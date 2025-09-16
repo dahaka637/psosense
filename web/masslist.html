@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Generate and Save License Key</title>
+    <link rel="stylesheet" type="text/css" href="estilos/massliststyle.css">
+    <link rel="icon" href="estilos/imagens/favicon.ico" type="image/x-icon">
+</head>
+<body>
+    <div class="navigation-container">
+        <div class="navigation-menu">
+            <button class="BotaoNavigation" id="btnEdit">License Editor</button>
+            <button class="BotaoNavigation" id="btnLicenseList">License List</button>
+            <button class="BotaoNavigation" id="btnMassGenerator">Mass Generator</button>
+            <button class="BotaoNavigation" id="btnUserList">User List</button>
+            <button class="BotaoNavigation" id="btnUserEditor">User Editor</button>
+            <button class="BotaoNavigation" id="btnSoftware">Software Data</button>
+        </div>
+    </div>
+
+    <div class="container">
+        <img src="estilos/imagens/adminlogo.png" alt="Logo">
+        <div id="UserName"></div>
+        <div class="input-container">
+            <select id="LicenseDurationField" name="LicenseDurationField" style="margin-right: 10px;"> 
+                <option value="24 hours">24 hours</option>
+                <option value="7 days">7 days</option>
+                <option value="30 days">30 days</option>
+                <option value="Lifetime">Lifetime</option>
+            </select>
+            
+            <select id="NumberLicenses" name="NumberLicense" style="margin-right: 10px;">
+                <option value="5">5 licenses</option>
+                <option value="10">10 licenses</option>
+                <option value="25">25 licenses</option>
+                <option value="50">50 licenses</option>
+                <option value="75">75 licenses</option>
+                <option value="100">100 licenses</option>
+            </select>
+        </div>
+
+        <div class="button-container">
+            <button id="SaveLicense" name="saveLicense" class="button-icon"><i class="fas fa-save"></i> Save</button>
+            <button id="GenerateLicense" name="generateLicense" class="button-icon"><i class="fas fa-key"></i> Generate</button>
+            <button id="CopyLicense" name="copyLicense" class="button-icon"><i class="fa-solid fa-copy"></i> Copy</button>
+        </div>
+        <div id="messageContainer"></div>
+        <div class="table-container">
+            <table>
+                <thead>
+                    <tr>
+                        <th>License</th>
+                    </tr>
+                </thead>
+                <tbody id="licenseList">
+                    <!-- Licenses will be inserted here -->
+                </tbody>
+            </table>
+        </div>
+    </div>
+
+
+    <script type="module" src="scripts/masslist-javascript.js"></script>
+
+</body>
+</html>

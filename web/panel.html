@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>User Dashboard</title>
+    <link rel="icon" href="estilos/imagens/favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" type="text/css" href="estilos/stylepanel.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <img src="estilos/imagens/panellogo.png" alt="Logo">
+        </div>
+        
+        <div class="user-profile">
+            <p>
+                <i class="fas fa-user"></i> User: <strong id="user-email"></strong>
+            </p>
+            <div class="status-info">
+                <div class="status" id="account-status-container">
+                    Account Status: <strong id="account-status"></strong>
+                    <span class="status-icon-container"><i class=""></i></span>
+                </div>
+
+                <div class="status">
+                    License: <strong id="user-license" class="expired-license"></strong>
+                </div>
+
+                <div class="status">
+                    Remaining Time:<strong id="expiration-date" class="expiration-date"> </strong>
+                </div>
+                
+                
+                
+                
+                <div class="status">
+                    Loader Status: <strong id="loader-version"></strong>
+                </div>
+
+                <div class="status">
+                    Software Status: <strong id="software-status"></strong>
+                    <span class="status-icon-container"><i class=""></i></span>
+                </div>
+                <div class="status">
+                    HWID Status: <strong id="hwid-status"></strong>
+                    <span class="status-icon-container"><i class=""></i></span>
+                </div>
+                <div class="status">
+                    <strong id="software-version">Lastest Version: </strong>
+                    <i class=""></i>
+                </div>
+                <div class="status">
+                <strong id="user-version">Your Version: </strong>
+                </div>
+                
+
+            </div>
+        </div>
+        <!-- Botão Launch -->
+        <div class="button-container">
+            <button id="launch-button" class="custom-button hidden">
+                <i class="fas fa-cogs"></i> Launch
+            </button>
+        </div>
+
+        <div class="button-container">
+        <!-- Botão para ativar a licença -->
+            <button id="activate-license-button" class="custom-button hidden">
+                <i class="fas fa-key"></i> Activate License
+            </button>
+        </div>
+
+
+        <div class="load" id="loading"></div>
+    </div>
+
+    <!-- Alert -->
+    <div class="notifications-container">
+        <div class="alert" id="alert-message"></div>
+    </div>
+
+    <!-- Adicione ao final do corpo do seu HTML -->
+<div class="popup" id="license-popup">
+    <div class="popup-content">
+        <span id="popup-close" class="popup-close">&times;</span>
+        <label for="license-input">Enter your license:</label>
+        <input type="text" id="license-input" class="form__field" placeholder="License" required>
+        <button id="submit-license" class="custom-button">Submit</button>
+    </div>
+</div>
+
+
+
+    <script type="module" src="scripts/panel-javascript.js"></script>
+</body>
+</html>

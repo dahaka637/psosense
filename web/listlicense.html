@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>License List</title>
+    <link rel="stylesheet" type="text/css" href="estilos/stylelicenselist.css">
+    <link rel="icon" href="estilos/imagens/favicon.ico" type="image/x-icon">
+</head>
+<body>
+    <div class="navigation-container">
+       
+        <div class="navigation-menu">
+            <button class="BotaoNavigation" id="btnEdit">License Editor</button>
+            <button class="BotaoNavigation" id="btnLicenseList">License List</button>
+            <button class="BotaoNavigation" id="btnMassGenerator">Mass Generator</button>
+            <button class="BotaoNavigation" id="btnUserList">User List</button>
+            <button class="BotaoNavigation" id="btnUserEditor">User Editor</button>
+            <button class="BotaoNavigation" id="btnSoftware">Software Data</button>
+        </div>
+    </div>
+    <div class="container">
+        
+        <img src="estilos/imagens/adminlogo.png" alt="Logo">
+        <div id="UserName"></div>
+
+        <div class="checkbox-wrapper-1">
+
+
+            <input id="hideexpired" class="substituted" type="checkbox" aria-hidden="true" />
+            <label for="hideexpired">Hide Expired</label>
+            <input id="HideNoActived" class="substituted" type="checkbox" aria-hidden="true" />
+            <label for="HideNoActived">Hide No Actived</label>
+            <input id="HideActived" class="substituted" type="checkbox" aria-hidden="true" />
+            <label for="HideActived">Hide Actived</label>
+            <input id="HideBasic" class="substituted" type="checkbox" aria-hidden="true" />
+            <label for="HideBasic">Hide Basic</label>
+            <input id="HidePro" class="substituted" type="checkbox" aria-hidden="true" />
+            <label for="HidePro">Hide Premium</label>
+
+            
+
+
+          </div>
+        
+        
+
+
+        <input type="text" id="searchInput" placeholder="Search by license or user">
+
+        <div class="table-container">
+            <table>
+                <thead>
+                    <tr>
+                        <th>License</th>
+                        <th>Time Remaining</th>
+                        <th>Type</th>
+                        <th>Product</th>
+                    </tr>
+                </thead>
+                <tbody id="licenseList">
+                    <!-- Licenses will be inserted here -->
+                </tbody>
+            </table>
+        </div>
+                <!-- Botão de excluir todas as licenças expiradas -->
+        <div class="delete-expired-container">
+            <button id="deleteExpiredLicenses" class="delete-expired-button">
+                🗑️ Delete All Expired Licenses
+            </button>
+        </div>
+
+            <!-- Pop-up -->
+    <div id="popup" class="popup">
+        <div class="popup-content">
+            <span class="popup-close" id="popup-close">&times;</span>
+            <p id="popup-message"></p>
+        </div>
+    </div>
+    
+    </div>
+
+    <script type="module" src="scripts/listlicense-javascript.js"></script>
+</body>
+</html>

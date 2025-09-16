@@ -1,0 +1,779 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Debug|x64">
+      <Configuration>Debug</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|x64">
+      <Configuration>Release</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <VCProjectVersion>17.0</VCProjectVersion>
+    <Keyword>Win32Proj</Keyword>
+    <ProjectGuid>{c569df39-538c-4e4c-ab64-66348183c969}</ProjectGuid>
+    <RootNamespace>PSOInternal</RootNamespace>
+    <WindowsTargetPlatformVersion>10.0</WindowsTargetPlatformVersion>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>v143</PlatformToolset>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>v143</PlatformToolset>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>v143</PlatformToolset>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="Configuration">
+    <ConfigurationType>DynamicLibrary</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>v143</PlatformToolset>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="Shared">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <IncludePath>$(ProjectDir)Sdk\minhook\include;$(ProjectDir)Sdk\minhook\lib;$(IncludePath)</IncludePath>
+    <LibraryPath>$(ProjectDir)Sdk\minhook\lib;$(LibraryPath)</LibraryPath>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <SDLCheck>true</SDLCheck>
+      <PreprocessorDefinitions>WIN32;_DEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ConformanceMode>true</ConformanceMode>
+    </ClCompile>
+    <Link>
+      <SubSystem>Console</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <SDLCheck>true</SDLCheck>
+      <PreprocessorDefinitions>WIN32;NDEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ConformanceMode>true</ConformanceMode>
+    </ClCompile>
+    <Link>
+      <SubSystem>Console</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <SDLCheck>true</SDLCheck>
+      <PreprocessorDefinitions>_DEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ConformanceMode>true</ConformanceMode>
+    </ClCompile>
+    <Link>
+      <SubSystem>Console</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <SDLCheck>true</SDLCheck>
+      <PreprocessorDefinitions>NDEBUG;_CONSOLE;%(PreprocessorDefinitions);MH_STATIC
+</PreprocessorDefinitions>
+      <ConformanceMode>true</ConformanceMode>
+      <AdditionalIncludeDirectories>$(ProjectDir)MinHook\include;$(ProjectDir)Sdk\CppSDK;$(ProjectDir)imgui</AdditionalIncludeDirectories>
+      <LanguageStandard>stdcpp20</LanguageStandard>
+    </ClCompile>
+    <Link>
+      <SubSystem>Console</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <AdditionalLibraryDirectories>$(ProjectDir)Sdk\minhook\lib</AdditionalLibraryDirectories>
+      <AdditionalDependencies>MinHook.lib;%(AdditionalDependencies)</AdditionalDependencies>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <None Include="Sdk\CppSDK\NameCollisions.inl" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="pe_blocker.hpp" />
+    <ClInclude Include="dx11_hook.hpp" />
+    <ClInclude Include="function_calls.hpp" />
+    <ClInclude Include="game_context.hpp" />
+    <ClInclude Include="imgui\backends\imgui_impl_dx11.h" />
+    <ClInclude Include="imgui\backends\imgui_impl_win32.h" />
+    <ClInclude Include="imgui\imconfig.h" />
+    <ClInclude Include="imgui\imgui.h" />
+    <ClInclude Include="imgui\imgui_internal.h" />
+    <ClInclude Include="imgui\imstb_rectpack.h" />
+    <ClInclude Include="imgui\imstb_textedit.h" />
+    <ClInclude Include="imgui\imstb_truetype.h" />
+    <ClInclude Include="minhook\include\MinHook.h" />
+    <ClInclude Include="minhook\src\buffer.h" />
+    <ClInclude Include="minhook\src\hde\hde32.h" />
+    <ClInclude Include="minhook\src\hde\hde64.h" />
+    <ClInclude Include="minhook\src\hde\pstdint.h" />
+    <ClInclude Include="minhook\src\hde\table32.h" />
+    <ClInclude Include="minhook\src\hde\table64.h" />
+    <ClInclude Include="minhook\src\trampoline.h" />
+    <ClInclude Include="psosense_pipe.hpp" />
+    <ClInclude Include="Sdk\CppSDK\PropertyFixup.hpp" />
+    <ClInclude Include="Sdk\CppSDK\SDK.hpp" />
+    <ClInclude Include="Sdk\CppSDK\SDK\ActorLayerUtilities_classes.hpp" />
+    <ClInclude Include="Sdk\CppSDK\SDK\ActorLayerUtilities_parameters.hpp" />
+    <ClInclude Include="Sdk\CppSDK\SDK\ActorLayerUtilities_structs.hpp" />
+    <ClInclude Include="Sdk\CppSDK\SDK\ActorSequence_classes.hpp" />
+    <ClInclude Include="Sdk\CppSDK\SDK\ActorSequence_structs.hpp" />
+    <ClInclude Include="Sdk\CppSDK\SDK\AIModule_classes.hpp" />
+    <ClInclude Include="Sdk\CppSDK\SDK\AIModule_parameters.hpp" />
+    <ClInclude Include="Sdk\CppSDK\SDK\AIModule_structs.hpp" />
+    <ClInclude Include="Sdk\CppSDK\SDK\AndroidPermission_classes.hpp" />
+    <ClInclude Include="Sdk\CppSDK\SDK\AndroidPermission_parameters.hpp" />
+    <ClInclude Include="Sdk\CppSDK\SDK\AnimationCore_classes.hpp" />
+    <ClInclude Include="Sdk\CppSDK\SDK\AnimationCore_structs.hpp" />
+    <ClInclude Include="Sdk\CppSDK\SDK\AnimationSharing_classes.hpp" />
+    <ClInclude Include="Sdk\CppSDK\SDK\AnimationSharing_parameters.hpp" />
+    <ClInclude Include="Sdk\CppSDK\SDK\AnimationSharing_structs.hpp" />
+    <ClInclude Include="Sdk\CppSDK\SDK\AnimGraphRuntime_classes.hpp" />
+    <ClInclude Include="Sdk\CppSDK\SDK\AnimGraphRuntime_parameters.hpp" />
+    <ClInclude Include="Sdk\CppSDK\SDK\AnimGraphRuntime_structs.hpp" />
+    <ClInclude Include="Sdk\CppSDK\SDK\ApexDestruction_classes.hpp" />
+    <ClInclude Include="Sdk\CppSDK\SDK\ApexDestruction_parameters.hpp" />
+    <ClInclude Include="Sdk\CppSDK\SDK\ApexDestruction_structs.hpp" />
+    <ClInclude Include="Sdk\CppSDK\SDK\AppleImageUtils_classes.hpp" />
+    <ClInclude Include="Sdk\CppSDK\SDK\AppleImageUtils_parameters.hpp" />
+    <ClInclude Include="Sdk\CppSDK\SDK\AppleImageUtils_structs.hpp" />
+    <ClInclude Include="Sdk\CppSDK\SDK\AssetRegistry_classes.hpp" />
+    <ClInclude Include="Sdk\CppSDK\SDK\AssetRegistry_parameters.hpp" />
+    <ClInclude Include="Sdk\CppSDK\SDK\AssetRegistry_structs.hpp" />
+    <ClInclude Include="Sdk\CppSDK\SDK\AssetTags_classes.hpp" />
+    <ClInclude Include="Sdk\CppSDK\SDK\AssetTags_parameters.hpp" />
+    <ClInclude Include="Sdk\CppSDK\SDK\AssetTags_structs.hpp" />
+    <ClInclude Include="Sdk\CppSDK\SDK\AudioCapture_classes.hpp" />
+    <ClInclude Include="Sdk\CppSDK\SDK\AudioCapture_parameters.hpp" />
+    <ClInclude Include="Sdk\CppSDK\SDK\AudioCapture_structs.hpp" />
+    <ClInclude Include="Sdk\CppSDK\SDK\AudioExtensions_classes.hpp" />
+    <ClInclude Include="Sdk\CppSDK\SDK\AudioMixer_classes.hpp" />
+    <ClInclude Include="Sdk\CppSDK\SDK\AudioMixer_parameters.hpp" />
+    <ClInclude Include="Sdk\CppSDK\SDK\AudioMixer_structs.hpp" />
+    <ClInclude Include="Sdk\CppSDK\SDK\AudioPlatformConfiguration_structs.hpp" />
+    <ClInclude Include="Sdk\CppSDK\SDK\AugmentedReality_classes.hpp" />
+    <ClInclude Include="Sdk\CppSDK\SDK\AugmentedReality_parameters.hpp" />
+    <ClInclude Include="Sdk\CppSDK\SDK\AugmentedReality_structs.hpp" />
+    <ClInclude Include="Sdk\CppSDK\SDK\AutomationUtils_classes.hpp" />
+    <ClInclude Include="Sdk\CppSDK\SDK\AutomationUtils_parameters.hpp" />
+    <ClInclude Include="Sdk\CppSDK\SDK\AwsGameLiftClient_classes.hpp" />
+    <ClInclude Include="Sdk\CppSDK\SDK\AwsGameLiftClient_parameters.hpp" />
+    <ClInclude Include="Sdk\CppSDK\SDK\AwsGameLiftClient_structs.hpp" />
+    <ClInclude Include="Sdk\CppSDK\SDK\AwsGameLiftServer_classes.hpp" />
+    <ClInclude Include="Sdk\CppSDK\SDK\AwsGameLiftServer_parameters.hpp" />
+    <ClInclude Include="Sdk\CppSDK\SDK\AwsGameLiftServer_structs.hpp" />
+    <ClInclude Include="Sdk\CppSDK\SDK\BallHalo_Large_classes.hpp" />
+    <ClInclude Include="Sdk\CppSDK\SDK\BallHalo_Medium_classes.hpp" />
+    <ClInclude Include="Sdk\CppSDK\SDK\BallHalo_Small_classes.hpp" />
+    <ClInclude Include="Sdk\CppSDK\SDK\Basic.hpp" />
+    <ClInclude Include="Sdk\CppSDK\SDK\BedfordParkActor_classes.hpp" />
+    <ClInclude Include="Sdk\CppSDK\SDK\BlueprintJson_classes.hpp" />
+    <ClInclude Include="Sdk\CppSDK\SDK\BlueprintJson_parameters.hpp" />
+    <ClInclude Include="Sdk\CppSDK\SDK\BlueprintJson_structs.hpp" />
+    <ClInclude Include="Sdk\CppSDK\SDK\BP_FunctionLibrary_classes.hpp" />
+    <ClInclude Include="Sdk\CppSDK\SDK\BP_FunctionLibrary_parameters.hpp" />
+    <ClInclude Include="Sdk\CppSDK\SDK\BP_Sky_Sphere_classes.hpp" />
+    <ClInclude Include="Sdk\CppSDK\SDK\BP_Sky_Sphere_parameters.hpp" />
+    <ClInclude Include="Sdk\CppSDK\SDK\BuildPatchServices_classes.hpp" />
+    <ClInclude Include="Sdk\CppSDK\SDK\BuildPatchServices_structs.hpp" />
+    <ClInclude Include="Sdk\CppSDK\SDK\Chaos_structs.hpp" />
+    <ClInclude Include="Sdk\CppSDK\SDK\ChatMessageMiddlePanel_classes.hpp" />
+    <ClInclude Include="Sdk\CppSDK\SDK\ChatMessageMiddlePanel_parameters.hpp" />
+    <ClInclude Include="Sdk\CppSDK\SDK\ChatMessage_classes.hpp" />
+    <ClInclude Include="Sdk\CppSDK\SDK\ChatMessage_parameters.hpp" />
+    <ClInclude Include="Sdk\CppSDK\SDK\Chat_classes.hpp" />
+    <ClInclude Include="Sdk\CppSDK\SDK\Chat_parameters.hpp" />
+    <ClInclude Include="Sdk\CppSDK\SDK\CinematicCamera_classes.hpp" />
+    <ClInclude Include="Sdk\CppSDK\SDK\CinematicCamera_parameters.hpp" />
+    <ClInclude Include="Sdk\CppSDK\SDK\CinematicCamera_structs.hpp" />
+    <ClInclude Include="Sdk\CppSDK\SDK\ClothingSystemRuntimeCommon_classes.hpp" />
+    <ClInclude Include="Sdk\CppSDK\SDK\ClothingSystemRuntimeCommon_structs.hpp" />
+    <ClInclude Include="Sdk\CppSDK\SDK\ClothingSystemRuntimeInterface_classes.hpp" />
+    <ClInclude Include="Sdk\CppSDK\SDK\ClothingSystemRuntimeInterface_parameters.hpp" />
+    <ClInclude Include="Sdk\CppSDK\SDK\ClothingSystemRuntimeInterface_structs.hpp" />
+    <ClInclude Include="Sdk\CppSDK\SDK\ClothingSystemRuntimeNv_classes.hpp" />
+    <ClInclude Include="Sdk\CppSDK\SDK\ClothingSystemRuntimeNv_parameters.hpp" />
+    <ClInclude Include="Sdk\CppSDK\SDK\ClothingSystemRuntimeNv_structs.hpp" />
+    <ClInclude Include="Sdk\CppSDK\SDK\ColorWheelPlugin_classes.hpp" />
+    <ClInclude Include="Sdk\CppSDK\SDK\ColorWheelPlugin_parameters.hpp" />
+    <ClInclude Include="Sdk\CppSDK\SDK\ColorWheelPlugin_structs.hpp" />
+    <ClInclude Include="Sdk\CppSDK\SDK\ControlRig_classes.hpp" />
+    <ClInclude Include="Sdk\CppSDK\SDK\ControlRig_parameters.hpp" />
+    <ClInclude Include="Sdk\CppSDK\SDK\ControlRig_structs.hpp" />
+    <ClInclude Include="Sdk\CppSDK\SDK\CoreUObject_classes.hpp" />
+    <ClInclude Include="Sdk\CppSDK\SDK\CoreUObject_parameters.hpp" />
+    <ClInclude Include="Sdk\CppSDK\SDK\CoreUObject_structs.hpp" />
+    <ClInclude Include="Sdk\CppSDK\SDK\CPTMenuPlayerItem_classes.hpp" />
+    <ClInclude Include="Sdk\CppSDK\SDK\CPTMenuPlayerItem_parameters.hpp" />
+    <ClInclude Include="Sdk\CppSDK\SDK\CPTMenu_classes.hpp" />
+    <ClInclude Include="Sdk\CppSDK\SDK\CPTMenu_parameters.hpp" />
+    <ClInclude Include="Sdk\CppSDK\SDK\CustomLobbiesServerItem_classes.hpp" />
+    <ClInclude Include="Sdk\CppSDK\SDK\CustomLobbiesServerItem_parameters.hpp" />
+    <ClInclude Include="Sdk\CppSDK\SDK\CustomLobbies_classes.hpp" />
+    <ClInclude Include="Sdk\CppSDK\SDK\CustomLobbies_parameters.hpp" />
+    <ClInclude Include="Sdk\CppSDK\SDK\CustomTeam_structs.hpp" />
+    <ClInclude Include="Sdk\CppSDK\SDK\DeveloperSettings_classes.hpp" />
+    <ClInclude Include="Sdk\CppSDK\SDK\Discords_classes.hpp" />
+    <ClInclude Include="Sdk\CppSDK\SDK\Discords_parameters.hpp" />
+    <ClInclude Include="Sdk\CppSDK\SDK\DmgTypeBP_Environmental_classes.hpp" />
+    <ClInclude Include="Sdk\CppSDK\SDK\DS_EntryGameMode_classes.hpp" />
+    <ClInclude Include="Sdk\CppSDK\SDK\DS_EntryGameMode_parameters.hpp" />
+    <ClInclude Include="Sdk\CppSDK\SDK\DS_Entry_GameState_classes.hpp" />
+    <ClInclude Include="Sdk\CppSDK\SDK\DS_Entry_HUD_classes.hpp" />
+    <ClInclude Include="Sdk\CppSDK\SDK\DS_Entry_HUD_parameters.hpp" />
+    <ClInclude Include="Sdk\CppSDK\SDK\DS_Entry_Widget_classes.hpp" />
+    <ClInclude Include="Sdk\CppSDK\SDK\DS_Entry_Widget_parameters.hpp" />
+    <ClInclude Include="Sdk\CppSDK\SDK\EngineMessages_structs.hpp" />
+    <ClInclude Include="Sdk\CppSDK\SDK\EngineSettings_classes.hpp" />
+    <ClInclude Include="Sdk\CppSDK\SDK\EngineSettings_parameters.hpp" />
+    <ClInclude Include="Sdk\CppSDK\SDK\EngineSettings_structs.hpp" />
+    <ClInclude Include="Sdk\CppSDK\SDK\Engine_classes.hpp" />
+    <ClInclude Include="Sdk\CppSDK\SDK\Engine_parameters.hpp" />
+    <ClInclude Include="Sdk\CppSDK\SDK\Engine_structs.hpp" />
+    <ClInclude Include="Sdk\CppSDK\SDK\Extras_classes.hpp" />
+    <ClInclude Include="Sdk\CppSDK\SDK\Extras_parameters.hpp" />
+    <ClInclude Include="Sdk\CppSDK\SDK\EyeTracker_classes.hpp" />
+    <ClInclude Include="Sdk\CppSDK\SDK\EyeTracker_parameters.hpp" />
+    <ClInclude Include="Sdk\CppSDK\SDK\EyeTracker_structs.hpp" />
+    <ClInclude Include="Sdk\CppSDK\SDK\Foliage_classes.hpp" />
+    <ClInclude Include="Sdk\CppSDK\SDK\Foliage_parameters.hpp" />
+    <ClInclude Include="Sdk\CppSDK\SDK\Foliage_structs.hpp" />
+    <ClInclude Include="Sdk\CppSDK\SDK\FriendItem_classes.hpp" />
+    <ClInclude Include="Sdk\CppSDK\SDK\FriendItem_parameters.hpp" />
+    <ClInclude Include="Sdk\CppSDK\SDK\GameplayCameras_classes.hpp" />
+    <ClInclude Include="Sdk\CppSDK\SDK\GameplayCameras_parameters.hpp" />
+    <ClInclude Include="Sdk\CppSDK\SDK\GameplayCameras_structs.hpp" />
+    <ClInclude Include="Sdk\CppSDK\SDK\GameplayTags_classes.hpp" />
+    <ClInclude Include="Sdk\CppSDK\SDK\GameplayTags_parameters.hpp" />
+    <ClInclude Include="Sdk\CppSDK\SDK\GameplayTags_structs.hpp" />
+    <ClInclude Include="Sdk\CppSDK\SDK\GameplayTasks_classes.hpp" />
+    <ClInclude Include="Sdk\CppSDK\SDK\GameplayTasks_parameters.hpp" />
+    <ClInclude Include="Sdk\CppSDK\SDK\GameplayTasks_structs.hpp" />
+    <ClInclude Include="Sdk\CppSDK\SDK\GeometryCacheTracks_classes.hpp" />
+    <ClInclude Include="Sdk\CppSDK\SDK\GeometryCacheTracks_structs.hpp" />
+    <ClInclude Include="Sdk\CppSDK\SDK\GeometryCache_classes.hpp" />
+    <ClInclude Include="Sdk\CppSDK\SDK\GeometryCache_parameters.hpp" />
+    <ClInclude Include="Sdk\CppSDK\SDK\GeometryCache_structs.hpp" />
+    <ClInclude Include="Sdk\CppSDK\SDK\HeadMountedDisplay_classes.hpp" />
+    <ClInclude Include="Sdk\CppSDK\SDK\HeadMountedDisplay_parameters.hpp" />
+    <ClInclude Include="Sdk\CppSDK\SDK\HeadMountedDisplay_structs.hpp" />
+    <ClInclude Include="Sdk\CppSDK\SDK\HostMenuPlayerItem_classes.hpp" />
+    <ClInclude Include="Sdk\CppSDK\SDK\HostMenuPlayerItem_parameters.hpp" />
+    <ClInclude Include="Sdk\CppSDK\SDK\HostMenu_classes.hpp" />
+    <ClInclude Include="Sdk\CppSDK\SDK\HostMenu_parameters.hpp" />
+    <ClInclude Include="Sdk\CppSDK\SDK\ImageWrapper_structs.hpp" />
+    <ClInclude Include="Sdk\CppSDK\SDK\ImageWriteQueue_classes.hpp" />
+    <ClInclude Include="Sdk\CppSDK\SDK\ImageWriteQueue_parameters.hpp" />
+    <ClInclude Include="Sdk\CppSDK\SDK\ImageWriteQueue_structs.hpp" />
+    <ClInclude Include="Sdk\CppSDK\SDK\Ind_Net_classes.hpp" />
+    <ClInclude Include="Sdk\CppSDK\SDK\Ind_Net_parameters.hpp" />
+    <ClInclude Include="Sdk\CppSDK\SDK\InputCore_classes.hpp" />
+    <ClInclude Include="Sdk\CppSDK\SDK\InputCore_structs.hpp" />
+    <ClInclude Include="Sdk\CppSDK\SDK\Intro_classes.hpp" />
+    <ClInclude Include="Sdk\CppSDK\SDK\Intro_parameters.hpp" />
+    <ClInclude Include="Sdk\CppSDK\SDK\JsonUtilities_classes.hpp" />
+    <ClInclude Include="Sdk\CppSDK\SDK\JsonUtilities_structs.hpp" />
+    <ClInclude Include="Sdk\CppSDK\SDK\Landscape_classes.hpp" />
+    <ClInclude Include="Sdk\CppSDK\SDK\Landscape_parameters.hpp" />
+    <ClInclude Include="Sdk\CppSDK\SDK\Landscape_structs.hpp" />
+    <ClInclude Include="Sdk\CppSDK\SDK\LevelSequence_classes.hpp" />
+    <ClInclude Include="Sdk\CppSDK\SDK\LevelSequence_parameters.hpp" />
+    <ClInclude Include="Sdk\CppSDK\SDK\LevelSequence_structs.hpp" />
+    <ClInclude Include="Sdk\CppSDK\SDK\LightPropagationVolumeRuntime_classes.hpp" />
+    <ClInclude Include="Sdk\CppSDK\SDK\LiveLinkComponents_classes.hpp" />
+    <ClInclude Include="Sdk\CppSDK\SDK\LiveLinkComponents_structs.hpp" />
+    <ClInclude Include="Sdk\CppSDK\SDK\LiveLinkInterface_classes.hpp" />
+    <ClInclude Include="Sdk\CppSDK\SDK\LiveLinkInterface_structs.hpp" />
+    <ClInclude Include="Sdk\CppSDK\SDK\LiveLinkMessageBusFramework_structs.hpp" />
+    <ClInclude Include="Sdk\CppSDK\SDK\LiveLinkMovieScene_classes.hpp" />
+    <ClInclude Include="Sdk\CppSDK\SDK\LiveLinkMovieScene_structs.hpp" />
+    <ClInclude Include="Sdk\CppSDK\SDK\LiveLink_classes.hpp" />
+    <ClInclude Include="Sdk\CppSDK\SDK\LiveLink_parameters.hpp" />
+    <ClInclude Include="Sdk\CppSDK\SDK\LiveLink_structs.hpp" />
+    <ClInclude Include="Sdk\CppSDK\SDK\MainMenuStartScreen_classes.hpp" />
+    <ClInclude Include="Sdk\CppSDK\SDK\MainMenuStartScreen_parameters.hpp" />
+    <ClInclude Include="Sdk\CppSDK\SDK\MainMenu_classes.hpp" />
+    <ClInclude Include="Sdk\CppSDK\SDK\MainMenu_parameters.hpp" />
+    <ClInclude Include="Sdk\CppSDK\SDK\MatchController_Indoor_classes.hpp" />
+    <ClInclude Include="Sdk\CppSDK\SDK\MatchController_Indoor_parameters.hpp" />
+    <ClInclude Include="Sdk\CppSDK\SDK\MatchController_Regulation_classes.hpp" />
+    <ClInclude Include="Sdk\CppSDK\SDK\MatchController_Regulation_parameters.hpp" />
+    <ClInclude Include="Sdk\CppSDK\SDK\MatchInfo_classes.hpp" />
+    <ClInclude Include="Sdk\CppSDK\SDK\MatchState_classes.hpp" />
+    <ClInclude Include="Sdk\CppSDK\SDK\MaterialShaderQualitySettings_classes.hpp" />
+    <ClInclude Include="Sdk\CppSDK\SDK\MaterialShaderQualitySettings_structs.hpp" />
+    <ClInclude Include="Sdk\CppSDK\SDK\MediaAssets_classes.hpp" />
+    <ClInclude Include="Sdk\CppSDK\SDK\MediaAssets_parameters.hpp" />
+    <ClInclude Include="Sdk\CppSDK\SDK\MediaAssets_structs.hpp" />
+    <ClInclude Include="Sdk\CppSDK\SDK\MediaUtils_structs.hpp" />
+    <ClInclude Include="Sdk\CppSDK\SDK\MeshDescription_classes.hpp" />
+    <ClInclude Include="Sdk\CppSDK\SDK\MeshDescription_parameters.hpp" />
+    <ClInclude Include="Sdk\CppSDK\SDK\MeshDescription_structs.hpp" />
+    <ClInclude Include="Sdk\CppSDK\SDK\MiddlePanel_classes.hpp" />
+    <ClInclude Include="Sdk\CppSDK\SDK\MiddlePanel_parameters.hpp" />
+    <ClInclude Include="Sdk\CppSDK\SDK\MM_Character_classes.hpp" />
+    <ClInclude Include="Sdk\CppSDK\SDK\MM_Character_parameters.hpp" />
+    <ClInclude Include="Sdk\CppSDK\SDK\MM_Controller_classes.hpp" />
+    <ClInclude Include="Sdk\CppSDK\SDK\MM_Controller_parameters.hpp" />
+    <ClInclude Include="Sdk\CppSDK\SDK\MM_Credits_classes.hpp" />
+    <ClInclude Include="Sdk\CppSDK\SDK\MM_Credits_parameters.hpp" />
+    <ClInclude Include="Sdk\CppSDK\SDK\MM_Customization_classes.hpp" />
+    <ClInclude Include="Sdk\CppSDK\SDK\MM_Customization_parameters.hpp" />
+    <ClInclude Include="Sdk\CppSDK\SDK\MM_CustomTeamsOld_classes.hpp" />
+    <ClInclude Include="Sdk\CppSDK\SDK\MM_CustomTeamsOld_parameters.hpp" />
+    <ClInclude Include="Sdk\CppSDK\SDK\MM_Extras_classes.hpp" />
+    <ClInclude Include="Sdk\CppSDK\SDK\MM_Extras_parameters.hpp" />
+    <ClInclude Include="Sdk\CppSDK\SDK\MM_HUD_classes.hpp" />
+    <ClInclude Include="Sdk\CppSDK\SDK\MM_HUD_New_classes.hpp" />
+    <ClInclude Include="Sdk\CppSDK\SDK\MM_HUD_New_parameters.hpp" />
+    <ClInclude Include="Sdk\CppSDK\SDK\MM_HUD_parameters.hpp" />
+    <ClInclude Include="Sdk\CppSDK\SDK\MM_Intro_classes.hpp" />
+    <ClInclude Include="Sdk\CppSDK\SDK\MM_Intro_parameters.hpp" />
+    <ClInclude Include="Sdk\CppSDK\SDK\MM_Music_classes.hpp" />
+    <ClInclude Include="Sdk\CppSDK\SDK\MM_Music_parameters.hpp" />
+    <ClInclude Include="Sdk\CppSDK\SDK\MM_Profile_classes.hpp" />
+    <ClInclude Include="Sdk\CppSDK\SDK\MM_Profile_parameters.hpp" />
+    <ClInclude Include="Sdk\CppSDK\SDK\MM_SoloRanked_classes.hpp" />
+    <ClInclude Include="Sdk\CppSDK\SDK\MM_SoloRanked_parameters.hpp" />
+    <ClInclude Include="Sdk\CppSDK\SDK\MM_Soundtrack_classes.hpp" />
+    <ClInclude Include="Sdk\CppSDK\SDK\MM_Soundtrack_parameters.hpp" />
+    <ClInclude Include="Sdk\CppSDK\SDK\MM_Start_classes.hpp" />
+    <ClInclude Include="Sdk\CppSDK\SDK\MM_Start_parameters.hpp" />
+    <ClInclude Include="Sdk\CppSDK\SDK\MoviePlayer_classes.hpp" />
+    <ClInclude Include="Sdk\CppSDK\SDK\MoviePlayer_structs.hpp" />
+    <ClInclude Include="Sdk\CppSDK\SDK\MovieSceneCapture_classes.hpp" />
+    <ClInclude Include="Sdk\CppSDK\SDK\MovieSceneCapture_parameters.hpp" />
+    <ClInclude Include="Sdk\CppSDK\SDK\MovieSceneCapture_structs.hpp" />
+    <ClInclude Include="Sdk\CppSDK\SDK\MovieSceneTracks_classes.hpp" />
+    <ClInclude Include="Sdk\CppSDK\SDK\MovieSceneTracks_parameters.hpp" />
+    <ClInclude Include="Sdk\CppSDK\SDK\MovieSceneTracks_structs.hpp" />
+    <ClInclude Include="Sdk\CppSDK\SDK\MovieScene_classes.hpp" />
+    <ClInclude Include="Sdk\CppSDK\SDK\MovieScene_parameters.hpp" />
+    <ClInclude Include="Sdk\CppSDK\SDK\MovieScene_structs.hpp" />
+    <ClInclude Include="Sdk\CppSDK\SDK\MP_ChatMessage_classes.hpp" />
+    <ClInclude Include="Sdk\CppSDK\SDK\MP_ChatMessage_parameters.hpp" />
+    <ClInclude Include="Sdk\CppSDK\SDK\MP_FreeCam_classes.hpp" />
+    <ClInclude Include="Sdk\CppSDK\SDK\MP_FreeCam_parameters.hpp" />
+    <ClInclude Include="Sdk\CppSDK\SDK\MP_GameliftServerObject_classes.hpp" />
+    <ClInclude Include="Sdk\CppSDK\SDK\MP_GameliftServerObject_parameters.hpp" />
+    <ClInclude Include="Sdk\CppSDK\SDK\MP_GameMode_classes.hpp" />
+    <ClInclude Include="Sdk\CppSDK\SDK\MP_GameMode_parameters.hpp" />
+    <ClInclude Include="Sdk\CppSDK\SDK\MP_GameState_classes.hpp" />
+    <ClInclude Include="Sdk\CppSDK\SDK\MP_GameState_parameters.hpp" />
+    <ClInclude Include="Sdk\CppSDK\SDK\MP_HostMenu_PlayerCard_classes.hpp" />
+    <ClInclude Include="Sdk\CppSDK\SDK\MP_HostMenu_PlayerCard_parameters.hpp" />
+    <ClInclude Include="Sdk\CppSDK\SDK\MP_HUD_classes.hpp" />
+    <ClInclude Include="Sdk\CppSDK\SDK\MP_HUD_NEW_classes.hpp" />
+    <ClInclude Include="Sdk\CppSDK\SDK\MP_HUD_NEW_parameters.hpp" />
+    <ClInclude Include="Sdk\CppSDK\SDK\MP_HUD_parameters.hpp" />
+    <ClInclude Include="Sdk\CppSDK\SDK\MP_Interface_classes.hpp" />
+    <ClInclude Include="Sdk\CppSDK\SDK\MP_Interface_parameters.hpp" />
+    <ClInclude Include="Sdk\CppSDK\SDK\MP_PlayerState_classes.hpp" />
+    <ClInclude Include="Sdk\CppSDK\SDK\MP_PlayerState_parameters.hpp" />
+    <ClInclude Include="Sdk\CppSDK\SDK\MP_RichImageDecorator_classes.hpp" />
+    <ClInclude Include="Sdk\CppSDK\SDK\MP_ScoreBoardCard_classes.hpp" />
+    <ClInclude Include="Sdk\CppSDK\SDK\MP_ScoreBoardCard_parameters.hpp" />
+    <ClInclude Include="Sdk\CppSDK\SDK\MP_SpectatorCharacter_classes.hpp" />
+    <ClInclude Include="Sdk\CppSDK\SDK\MP_SpectatorCharacter_parameters.hpp" />
+    <ClInclude Include="Sdk\CppSDK\SDK\MP_TeamSheet_classes.hpp" />
+    <ClInclude Include="Sdk\CppSDK\SDK\MP_TeamSheet_parameters.hpp" />
+    <ClInclude Include="Sdk\CppSDK\SDK\MRMesh_classes.hpp" />
+    <ClInclude Include="Sdk\CppSDK\SDK\MRMesh_parameters.hpp" />
+    <ClInclude Include="Sdk\CppSDK\SDK\MRMesh_structs.hpp" />
+    <ClInclude Include="Sdk\CppSDK\SDK\MultiplayerMenu_classes.hpp" />
+    <ClInclude Include="Sdk\CppSDK\SDK\MultiplayerMenu_parameters.hpp" />
+    <ClInclude Include="Sdk\CppSDK\SDK\NavigationSystem_classes.hpp" />
+    <ClInclude Include="Sdk\CppSDK\SDK\NavigationSystem_parameters.hpp" />
+    <ClInclude Include="Sdk\CppSDK\SDK\NavigationSystem_structs.hpp" />
+    <ClInclude Include="Sdk\CppSDK\SDK\NetCore_classes.hpp" />
+    <ClInclude Include="Sdk\CppSDK\SDK\NetCore_structs.hpp" />
+    <ClInclude Include="Sdk\CppSDK\SDK\NewsItem_classes.hpp" />
+    <ClInclude Include="Sdk\CppSDK\SDK\NewsItem_parameters.hpp" />
+    <ClInclude Include="Sdk\CppSDK\SDK\NewsPanel_classes.hpp" />
+    <ClInclude Include="Sdk\CppSDK\SDK\NewsPanel_parameters.hpp" />
+    <ClInclude Include="Sdk\CppSDK\SDK\OnlineSubsystemSteam_classes.hpp" />
+    <ClInclude Include="Sdk\CppSDK\SDK\OnlineSubsystemUtils_classes.hpp" />
+    <ClInclude Include="Sdk\CppSDK\SDK\OnlineSubsystemUtils_parameters.hpp" />
+    <ClInclude Include="Sdk\CppSDK\SDK\OnlineSubsystemUtils_structs.hpp" />
+    <ClInclude Include="Sdk\CppSDK\SDK\OnlineSubsystem_classes.hpp" />
+    <ClInclude Include="Sdk\CppSDK\SDK\OnlineSubsystem_parameters.hpp" />
+    <ClInclude Include="Sdk\CppSDK\SDK\OnlineSubsystem_structs.hpp" />
+    <ClInclude Include="Sdk\CppSDK\SDK\OodleNetworkHandlerComponent_classes.hpp" />
+    <ClInclude Include="Sdk\CppSDK\SDK\OodleNetworkHandlerComponent_structs.hpp" />
+    <ClInclude Include="Sdk\CppSDK\SDK\OpenXRHandTracking_classes.hpp" />
+    <ClInclude Include="Sdk\CppSDK\SDK\OpenXRHandTracking_structs.hpp" />
+    <ClInclude Include="Sdk\CppSDK\SDK\Overlay_classes.hpp" />
+    <ClInclude Include="Sdk\CppSDK\SDK\Overlay_structs.hpp" />
+    <ClInclude Include="Sdk\CppSDK\SDK\PacketHandler_classes.hpp" />
+    <ClInclude Include="Sdk\CppSDK\SDK\PhysicsCore_classes.hpp" />
+    <ClInclude Include="Sdk\CppSDK\SDK\PhysicsCore_structs.hpp" />
+    <ClInclude Include="Sdk\CppSDK\SDK\PlayerCustomization_classes.hpp" />
+    <ClInclude Include="Sdk\CppSDK\SDK\PlayerCustomization_parameters.hpp" />
+    <ClInclude Include="Sdk\CppSDK\SDK\PlayerReport_classes.hpp" />
+    <ClInclude Include="Sdk\CppSDK\SDK\PlayerReport_parameters.hpp" />
+    <ClInclude Include="Sdk\CppSDK\SDK\PlayerStatsItem_classes.hpp" />
+    <ClInclude Include="Sdk\CppSDK\SDK\PlayerStatsItem_parameters.hpp" />
+    <ClInclude Include="Sdk\CppSDK\SDK\PlayerStats_classes.hpp" />
+    <ClInclude Include="Sdk\CppSDK\SDK\PropertyAccess_classes.hpp" />
+    <ClInclude Include="Sdk\CppSDK\SDK\PropertyAccess_structs.hpp" />
+    <ClInclude Include="Sdk\CppSDK\SDK\PropertyPath_structs.hpp" />
+    <ClInclude Include="Sdk\CppSDK\SDK\ProSoccerOnline_classes.hpp" />
+    <ClInclude Include="Sdk\CppSDK\SDK\PSO_CustomTeam_classes.hpp" />
+    <ClInclude Include="Sdk\CppSDK\SDK\PSO_GameInstance_classes.hpp" />
+    <ClInclude Include="Sdk\CppSDK\SDK\PSO_GameInstance_parameters.hpp" />
+    <ClInclude Include="Sdk\CppSDK\SDK\PSO_PlayerAppearance_classes.hpp" />
+    <ClInclude Include="Sdk\CppSDK\SDK\PSO_Settings_Audio_classes.hpp" />
+    <ClInclude Include="Sdk\CppSDK\SDK\PSO_Settings_Camera_classes.hpp" />
+    <ClInclude Include="Sdk\CppSDK\SDK\PSO_Settings_Controls_classes.hpp" />
+    <ClInclude Include="Sdk\CppSDK\SDK\PSO_Settings_Online_classes.hpp" />
+    <ClInclude Include="Sdk\CppSDK\SDK\PSO_Settings_Video_classes.hpp" />
+    <ClInclude Include="Sdk\CppSDK\SDK\PSO_UserTeam_classes.hpp" />
+    <ClInclude Include="Sdk\CppSDK\SDK\Reg_Net_classes.hpp" />
+    <ClInclude Include="Sdk\CppSDK\SDK\Reg_Net_parameters.hpp" />
+    <ClInclude Include="Sdk\CppSDK\SDK\Renderer_structs.hpp" />
+    <ClInclude Include="Sdk\CppSDK\SDK\RichTextBlockInlineDecorator_classes.hpp" />
+    <ClInclude Include="Sdk\CppSDK\SDK\RigVM_classes.hpp" />
+    <ClInclude Include="Sdk\CppSDK\SDK\RigVM_parameters.hpp" />
+    <ClInclude Include="Sdk\CppSDK\SDK\RigVM_structs.hpp" />
+    <ClInclude Include="Sdk\CppSDK\SDK\Scorecard_classes.hpp" />
+    <ClInclude Include="Sdk\CppSDK\SDK\Scorecard_parameters.hpp" />
+    <ClInclude Include="Sdk\CppSDK\SDK\SCUE4_classes.hpp" />
+    <ClInclude Include="Sdk\CppSDK\SDK\SCUE4_parameters.hpp" />
+    <ClInclude Include="Sdk\CppSDK\SDK\SCUE4_structs.hpp" />
+    <ClInclude Include="Sdk\CppSDK\SDK\Serialization_structs.hpp" />
+    <ClInclude Include="Sdk\CppSDK\SDK\SessionInfo_structs.hpp" />
+    <ClInclude Include="Sdk\CppSDK\SDK\SessionMessages_structs.hpp" />
+    <ClInclude Include="Sdk\CppSDK\SDK\SettingsListItem_classes.hpp" />
+    <ClInclude Include="Sdk\CppSDK\SDK\SettingsListItem_parameters.hpp" />
+    <ClInclude Include="Sdk\CppSDK\SDK\Settings_classes.hpp" />
+    <ClInclude Include="Sdk\CppSDK\SDK\Settings_parameters.hpp" />
+    <ClInclude Include="Sdk\CppSDK\SDK\SignificanceManager_classes.hpp" />
+    <ClInclude Include="Sdk\CppSDK\SDK\SlateCore_classes.hpp" />
+    <ClInclude Include="Sdk\CppSDK\SDK\SlateCore_structs.hpp" />
+    <ClInclude Include="Sdk\CppSDK\SDK\Slate_classes.hpp" />
+    <ClInclude Include="Sdk\CppSDK\SDK\Slate_structs.hpp" />
+    <ClInclude Include="Sdk\CppSDK\SDK\SoccerBall_classes.hpp" />
+    <ClInclude Include="Sdk\CppSDK\SDK\SoccerBall_parameters.hpp" />
+    <ClInclude Include="Sdk\CppSDK\SDK\SoundFields_classes.hpp" />
+    <ClInclude Include="Sdk\CppSDK\SDK\SoundUtilities_classes.hpp" />
+    <ClInclude Include="Sdk\CppSDK\SDK\SoundUtilities_parameters.hpp" />
+    <ClInclude Include="Sdk\CppSDK\SDK\SoundUtilities_structs.hpp" />
+    <ClInclude Include="Sdk\CppSDK\SDK\SpectatorListItem_classes.hpp" />
+    <ClInclude Include="Sdk\CppSDK\SDK\SpectatorListItem_parameters.hpp" />
+    <ClInclude Include="Sdk\CppSDK\SDK\SpectatorOptions_classes.hpp" />
+    <ClInclude Include="Sdk\CppSDK\SDK\SP_ABP_classes.hpp" />
+    <ClInclude Include="Sdk\CppSDK\SDK\SP_ABP_parameters.hpp" />
+    <ClInclude Include="Sdk\CppSDK\SDK\SP_AppearanceCombined_structs.hpp" />
+    <ClInclude Include="Sdk\CppSDK\SDK\SP_Character_classes.hpp" />
+    <ClInclude Include="Sdk\CppSDK\SDK\SP_Character_parameters.hpp" />
+    <ClInclude Include="Sdk\CppSDK\SDK\SP_Controller_classes.hpp" />
+    <ClInclude Include="Sdk\CppSDK\SDK\SP_Controller_parameters.hpp" />
+    <ClInclude Include="Sdk\CppSDK\SDK\SP_Emotes_QC_classes.hpp" />
+    <ClInclude Include="Sdk\CppSDK\SDK\SP_Emotes_QC_parameters.hpp" />
+    <ClInclude Include="Sdk\CppSDK\SDK\SP_KickBarOld_classes.hpp" />
+    <ClInclude Include="Sdk\CppSDK\SDK\SP_KickBarOld_parameters.hpp" />
+    <ClInclude Include="Sdk\CppSDK\SDK\SP_Kickbar_classes.hpp" />
+    <ClInclude Include="Sdk\CppSDK\SDK\SP_Kickbar_parameters.hpp" />
+    <ClInclude Include="Sdk\CppSDK\SDK\SP_NameTag_classes.hpp" />
+    <ClInclude Include="Sdk\CppSDK\SDK\SP_PlayerAppearance_structs.hpp" />
+    <ClInclude Include="Sdk\CppSDK\SDK\SP_ShirtData_classes.hpp" />
+    <ClInclude Include="Sdk\CppSDK\SDK\SP_ShirtData_parameters.hpp" />
+    <ClInclude Include="Sdk\CppSDK\SDK\SP_TeamAppearance_structs.hpp" />
+    <ClInclude Include="Sdk\CppSDK\SDK\StaticMeshDescription_classes.hpp" />
+    <ClInclude Include="Sdk\CppSDK\SDK\StaticMeshDescription_parameters.hpp" />
+    <ClInclude Include="Sdk\CppSDK\SDK\StaticMeshDescription_structs.hpp" />
+    <ClInclude Include="Sdk\CppSDK\SDK\StatsUpdateSheet_structs.hpp" />
+    <ClInclude Include="Sdk\CppSDK\SDK\SteamCoreWeb_classes.hpp" />
+    <ClInclude Include="Sdk\CppSDK\SDK\SteamCoreWeb_parameters.hpp" />
+    <ClInclude Include="Sdk\CppSDK\SDK\SteamCoreWeb_structs.hpp" />
+    <ClInclude Include="Sdk\CppSDK\SDK\SteamCore_classes.hpp" />
+    <ClInclude Include="Sdk\CppSDK\SDK\SteamCore_parameters.hpp" />
+    <ClInclude Include="Sdk\CppSDK\SDK\SteamCore_structs.hpp" />
+    <ClInclude Include="Sdk\CppSDK\SDK\SteamSockets_classes.hpp" />
+    <ClInclude Include="Sdk\CppSDK\SDK\TakeMovieScene_classes.hpp" />
+    <ClInclude Include="Sdk\CppSDK\SDK\TcpMessaging_classes.hpp" />
+    <ClInclude Include="Sdk\CppSDK\SDK\Team1Info_classes.hpp" />
+    <ClInclude Include="Sdk\CppSDK\SDK\Team1Info_parameters.hpp" />
+    <ClInclude Include="Sdk\CppSDK\SDK\Team2Info_classes.hpp" />
+    <ClInclude Include="Sdk\CppSDK\SDK\Team2Info_parameters.hpp" />
+    <ClInclude Include="Sdk\CppSDK\SDK\TeamCustomization_classes.hpp" />
+    <ClInclude Include="Sdk\CppSDK\SDK\TeamCustomization_parameters.hpp" />
+    <ClInclude Include="Sdk\CppSDK\SDK\TeamFormationItem_classes.hpp" />
+    <ClInclude Include="Sdk\CppSDK\SDK\TeamFormationItem_parameters.hpp" />
+    <ClInclude Include="Sdk\CppSDK\SDK\TeamFormation_0_structs.hpp" />
+    <ClInclude Include="Sdk\CppSDK\SDK\TeamFormation_classes.hpp" />
+    <ClInclude Include="Sdk\CppSDK\SDK\TeamInfo_structs.hpp" />
+    <ClInclude Include="Sdk\CppSDK\SDK\TeamListItem_classes.hpp" />
+    <ClInclude Include="Sdk\CppSDK\SDK\TeamListItem_parameters.hpp" />
+    <ClInclude Include="Sdk\CppSDK\SDK\TeamList_classes.hpp" />
+    <ClInclude Include="Sdk\CppSDK\SDK\TemplateSequence_classes.hpp" />
+    <ClInclude Include="Sdk\CppSDK\SDK\TemplateSequence_parameters.hpp" />
+    <ClInclude Include="Sdk\CppSDK\SDK\TemplateSequence_structs.hpp" />
+    <ClInclude Include="Sdk\CppSDK\SDK\TimeManagement_classes.hpp" />
+    <ClInclude Include="Sdk\CppSDK\SDK\TimeManagement_parameters.hpp" />
+    <ClInclude Include="Sdk\CppSDK\SDK\TimeManagement_structs.hpp" />
+    <ClInclude Include="Sdk\CppSDK\SDK\TrainingController_Indoor_classes.hpp" />
+    <ClInclude Include="Sdk\CppSDK\SDK\TrainingController_Indoor_parameters.hpp" />
+    <ClInclude Include="Sdk\CppSDK\SDK\TrainingController_Regulation_classes.hpp" />
+    <ClInclude Include="Sdk\CppSDK\SDK\TrainingController_Regulation_parameters.hpp" />
+    <ClInclude Include="Sdk\CppSDK\SDK\TR_HUD_classes.hpp" />
+    <ClInclude Include="Sdk\CppSDK\SDK\TR_HUD_parameters.hpp" />
+    <ClInclude Include="Sdk\CppSDK\SDK\TR_StartMenu_classes.hpp" />
+    <ClInclude Include="Sdk\CppSDK\SDK\TR_StartMenu_parameters.hpp" />
+    <ClInclude Include="Sdk\CppSDK\SDK\TR_Tutorial_Dribbling_classes.hpp" />
+    <ClInclude Include="Sdk\CppSDK\SDK\TR_Tutorial_Dribbling_parameters.hpp" />
+    <ClInclude Include="Sdk\CppSDK\SDK\TR_Tutorial_GoalKeeping_classes.hpp" />
+    <ClInclude Include="Sdk\CppSDK\SDK\TR_Tutorial_GoalKeeping_parameters.hpp" />
+    <ClInclude Include="Sdk\CppSDK\SDK\TR_Tutorial_Kicking_classes.hpp" />
+    <ClInclude Include="Sdk\CppSDK\SDK\TR_Tutorial_Kicking_parameters.hpp" />
+    <ClInclude Include="Sdk\CppSDK\SDK\TR_Tutorial_Movement_classes.hpp" />
+    <ClInclude Include="Sdk\CppSDK\SDK\TR_Tutorial_Movement_parameters.hpp" />
+    <ClInclude Include="Sdk\CppSDK\SDK\Tutorial_Dribbling_classes.hpp" />
+    <ClInclude Include="Sdk\CppSDK\SDK\Tutorial_Dribbling_parameters.hpp" />
+    <ClInclude Include="Sdk\CppSDK\SDK\Tutorial_GoalKeeping_classes.hpp" />
+    <ClInclude Include="Sdk\CppSDK\SDK\Tutorial_GoalKeeping_parameters.hpp" />
+    <ClInclude Include="Sdk\CppSDK\SDK\Tutorial_Kicking_classes.hpp" />
+    <ClInclude Include="Sdk\CppSDK\SDK\Tutorial_Kicking_parameters.hpp" />
+    <ClInclude Include="Sdk\CppSDK\SDK\Tutorial_Movement_classes.hpp" />
+    <ClInclude Include="Sdk\CppSDK\SDK\Tutorial_Movement_parameters.hpp" />
+    <ClInclude Include="Sdk\CppSDK\SDK\UdpMessaging_classes.hpp" />
+    <ClInclude Include="Sdk\CppSDK\SDK\UdpMessaging_structs.hpp" />
+    <ClInclude Include="Sdk\CppSDK\SDK\UMG_classes.hpp" />
+    <ClInclude Include="Sdk\CppSDK\SDK\UMG_parameters.hpp" />
+    <ClInclude Include="Sdk\CppSDK\SDK\UMG_structs.hpp" />
+    <ClInclude Include="Sdk\CppSDK\SDK\UniversalVoiceChatPro_classes.hpp" />
+    <ClInclude Include="Sdk\CppSDK\SDK\UniversalVoiceChatPro_parameters.hpp" />
+    <ClInclude Include="Sdk\CppSDK\SDK\UObjectPlugin_classes.hpp" />
+    <ClInclude Include="Sdk\CppSDK\SDK\UObjectPlugin_structs.hpp" />
+    <ClInclude Include="Sdk\CppSDK\SDK\VaRest_classes.hpp" />
+    <ClInclude Include="Sdk\CppSDK\SDK\VaRest_parameters.hpp" />
+    <ClInclude Include="Sdk\CppSDK\SDK\VaRest_structs.hpp" />
+    <ClInclude Include="Sdk\CppSDK\SDK\VariantManagerContent_classes.hpp" />
+    <ClInclude Include="Sdk\CppSDK\SDK\VariantManagerContent_parameters.hpp" />
+    <ClInclude Include="Sdk\CppSDK\SDK\VariantManagerContent_structs.hpp" />
+    <ClInclude Include="Sdk\CppSDK\SDK\VictoryBPLibrary_classes.hpp" />
+    <ClInclude Include="Sdk\CppSDK\SDK\VictoryBPLibrary_parameters.hpp" />
+    <ClInclude Include="Sdk\CppSDK\SDK\VictoryBPLibrary_structs.hpp" />
+    <ClInclude Include="Sdk\CppSDK\SDK\VotePanel_classes.hpp" />
+    <ClInclude Include="Sdk\CppSDK\SDK\WebBrowserWidget_classes.hpp" />
+    <ClInclude Include="Sdk\CppSDK\SDK\WebBrowserWidget_parameters.hpp" />
+    <ClInclude Include="Sdk\CppSDK\SDK\WebBrowser_structs.hpp" />
+    <ClInclude Include="Sdk\CppSDK\UnrealContainers.hpp" />
+    <ClInclude Include="Sdk\CppSDK\UtfN.hpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="pe_blocker.cpp" />
+    <ClCompile Include="dllmain.cpp" />
+    <ClCompile Include="dx11_hook.cpp" />
+    <ClCompile Include="function_calls.cpp" />
+    <ClCompile Include="game_context.cpp" />
+    <ClCompile Include="imgui\backends\imgui_impl_dx11.cpp" />
+    <ClCompile Include="imgui\backends\imgui_impl_win32.cpp" />
+    <ClCompile Include="imgui\imgui.cpp" />
+    <ClCompile Include="imgui\imgui_demo.cpp" />
+    <ClCompile Include="imgui\imgui_draw.cpp" />
+    <ClCompile Include="imgui\imgui_tables.cpp" />
+    <ClCompile Include="imgui\imgui_widgets.cpp" />
+    <ClCompile Include="minhook\src\buffer.c" />
+    <ClCompile Include="minhook\src\hde\hde32.c" />
+    <ClCompile Include="minhook\src\hde\hde64.c" />
+    <ClCompile Include="minhook\src\hook.c" />
+    <ClCompile Include="minhook\src\trampoline.c" />
+    <ClCompile Include="psosense_pipe.cpp" />
+    <ClCompile Include="Sdk\CppSDK\SDK\ActorLayerUtilities_functions.cpp" />
+    <ClCompile Include="Sdk\CppSDK\SDK\AIModule_functions.cpp" />
+    <ClCompile Include="Sdk\CppSDK\SDK\AndroidPermission_functions.cpp" />
+    <ClCompile Include="Sdk\CppSDK\SDK\AnimationSharing_functions.cpp" />
+    <ClCompile Include="Sdk\CppSDK\SDK\AnimGraphRuntime_functions.cpp" />
+    <ClCompile Include="Sdk\CppSDK\SDK\ApexDestruction_functions.cpp" />
+    <ClCompile Include="Sdk\CppSDK\SDK\AppleImageUtils_functions.cpp" />
+    <ClCompile Include="Sdk\CppSDK\SDK\AssetRegistry_functions.cpp" />
+    <ClCompile Include="Sdk\CppSDK\SDK\AssetTags_functions.cpp" />
+    <ClCompile Include="Sdk\CppSDK\SDK\AudioCapture_functions.cpp" />
+    <ClCompile Include="Sdk\CppSDK\SDK\AudioMixer_functions.cpp" />
+    <ClCompile Include="Sdk\CppSDK\SDK\AugmentedReality_functions.cpp" />
+    <ClCompile Include="Sdk\CppSDK\SDK\AutomationUtils_functions.cpp" />
+    <ClCompile Include="Sdk\CppSDK\SDK\AwsGameLiftClient_functions.cpp" />
+    <ClCompile Include="Sdk\CppSDK\SDK\AwsGameLiftServer_functions.cpp" />
+    <ClCompile Include="Sdk\CppSDK\SDK\Basic.cpp" />
+    <ClCompile Include="Sdk\CppSDK\SDK\BlueprintJson_functions.cpp" />
+    <ClCompile Include="Sdk\CppSDK\SDK\BP_FunctionLibrary_functions.cpp" />
+    <ClCompile Include="Sdk\CppSDK\SDK\BP_Sky_Sphere_functions.cpp" />
+    <ClCompile Include="Sdk\CppSDK\SDK\ChatMessageMiddlePanel_functions.cpp" />
+    <ClCompile Include="Sdk\CppSDK\SDK\ChatMessage_functions.cpp" />
+    <ClCompile Include="Sdk\CppSDK\SDK\Chat_functions.cpp" />
+    <ClCompile Include="Sdk\CppSDK\SDK\CinematicCamera_functions.cpp" />
+    <ClCompile Include="Sdk\CppSDK\SDK\ClothingSystemRuntimeInterface_functions.cpp" />
+    <ClCompile Include="Sdk\CppSDK\SDK\ClothingSystemRuntimeNv_functions.cpp" />
+    <ClCompile Include="Sdk\CppSDK\SDK\ColorWheelPlugin_functions.cpp" />
+    <ClCompile Include="Sdk\CppSDK\SDK\ControlRig_functions.cpp" />
+    <ClCompile Include="Sdk\CppSDK\SDK\CoreUObject_functions.cpp" />
+    <ClCompile Include="Sdk\CppSDK\SDK\CPTMenuPlayerItem_functions.cpp" />
+    <ClCompile Include="Sdk\CppSDK\SDK\CPTMenu_functions.cpp" />
+    <ClCompile Include="Sdk\CppSDK\SDK\CustomLobbiesServerItem_functions.cpp" />
+    <ClCompile Include="Sdk\CppSDK\SDK\CustomLobbies_functions.cpp" />
+    <ClCompile Include="Sdk\CppSDK\SDK\Discords_functions.cpp" />
+    <ClCompile Include="Sdk\CppSDK\SDK\DS_EntryGameMode_functions.cpp" />
+    <ClCompile Include="Sdk\CppSDK\SDK\DS_Entry_HUD_functions.cpp" />
+    <ClCompile Include="Sdk\CppSDK\SDK\DS_Entry_Widget_functions.cpp" />
+    <ClCompile Include="Sdk\CppSDK\SDK\EngineSettings_functions.cpp" />
+    <ClCompile Include="Sdk\CppSDK\SDK\Engine_functions.cpp" />
+    <ClCompile Include="Sdk\CppSDK\SDK\Extras_functions.cpp" />
+    <ClCompile Include="Sdk\CppSDK\SDK\EyeTracker_functions.cpp" />
+    <ClCompile Include="Sdk\CppSDK\SDK\Foliage_functions.cpp" />
+    <ClCompile Include="Sdk\CppSDK\SDK\FriendItem_functions.cpp" />
+    <ClCompile Include="Sdk\CppSDK\SDK\GameplayCameras_functions.cpp" />
+    <ClCompile Include="Sdk\CppSDK\SDK\GameplayTags_functions.cpp" />
+    <ClCompile Include="Sdk\CppSDK\SDK\GameplayTasks_functions.cpp" />
+    <ClCompile Include="Sdk\CppSDK\SDK\GeometryCache_functions.cpp" />
+    <ClCompile Include="Sdk\CppSDK\SDK\HeadMountedDisplay_functions.cpp" />
+    <ClCompile Include="Sdk\CppSDK\SDK\HostMenuPlayerItem_functions.cpp" />
+    <ClCompile Include="Sdk\CppSDK\SDK\HostMenu_functions.cpp" />
+    <ClCompile Include="Sdk\CppSDK\SDK\ImageWriteQueue_functions.cpp" />
+    <ClCompile Include="Sdk\CppSDK\SDK\Ind_Net_functions.cpp" />
+    <ClCompile Include="Sdk\CppSDK\SDK\Intro_functions.cpp" />
+    <ClCompile Include="Sdk\CppSDK\SDK\Landscape_functions.cpp" />
+    <ClCompile Include="Sdk\CppSDK\SDK\LevelSequence_functions.cpp" />
+    <ClCompile Include="Sdk\CppSDK\SDK\LiveLink_functions.cpp" />
+    <ClCompile Include="Sdk\CppSDK\SDK\MainMenuStartScreen_functions.cpp" />
+    <ClCompile Include="Sdk\CppSDK\SDK\MainMenu_functions.cpp" />
+    <ClCompile Include="Sdk\CppSDK\SDK\MatchController_Indoor_functions.cpp" />
+    <ClCompile Include="Sdk\CppSDK\SDK\MatchController_Regulation_functions.cpp" />
+    <ClCompile Include="Sdk\CppSDK\SDK\MediaAssets_functions.cpp" />
+    <ClCompile Include="Sdk\CppSDK\SDK\MeshDescription_functions.cpp" />
+    <ClCompile Include="Sdk\CppSDK\SDK\MiddlePanel_functions.cpp" />
+    <ClCompile Include="Sdk\CppSDK\SDK\MM_Character_functions.cpp" />
+    <ClCompile Include="Sdk\CppSDK\SDK\MM_Controller_functions.cpp" />
+    <ClCompile Include="Sdk\CppSDK\SDK\MM_Credits_functions.cpp" />
+    <ClCompile Include="Sdk\CppSDK\SDK\MM_Customization_functions.cpp" />
+    <ClCompile Include="Sdk\CppSDK\SDK\MM_CustomTeamsOld_functions.cpp" />
+    <ClCompile Include="Sdk\CppSDK\SDK\MM_Extras_functions.cpp" />
+    <ClCompile Include="Sdk\CppSDK\SDK\MM_HUD_functions.cpp" />
+    <ClCompile Include="Sdk\CppSDK\SDK\MM_HUD_New_functions.cpp" />
+    <ClCompile Include="Sdk\CppSDK\SDK\MM_Intro_functions.cpp" />
+    <ClCompile Include="Sdk\CppSDK\SDK\MM_Music_functions.cpp" />
+    <ClCompile Include="Sdk\CppSDK\SDK\MM_Profile_functions.cpp" />
+    <ClCompile Include="Sdk\CppSDK\SDK\MM_SoloRanked_functions.cpp" />
+    <ClCompile Include="Sdk\CppSDK\SDK\MM_Soundtrack_functions.cpp" />
+    <ClCompile Include="Sdk\CppSDK\SDK\MM_Start_functions.cpp" />
+    <ClCompile Include="Sdk\CppSDK\SDK\MovieSceneCapture_functions.cpp" />
+    <ClCompile Include="Sdk\CppSDK\SDK\MovieSceneTracks_functions.cpp" />
+    <ClCompile Include="Sdk\CppSDK\SDK\MovieScene_functions.cpp" />
+    <ClCompile Include="Sdk\CppSDK\SDK\MP_ChatMessage_functions.cpp" />
+    <ClCompile Include="Sdk\CppSDK\SDK\MP_FreeCam_functions.cpp" />
+    <ClCompile Include="Sdk\CppSDK\SDK\MP_GameliftServerObject_functions.cpp" />
+    <ClCompile Include="Sdk\CppSDK\SDK\MP_GameMode_functions.cpp" />
+    <ClCompile Include="Sdk\CppSDK\SDK\MP_GameState_functions.cpp" />
+    <ClCompile Include="Sdk\CppSDK\SDK\MP_HostMenu_PlayerCard_functions.cpp" />
+    <ClCompile Include="Sdk\CppSDK\SDK\MP_HUD_functions.cpp" />
+    <ClCompile Include="Sdk\CppSDK\SDK\MP_HUD_NEW_functions.cpp" />
+    <ClCompile Include="Sdk\CppSDK\SDK\MP_Interface_functions.cpp" />
+    <ClCompile Include="Sdk\CppSDK\SDK\MP_PlayerState_functions.cpp" />
+    <ClCompile Include="Sdk\CppSDK\SDK\MP_ScoreBoardCard_functions.cpp" />
+    <ClCompile Include="Sdk\CppSDK\SDK\MP_SpectatorCharacter_functions.cpp" />
+    <ClCompile Include="Sdk\CppSDK\SDK\MP_TeamSheet_functions.cpp" />
+    <ClCompile Include="Sdk\CppSDK\SDK\MRMesh_functions.cpp" />
+    <ClCompile Include="Sdk\CppSDK\SDK\MultiplayerMenu_functions.cpp" />
+    <ClCompile Include="Sdk\CppSDK\SDK\NavigationSystem_functions.cpp" />
+    <ClCompile Include="Sdk\CppSDK\SDK\NewsItem_functions.cpp" />
+    <ClCompile Include="Sdk\CppSDK\SDK\NewsPanel_functions.cpp" />
+    <ClCompile Include="Sdk\CppSDK\SDK\OnlineSubsystemUtils_functions.cpp" />
+    <ClCompile Include="Sdk\CppSDK\SDK\OnlineSubsystem_functions.cpp" />
+    <ClCompile Include="Sdk\CppSDK\SDK\PlayerCustomization_functions.cpp" />
+    <ClCompile Include="Sdk\CppSDK\SDK\PlayerReport_functions.cpp" />
+    <ClCompile Include="Sdk\CppSDK\SDK\PlayerStatsItem_functions.cpp" />
+    <ClCompile Include="Sdk\CppSDK\SDK\PSO_GameInstance_functions.cpp" />
+    <ClCompile Include="Sdk\CppSDK\SDK\Reg_Net_functions.cpp" />
+    <ClCompile Include="Sdk\CppSDK\SDK\RigVM_functions.cpp" />
+    <ClCompile Include="Sdk\CppSDK\SDK\Scorecard_functions.cpp" />
+    <ClCompile Include="Sdk\CppSDK\SDK\SCUE4_functions.cpp" />
+    <ClCompile Include="Sdk\CppSDK\SDK\SettingsListItem_functions.cpp" />
+    <ClCompile Include="Sdk\CppSDK\SDK\Settings_functions.cpp" />
+    <ClCompile Include="Sdk\CppSDK\SDK\SoccerBall_functions.cpp" />
+    <ClCompile Include="Sdk\CppSDK\SDK\SoundUtilities_functions.cpp" />
+    <ClCompile Include="Sdk\CppSDK\SDK\SpectatorListItem_functions.cpp" />
+    <ClCompile Include="Sdk\CppSDK\SDK\SP_ABP_functions.cpp" />
+    <ClCompile Include="Sdk\CppSDK\SDK\SP_Character_functions.cpp" />
+    <ClCompile Include="Sdk\CppSDK\SDK\SP_Controller_functions.cpp" />
+    <ClCompile Include="Sdk\CppSDK\SDK\SP_Emotes_QC_functions.cpp" />
+    <ClCompile Include="Sdk\CppSDK\SDK\SP_KickBarOld_functions.cpp" />
+    <ClCompile Include="Sdk\CppSDK\SDK\SP_Kickbar_functions.cpp" />
+    <ClCompile Include="Sdk\CppSDK\SDK\SP_ShirtData_functions.cpp" />
+    <ClCompile Include="Sdk\CppSDK\SDK\StaticMeshDescription_functions.cpp" />
+    <ClCompile Include="Sdk\CppSDK\SDK\SteamCoreWeb_functions.cpp" />
+    <ClCompile Include="Sdk\CppSDK\SDK\SteamCore_functions.cpp" />
+    <ClCompile Include="Sdk\CppSDK\SDK\Team1Info_functions.cpp" />
+    <ClCompile Include="Sdk\CppSDK\SDK\Team2Info_functions.cpp" />
+    <ClCompile Include="Sdk\CppSDK\SDK\TeamCustomization_functions.cpp" />
+    <ClCompile Include="Sdk\CppSDK\SDK\TeamFormationItem_functions.cpp" />
+    <ClCompile Include="Sdk\CppSDK\SDK\TeamListItem_functions.cpp" />
+    <ClCompile Include="Sdk\CppSDK\SDK\TemplateSequence_functions.cpp" />
+    <ClCompile Include="Sdk\CppSDK\SDK\TimeManagement_functions.cpp" />
+    <ClCompile Include="Sdk\CppSDK\SDK\TrainingController_Indoor_functions.cpp" />
+    <ClCompile Include="Sdk\CppSDK\SDK\TrainingController_Regulation_functions.cpp" />
+    <ClCompile Include="Sdk\CppSDK\SDK\TR_HUD_functions.cpp" />
+    <ClCompile Include="Sdk\CppSDK\SDK\TR_StartMenu_functions.cpp" />
+    <ClCompile Include="Sdk\CppSDK\SDK\TR_Tutorial_Dribbling_functions.cpp" />
+    <ClCompile Include="Sdk\CppSDK\SDK\TR_Tutorial_GoalKeeping_functions.cpp" />
+    <ClCompile Include="Sdk\CppSDK\SDK\TR_Tutorial_Kicking_functions.cpp" />
+    <ClCompile Include="Sdk\CppSDK\SDK\TR_Tutorial_Movement_functions.cpp" />
+    <ClCompile Include="Sdk\CppSDK\SDK\Tutorial_Dribbling_functions.cpp" />
+    <ClCompile Include="Sdk\CppSDK\SDK\Tutorial_GoalKeeping_functions.cpp" />
+    <ClCompile Include="Sdk\CppSDK\SDK\Tutorial_Kicking_functions.cpp" />
+    <ClCompile Include="Sdk\CppSDK\SDK\Tutorial_Movement_functions.cpp" />
+    <ClCompile Include="Sdk\CppSDK\SDK\UMG_functions.cpp" />
+    <ClCompile Include="Sdk\CppSDK\SDK\UniversalVoiceChatPro_functions.cpp" />
+    <ClCompile Include="Sdk\CppSDK\SDK\VaRest_functions.cpp" />
+    <ClCompile Include="Sdk\CppSDK\SDK\VariantManagerContent_functions.cpp" />
+    <ClCompile Include="Sdk\CppSDK\SDK\VictoryBPLibrary_functions.cpp" />
+    <ClCompile Include="Sdk\CppSDK\SDK\WebBrowserWidget_functions.cpp" />
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>

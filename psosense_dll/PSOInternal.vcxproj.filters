@@ -1,0 +1,1943 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="Arquivos de Origem">
+      <UniqueIdentifier>{4FC737F1-C7A5-4376-A066-2A32D752A2FF}</UniqueIdentifier>
+      <Extensions>cpp;c;cc;cxx;c++;cppm;ixx;def;odl;idl;hpj;bat;asm;asmx</Extensions>
+    </Filter>
+    <Filter Include="Arquivos de Cabeçalho">
+      <UniqueIdentifier>{93995380-89BD-4b04-88EB-625FBE52EBFB}</UniqueIdentifier>
+      <Extensions>h;hh;hpp;hxx;h++;hm;inl;inc;ipp;xsd</Extensions>
+    </Filter>
+    <Filter Include="Arquivos de Recurso">
+      <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
+      <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav;mfcribbon-ms</Extensions>
+    </Filter>
+    <Filter Include="Arquivos de Origem\SDK">
+      <UniqueIdentifier>{29d03ae8-206d-41d7-9900-be5a2beab788}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Arquivos de Cabeçalho\SDK">
+      <UniqueIdentifier>{6597700e-0e99-4e3b-a97b-86e26d813c66}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Arquivos de Origem\IMGUI">
+      <UniqueIdentifier>{0e23c661-c97b-4465-93c7-5e70bc3b44e6}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Arquivos de Cabeçalho\IMGUI">
+      <UniqueIdentifier>{4e7c27ec-98e8-4371-8843-b78a34e3ce30}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="Sdk\CppSDK\SDK\ActorLayerUtilities_classes.hpp">
+      <Filter>Arquivos de Cabeçalho\SDK</Filter>
+    </ClInclude>
+    <ClInclude Include="Sdk\CppSDK\SDK\ActorLayerUtilities_parameters.hpp">
+      <Filter>Arquivos de Cabeçalho\SDK</Filter>
+    </ClInclude>
+    <ClInclude Include="Sdk\CppSDK\SDK\ActorLayerUtilities_structs.hpp">
+      <Filter>Arquivos de Cabeçalho\SDK</Filter>
+    </ClInclude>
+    <ClInclude Include="Sdk\CppSDK\SDK\ActorSequence_classes.hpp">
+      <Filter>Arquivos de Cabeçalho\SDK</Filter>
+    </ClInclude>
+    <ClInclude Include="Sdk\CppSDK\SDK\ActorSequence_structs.hpp">
+      <Filter>Arquivos de Cabeçalho\SDK</Filter>
+    </ClInclude>
+    <ClInclude Include="Sdk\CppSDK\SDK\AIModule_classes.hpp">
+      <Filter>Arquivos de Cabeçalho\SDK</Filter>
+    </ClInclude>
+    <ClInclude Include="Sdk\CppSDK\SDK\AIModule_parameters.hpp">
+      <Filter>Arquivos de Cabeçalho\SDK</Filter>
+    </ClInclude>
+    <ClInclude Include="Sdk\CppSDK\SDK\AIModule_structs.hpp">
+      <Filter>Arquivos de Cabeçalho\SDK</Filter>
+    </ClInclude>
+    <ClInclude Include="Sdk\CppSDK\SDK\AndroidPermission_classes.hpp">
+      <Filter>Arquivos de Cabeçalho\SDK</Filter>
+    </ClInclude>
+    <ClInclude Include="Sdk\CppSDK\SDK\AndroidPermission_parameters.hpp">
+      <Filter>Arquivos de Cabeçalho\SDK</Filter>
+    </ClInclude>
+    <ClInclude Include="Sdk\CppSDK\SDK\AnimationCore_classes.hpp">
+      <Filter>Arquivos de Cabeçalho\SDK</Filter>
+    </ClInclude>
+    <ClInclude Include="Sdk\CppSDK\SDK\AnimationCore_structs.hpp">
+      <Filter>Arquivos de Cabeçalho\SDK</Filter>
+    </ClInclude>
+    <ClInclude Include="Sdk\CppSDK\SDK\AnimationSharing_classes.hpp">
+      <Filter>Arquivos de Cabeçalho\SDK</Filter>
+    </ClInclude>
+    <ClInclude Include="Sdk\CppSDK\SDK\AnimationSharing_parameters.hpp">
+      <Filter>Arquivos de Cabeçalho\SDK</Filter>
+    </ClInclude>
+    <ClInclude Include="Sdk\CppSDK\SDK\AnimationSharing_structs.hpp">
+      <Filter>Arquivos de Cabeçalho\SDK</Filter>
+    </ClInclude>
+    <ClInclude Include="Sdk\CppSDK\SDK\AnimGraphRuntime_classes.hpp">
+      <Filter>Arquivos de Cabeçalho\SDK</Filter>
+    </ClInclude>
+    <ClInclude Include="Sdk\CppSDK\SDK\AnimGraphRuntime_parameters.hpp">
+      <Filter>Arquivos de Cabeçalho\SDK</Filter>
+    </ClInclude>
+    <ClInclude Include="Sdk\CppSDK\SDK\AnimGraphRuntime_structs.hpp">
+      <Filter>Arquivos de Cabeçalho\SDK</Filter>
+    </ClInclude>
+    <ClInclude Include="Sdk\CppSDK\SDK\ApexDestruction_classes.hpp">
+      <Filter>Arquivos de Cabeçalho\SDK</Filter>
+    </ClInclude>
+    <ClInclude Include="Sdk\CppSDK\SDK\ApexDestruction_parameters.hpp">
+      <Filter>Arquivos de Cabeçalho\SDK</Filter>
+    </ClInclude>
+    <ClInclude Include="Sdk\CppSDK\SDK\ApexDestruction_structs.hpp">
+      <Filter>Arquivos de Cabeçalho\SDK</Filter>
+    </ClInclude>
+    <ClInclude Include="Sdk\CppSDK\SDK\AppleImageUtils_classes.hpp">
+      <Filter>Arquivos de Cabeçalho\SDK</Filter>
+    </ClInclude>
+    <ClInclude Include="Sdk\CppSDK\SDK\AppleImageUtils_parameters.hpp">
+      <Filter>Arquivos de Cabeçalho\SDK</Filter>
+    </ClInclude>
+    <ClInclude Include="Sdk\CppSDK\SDK\AppleImageUtils_structs.hpp">
+      <Filter>Arquivos de Cabeçalho\SDK</Filter>
+    </ClInclude>
+    <ClInclude Include="Sdk\CppSDK\SDK\AssetRegistry_classes.hpp">
+      <Filter>Arquivos de Cabeçalho\SDK</Filter>
+    </ClInclude>
+    <ClInclude Include="Sdk\CppSDK\SDK\AssetRegistry_parameters.hpp">
+      <Filter>Arquivos de Cabeçalho\SDK</Filter>
+    </ClInclude>
+    <ClInclude Include="Sdk\CppSDK\SDK\AssetRegistry_structs.hpp">
+      <Filter>Arquivos de Cabeçalho\SDK</Filter>
+    </ClInclude>
+    <ClInclude Include="Sdk\CppSDK\SDK\AssetTags_classes.hpp">
+      <Filter>Arquivos de Cabeçalho\SDK</Filter>
+    </ClInclude>
+    <ClInclude Include="Sdk\CppSDK\SDK\AssetTags_parameters.hpp">
+      <Filter>Arquivos de Cabeçalho\SDK</Filter>
+    </ClInclude>
+    <ClInclude Include="Sdk\CppSDK\SDK\AssetTags_structs.hpp">
+      <Filter>Arquivos de Cabeçalho\SDK</Filter>
+    </ClInclude>
+    <ClInclude Include="Sdk\CppSDK\SDK\AudioCapture_classes.hpp">
+      <Filter>Arquivos de Cabeçalho\SDK</Filter>
+    </ClInclude>
+    <ClInclude Include="Sdk\CppSDK\SDK\AudioCapture_parameters.hpp">
+      <Filter>Arquivos de Cabeçalho\SDK</Filter>
+    </ClInclude>
+    <ClInclude Include="Sdk\CppSDK\SDK\AudioCapture_structs.hpp">
+      <Filter>Arquivos de Cabeçalho\SDK</Filter>
+    </ClInclude>
+    <ClInclude Include="Sdk\CppSDK\SDK\AudioExtensions_classes.hpp">
+      <Filter>Arquivos de Cabeçalho\SDK</Filter>
+    </ClInclude>
+    <ClInclude Include="Sdk\CppSDK\SDK\AudioMixer_classes.hpp">
+      <Filter>Arquivos de Cabeçalho\SDK</Filter>
+    </ClInclude>
+    <ClInclude Include="Sdk\CppSDK\SDK\AudioMixer_parameters.hpp">
+      <Filter>Arquivos de Cabeçalho\SDK</Filter>
+    </ClInclude>
+    <ClInclude Include="Sdk\CppSDK\SDK\AudioMixer_structs.hpp">
+      <Filter>Arquivos de Cabeçalho\SDK</Filter>
+    </ClInclude>
+    <ClInclude Include="Sdk\CppSDK\SDK\AudioPlatformConfiguration_structs.hpp">
+      <Filter>Arquivos de Cabeçalho\SDK</Filter>
+    </ClInclude>
+    <ClInclude Include="Sdk\CppSDK\SDK\AugmentedReality_classes.hpp">
+      <Filter>Arquivos de Cabeçalho\SDK</Filter>
+    </ClInclude>
+    <ClInclude Include="Sdk\CppSDK\SDK\AugmentedReality_parameters.hpp">
+      <Filter>Arquivos de Cabeçalho\SDK</Filter>
+    </ClInclude>
+    <ClInclude Include="Sdk\CppSDK\SDK\AugmentedReality_structs.hpp">
+      <Filter>Arquivos de Cabeçalho\SDK</Filter>
+    </ClInclude>
+    <ClInclude Include="Sdk\CppSDK\SDK\AutomationUtils_classes.hpp">
+      <Filter>Arquivos de Cabeçalho\SDK</Filter>
+    </ClInclude>
+    <ClInclude Include="Sdk\CppSDK\SDK\AutomationUtils_parameters.hpp">
+      <Filter>Arquivos de Cabeçalho\SDK</Filter>
+    </ClInclude>
+    <ClInclude Include="Sdk\CppSDK\SDK\AwsGameLiftClient_classes.hpp">
+      <Filter>Arquivos de Cabeçalho\SDK</Filter>
+    </ClInclude>
+    <ClInclude Include="Sdk\CppSDK\SDK\AwsGameLiftClient_parameters.hpp">
+      <Filter>Arquivos de Cabeçalho\SDK</Filter>
+    </ClInclude>
+    <ClInclude Include="Sdk\CppSDK\SDK\AwsGameLiftClient_structs.hpp">
+      <Filter>Arquivos de Cabeçalho\SDK</Filter>
+    </ClInclude>
+    <ClInclude Include="Sdk\CppSDK\SDK\AwsGameLiftServer_classes.hpp">
+      <Filter>Arquivos de Cabeçalho\SDK</Filter>
+    </ClInclude>
+    <ClInclude Include="Sdk\CppSDK\SDK\AwsGameLiftServer_parameters.hpp">
+      <Filter>Arquivos de Cabeçalho\SDK</Filter>
+    </ClInclude>
+    <ClInclude Include="Sdk\CppSDK\SDK\AwsGameLiftServer_structs.hpp">
+      <Filter>Arquivos de Cabeçalho\SDK</Filter>
+    </ClInclude>
+    <ClInclude Include="Sdk\CppSDK\SDK\BallHalo_Large_classes.hpp">
+      <Filter>Arquivos de Cabeçalho\SDK</Filter>
+    </ClInclude>
+    <ClInclude Include="Sdk\CppSDK\SDK\BallHalo_Medium_classes.hpp">
+      <Filter>Arquivos de Cabeçalho\SDK</Filter>
+    </ClInclude>
+    <ClInclude Include="Sdk\CppSDK\SDK\BallHalo_Small_classes.hpp">
+      <Filter>Arquivos de Cabeçalho\SDK</Filter>
+    </ClInclude>
+    <ClInclude Include="Sdk\CppSDK\SDK\Basic.hpp">
+      <Filter>Arquivos de Cabeçalho\SDK</Filter>
+    </ClInclude>
+    <ClInclude Include="Sdk\CppSDK\SDK\BedfordParkActor_classes.hpp">
+      <Filter>Arquivos de Cabeçalho\SDK</Filter>
+    </ClInclude>
+    <ClInclude Include="Sdk\CppSDK\SDK\BlueprintJson_classes.hpp">
+      <Filter>Arquivos de Cabeçalho\SDK</Filter>
+    </ClInclude>
+    <ClInclude Include="Sdk\CppSDK\SDK\BlueprintJson_parameters.hpp">
+      <Filter>Arquivos de Cabeçalho\SDK</Filter>
+    </ClInclude>
+    <ClInclude Include="Sdk\CppSDK\SDK\BlueprintJson_structs.hpp">
+      <Filter>Arquivos de Cabeçalho\SDK</Filter>
+    </ClInclude>
+    <ClInclude Include="Sdk\CppSDK\SDK\BP_FunctionLibrary_classes.hpp">
+      <Filter>Arquivos de Cabeçalho\SDK</Filter>
+    </ClInclude>
+    <ClInclude Include="Sdk\CppSDK\SDK\BP_FunctionLibrary_parameters.hpp">
+      <Filter>Arquivos de Cabeçalho\SDK</Filter>
+    </ClInclude>
+    <ClInclude Include="Sdk\CppSDK\SDK\BP_Sky_Sphere_classes.hpp">
+      <Filter>Arquivos de Cabeçalho\SDK</Filter>
+    </ClInclude>
+    <ClInclude Include="Sdk\CppSDK\SDK\BP_Sky_Sphere_parameters.hpp">
+      <Filter>Arquivos de Cabeçalho\SDK</Filter>
+    </ClInclude>
+    <ClInclude Include="minhook\src\buffer.h">
+      <Filter>Arquivos de Cabeçalho\SDK</Filter>
+    </ClInclude>
+    <ClInclude Include="Sdk\CppSDK\SDK\BuildPatchServices_classes.hpp">
+      <Filter>Arquivos de Cabeçalho\SDK</Filter>
+    </ClInclude>
+    <ClInclude Include="Sdk\CppSDK\SDK\BuildPatchServices_structs.hpp">
+      <Filter>Arquivos de Cabeçalho\SDK</Filter>
+    </ClInclude>
+    <ClInclude Include="Sdk\CppSDK\SDK\Chaos_structs.hpp">
+      <Filter>Arquivos de Cabeçalho\SDK</Filter>
+    </ClInclude>
+    <ClInclude Include="Sdk\CppSDK\SDK\Chat_classes.hpp">
+      <Filter>Arquivos de Cabeçalho\SDK</Filter>
+    </ClInclude>
+    <ClInclude Include="Sdk\CppSDK\SDK\Chat_parameters.hpp">
+      <Filter>Arquivos de Cabeçalho\SDK</Filter>
+    </ClInclude>
+    <ClInclude Include="Sdk\CppSDK\SDK\ChatMessage_classes.hpp">
+      <Filter>Arquivos de Cabeçalho\SDK</Filter>
+    </ClInclude>
+    <ClInclude Include="Sdk\CppSDK\SDK\ChatMessage_parameters.hpp">
+      <Filter>Arquivos de Cabeçalho\SDK</Filter>
+    </ClInclude>
+    <ClInclude Include="Sdk\CppSDK\SDK\ChatMessageMiddlePanel_classes.hpp">
+      <Filter>Arquivos de Cabeçalho\SDK</Filter>
+    </ClInclude>
+    <ClInclude Include="Sdk\CppSDK\SDK\ChatMessageMiddlePanel_parameters.hpp">
+      <Filter>Arquivos de Cabeçalho\SDK</Filter>
+    </ClInclude>
+    <ClInclude Include="Sdk\CppSDK\SDK\CinematicCamera_classes.hpp">
+      <Filter>Arquivos de Cabeçalho\SDK</Filter>
+    </ClInclude>
+    <ClInclude Include="Sdk\CppSDK\SDK\CinematicCamera_parameters.hpp">
+      <Filter>Arquivos de Cabeçalho\SDK</Filter>
+    </ClInclude>
+    <ClInclude Include="Sdk\CppSDK\SDK\CinematicCamera_structs.hpp">
+      <Filter>Arquivos de Cabeçalho\SDK</Filter>
+    </ClInclude>
+    <ClInclude Include="Sdk\CppSDK\SDK\ClothingSystemRuntimeCommon_classes.hpp">
+      <Filter>Arquivos de Cabeçalho\SDK</Filter>
+    </ClInclude>
+    <ClInclude Include="Sdk\CppSDK\SDK\ClothingSystemRuntimeCommon_structs.hpp">
+      <Filter>Arquivos de Cabeçalho\SDK</Filter>
+    </ClInclude>
+    <ClInclude Include="Sdk\CppSDK\SDK\ClothingSystemRuntimeInterface_classes.hpp">
+      <Filter>Arquivos de Cabeçalho\SDK</Filter>
+    </ClInclude>
+    <ClInclude Include="Sdk\CppSDK\SDK\ClothingSystemRuntimeInterface_parameters.hpp">
+      <Filter>Arquivos de Cabeçalho\SDK</Filter>
+    </ClInclude>
+    <ClInclude Include="Sdk\CppSDK\SDK\ClothingSystemRuntimeInterface_structs.hpp">
+      <Filter>Arquivos de Cabeçalho\SDK</Filter>
+    </ClInclude>
+    <ClInclude Include="Sdk\CppSDK\SDK\ClothingSystemRuntimeNv_classes.hpp">
+      <Filter>Arquivos de Cabeçalho\SDK</Filter>
+    </ClInclude>
+    <ClInclude Include="Sdk\CppSDK\SDK\ClothingSystemRuntimeNv_parameters.hpp">
+      <Filter>Arquivos de Cabeçalho\SDK</Filter>
+    </ClInclude>
+    <ClInclude Include="Sdk\CppSDK\SDK\ClothingSystemRuntimeNv_structs.hpp">
+      <Filter>Arquivos de Cabeçalho\SDK</Filter>
+    </ClInclude>
+    <ClInclude Include="Sdk\CppSDK\SDK\ColorWheelPlugin_classes.hpp">
+      <Filter>Arquivos de Cabeçalho\SDK</Filter>
+    </ClInclude>
+    <ClInclude Include="Sdk\CppSDK\SDK\ColorWheelPlugin_parameters.hpp">
+      <Filter>Arquivos de Cabeçalho\SDK</Filter>
+    </ClInclude>
+    <ClInclude Include="Sdk\CppSDK\SDK\ColorWheelPlugin_structs.hpp">
+      <Filter>Arquivos de Cabeçalho\SDK</Filter>
+    </ClInclude>
+    <ClInclude Include="Sdk\CppSDK\SDK\ControlRig_classes.hpp">
+      <Filter>Arquivos de Cabeçalho\SDK</Filter>
+    </ClInclude>
+    <ClInclude Include="Sdk\CppSDK\SDK\ControlRig_parameters.hpp">
+      <Filter>Arquivos de Cabeçalho\SDK</Filter>
+    </ClInclude>
+    <ClInclude Include="Sdk\CppSDK\SDK\ControlRig_structs.hpp">
+      <Filter>Arquivos de Cabeçalho\SDK</Filter>
+    </ClInclude>
+    <ClInclude Include="Sdk\CppSDK\SDK\CoreUObject_classes.hpp">
+      <Filter>Arquivos de Cabeçalho\SDK</Filter>
+    </ClInclude>
+    <ClInclude Include="Sdk\CppSDK\SDK\CoreUObject_parameters.hpp">
+      <Filter>Arquivos de Cabeçalho\SDK</Filter>
+    </ClInclude>
+    <ClInclude Include="Sdk\CppSDK\SDK\CoreUObject_structs.hpp">
+      <Filter>Arquivos de Cabeçalho\SDK</Filter>
+    </ClInclude>
+    <ClInclude Include="Sdk\CppSDK\SDK\CPTMenu_classes.hpp">
+      <Filter>Arquivos de Cabeçalho\SDK</Filter>
+    </ClInclude>
+    <ClInclude Include="Sdk\CppSDK\SDK\CPTMenu_parameters.hpp">
+      <Filter>Arquivos de Cabeçalho\SDK</Filter>
+    </ClInclude>
+    <ClInclude Include="Sdk\CppSDK\SDK\CPTMenuPlayerItem_classes.hpp">
+      <Filter>Arquivos de Cabeçalho\SDK</Filter>
+    </ClInclude>
+    <ClInclude Include="Sdk\CppSDK\SDK\CPTMenuPlayerItem_parameters.hpp">
+      <Filter>Arquivos de Cabeçalho\SDK</Filter>
+    </ClInclude>
+    <ClInclude Include="Sdk\CppSDK\SDK\CustomLobbies_classes.hpp">
+      <Filter>Arquivos de Cabeçalho\SDK</Filter>
+    </ClInclude>
+    <ClInclude Include="Sdk\CppSDK\SDK\CustomLobbies_parameters.hpp">
+      <Filter>Arquivos de Cabeçalho\SDK</Filter>
+    </ClInclude>
+    <ClInclude Include="Sdk\CppSDK\SDK\CustomLobbiesServerItem_classes.hpp">
+      <Filter>Arquivos de Cabeçalho\SDK</Filter>
+    </ClInclude>
+    <ClInclude Include="Sdk\CppSDK\SDK\CustomLobbiesServerItem_parameters.hpp">
+      <Filter>Arquivos de Cabeçalho\SDK</Filter>
+    </ClInclude>
+    <ClInclude Include="Sdk\CppSDK\SDK\CustomTeam_structs.hpp">
+      <Filter>Arquivos de Cabeçalho\SDK</Filter>
+    </ClInclude>
+    <ClInclude Include="Sdk\CppSDK\SDK\DeveloperSettings_classes.hpp">
+      <Filter>Arquivos de Cabeçalho\SDK</Filter>
+    </ClInclude>
+    <ClInclude Include="Sdk\CppSDK\SDK\Discords_classes.hpp">
+      <Filter>Arquivos de Cabeçalho\SDK</Filter>
+    </ClInclude>
+    <ClInclude Include="Sdk\CppSDK\SDK\Discords_parameters.hpp">
+      <Filter>Arquivos de Cabeçalho\SDK</Filter>
+    </ClInclude>
+    <ClInclude Include="Sdk\CppSDK\SDK\DmgTypeBP_Environmental_classes.hpp">
+      <Filter>Arquivos de Cabeçalho\SDK</Filter>
+    </ClInclude>
+    <ClInclude Include="Sdk\CppSDK\SDK\DS_Entry_GameState_classes.hpp">
+      <Filter>Arquivos de Cabeçalho\SDK</Filter>
+    </ClInclude>
+    <ClInclude Include="Sdk\CppSDK\SDK\DS_Entry_HUD_classes.hpp">
+      <Filter>Arquivos de Cabeçalho\SDK</Filter>
+    </ClInclude>
+    <ClInclude Include="Sdk\CppSDK\SDK\DS_Entry_HUD_parameters.hpp">
+      <Filter>Arquivos de Cabeçalho\SDK</Filter>
+    </ClInclude>
+    <ClInclude Include="Sdk\CppSDK\SDK\DS_Entry_Widget_classes.hpp">
+      <Filter>Arquivos de Cabeçalho\SDK</Filter>
+    </ClInclude>
+    <ClInclude Include="Sdk\CppSDK\SDK\DS_Entry_Widget_parameters.hpp">
+      <Filter>Arquivos de Cabeçalho\SDK</Filter>
+    </ClInclude>
+    <ClInclude Include="Sdk\CppSDK\SDK\DS_EntryGameMode_classes.hpp">
+      <Filter>Arquivos de Cabeçalho\SDK</Filter>
+    </ClInclude>
+    <ClInclude Include="Sdk\CppSDK\SDK\DS_EntryGameMode_parameters.hpp">
+      <Filter>Arquivos de Cabeçalho\SDK</Filter>
+    </ClInclude>
+    <ClInclude Include="Sdk\CppSDK\SDK\Engine_classes.hpp">
+      <Filter>Arquivos de Cabeçalho\SDK</Filter>
+    </ClInclude>
+    <ClInclude Include="Sdk\CppSDK\SDK\Engine_parameters.hpp">
+      <Filter>Arquivos de Cabeçalho\SDK</Filter>
+    </ClInclude>
+    <ClInclude Include="Sdk\CppSDK\SDK\Engine_structs.hpp">
+      <Filter>Arquivos de Cabeçalho\SDK</Filter>
+    </ClInclude>
+    <ClInclude Include="Sdk\CppSDK\SDK\EngineMessages_structs.hpp">
+      <Filter>Arquivos de Cabeçalho\SDK</Filter>
+    </ClInclude>
+    <ClInclude Include="Sdk\CppSDK\SDK\EngineSettings_classes.hpp">
+      <Filter>Arquivos de Cabeçalho\SDK</Filter>
+    </ClInclude>
+    <ClInclude Include="Sdk\CppSDK\SDK\EngineSettings_parameters.hpp">
+      <Filter>Arquivos de Cabeçalho\SDK</Filter>
+    </ClInclude>
+    <ClInclude Include="Sdk\CppSDK\SDK\EngineSettings_structs.hpp">
+      <Filter>Arquivos de Cabeçalho\SDK</Filter>
+    </ClInclude>
+    <ClInclude Include="Sdk\CppSDK\SDK\Extras_classes.hpp">
+      <Filter>Arquivos de Cabeçalho\SDK</Filter>
+    </ClInclude>
+    <ClInclude Include="Sdk\CppSDK\SDK\Extras_parameters.hpp">
+      <Filter>Arquivos de Cabeçalho\SDK</Filter>
+    </ClInclude>
+    <ClInclude Include="Sdk\CppSDK\SDK\EyeTracker_classes.hpp">
+      <Filter>Arquivos de Cabeçalho\SDK</Filter>
+    </ClInclude>
+    <ClInclude Include="Sdk\CppSDK\SDK\EyeTracker_parameters.hpp">
+      <Filter>Arquivos de Cabeçalho\SDK</Filter>
+    </ClInclude>
+    <ClInclude Include="Sdk\CppSDK\SDK\EyeTracker_structs.hpp">
+      <Filter>Arquivos de Cabeçalho\SDK</Filter>
+    </ClInclude>
+    <ClInclude Include="Sdk\CppSDK\SDK\Foliage_classes.hpp">
+      <Filter>Arquivos de Cabeçalho\SDK</Filter>
+    </ClInclude>
+    <ClInclude Include="Sdk\CppSDK\SDK\Foliage_parameters.hpp">
+      <Filter>Arquivos de Cabeçalho\SDK</Filter>
+    </ClInclude>
+    <ClInclude Include="Sdk\CppSDK\SDK\Foliage_structs.hpp">
+      <Filter>Arquivos de Cabeçalho\SDK</Filter>
+    </ClInclude>
+    <ClInclude Include="Sdk\CppSDK\SDK\FriendItem_classes.hpp">
+      <Filter>Arquivos de Cabeçalho\SDK</Filter>
+    </ClInclude>
+    <ClInclude Include="Sdk\CppSDK\SDK\FriendItem_parameters.hpp">
+      <Filter>Arquivos de Cabeçalho\SDK</Filter>
+    </ClInclude>
+    <ClInclude Include="Sdk\CppSDK\SDK\GameplayCameras_classes.hpp">
+      <Filter>Arquivos de Cabeçalho\SDK</Filter>
+    </ClInclude>
+    <ClInclude Include="Sdk\CppSDK\SDK\GameplayCameras_parameters.hpp">
+      <Filter>Arquivos de Cabeçalho\SDK</Filter>
+    </ClInclude>
+    <ClInclude Include="Sdk\CppSDK\SDK\GameplayCameras_structs.hpp">
+      <Filter>Arquivos de Cabeçalho\SDK</Filter>
+    </ClInclude>
+    <ClInclude Include="Sdk\CppSDK\SDK\GameplayTags_classes.hpp">
+      <Filter>Arquivos de Cabeçalho\SDK</Filter>
+    </ClInclude>
+    <ClInclude Include="Sdk\CppSDK\SDK\GameplayTags_parameters.hpp">
+      <Filter>Arquivos de Cabeçalho\SDK</Filter>
+    </ClInclude>
+    <ClInclude Include="Sdk\CppSDK\SDK\GameplayTags_structs.hpp">
+      <Filter>Arquivos de Cabeçalho\SDK</Filter>
+    </ClInclude>
+    <ClInclude Include="Sdk\CppSDK\SDK\GameplayTasks_classes.hpp">
+      <Filter>Arquivos de Cabeçalho\SDK</Filter>
+    </ClInclude>
+    <ClInclude Include="Sdk\CppSDK\SDK\GameplayTasks_parameters.hpp">
+      <Filter>Arquivos de Cabeçalho\SDK</Filter>
+    </ClInclude>
+    <ClInclude Include="Sdk\CppSDK\SDK\GameplayTasks_structs.hpp">
+      <Filter>Arquivos de Cabeçalho\SDK</Filter>
+    </ClInclude>
+    <ClInclude Include="Sdk\CppSDK\SDK\GeometryCache_classes.hpp">
+      <Filter>Arquivos de Cabeçalho\SDK</Filter>
+    </ClInclude>
+    <ClInclude Include="Sdk\CppSDK\SDK\GeometryCache_parameters.hpp">
+      <Filter>Arquivos de Cabeçalho\SDK</Filter>
+    </ClInclude>
+    <ClInclude Include="Sdk\CppSDK\SDK\GeometryCache_structs.hpp">
+      <Filter>Arquivos de Cabeçalho\SDK</Filter>
+    </ClInclude>
+    <ClInclude Include="Sdk\CppSDK\SDK\GeometryCacheTracks_classes.hpp">
+      <Filter>Arquivos de Cabeçalho\SDK</Filter>
+    </ClInclude>
+    <ClInclude Include="Sdk\CppSDK\SDK\GeometryCacheTracks_structs.hpp">
+      <Filter>Arquivos de Cabeçalho\SDK</Filter>
+    </ClInclude>
+    <ClInclude Include="minhook\src\hde\hde32.h">
+      <Filter>Arquivos de Cabeçalho\SDK</Filter>
+    </ClInclude>
+    <ClInclude Include="minhook\src\hde\hde64.h">
+      <Filter>Arquivos de Cabeçalho\SDK</Filter>
+    </ClInclude>
+    <ClInclude Include="Sdk\CppSDK\SDK\HeadMountedDisplay_classes.hpp">
+      <Filter>Arquivos de Cabeçalho\SDK</Filter>
+    </ClInclude>
+    <ClInclude Include="Sdk\CppSDK\SDK\HeadMountedDisplay_parameters.hpp">
+      <Filter>Arquivos de Cabeçalho\SDK</Filter>
+    </ClInclude>
+    <ClInclude Include="Sdk\CppSDK\SDK\HeadMountedDisplay_structs.hpp">
+      <Filter>Arquivos de Cabeçalho\SDK</Filter>
+    </ClInclude>
+    <ClInclude Include="Sdk\CppSDK\SDK\HostMenu_classes.hpp">
+      <Filter>Arquivos de Cabeçalho\SDK</Filter>
+    </ClInclude>
+    <ClInclude Include="Sdk\CppSDK\SDK\HostMenu_parameters.hpp">
+      <Filter>Arquivos de Cabeçalho\SDK</Filter>
+    </ClInclude>
+    <ClInclude Include="Sdk\CppSDK\SDK\HostMenuPlayerItem_classes.hpp">
+      <Filter>Arquivos de Cabeçalho\SDK</Filter>
+    </ClInclude>
+    <ClInclude Include="Sdk\CppSDK\SDK\HostMenuPlayerItem_parameters.hpp">
+      <Filter>Arquivos de Cabeçalho\SDK</Filter>
+    </ClInclude>
+    <ClInclude Include="Sdk\CppSDK\SDK\ImageWrapper_structs.hpp">
+      <Filter>Arquivos de Cabeçalho\SDK</Filter>
+    </ClInclude>
+    <ClInclude Include="Sdk\CppSDK\SDK\ImageWriteQueue_classes.hpp">
+      <Filter>Arquivos de Cabeçalho\SDK</Filter>
+    </ClInclude>
+    <ClInclude Include="Sdk\CppSDK\SDK\ImageWriteQueue_parameters.hpp">
+      <Filter>Arquivos de Cabeçalho\SDK</Filter>
+    </ClInclude>
+    <ClInclude Include="Sdk\CppSDK\SDK\ImageWriteQueue_structs.hpp">
+      <Filter>Arquivos de Cabeçalho\SDK</Filter>
+    </ClInclude>
+    <ClInclude Include="Sdk\CppSDK\SDK\Ind_Net_classes.hpp">
+      <Filter>Arquivos de Cabeçalho\SDK</Filter>
+    </ClInclude>
+    <ClInclude Include="Sdk\CppSDK\SDK\Ind_Net_parameters.hpp">
+      <Filter>Arquivos de Cabeçalho\SDK</Filter>
+    </ClInclude>
+    <ClInclude Include="Sdk\CppSDK\SDK\InputCore_classes.hpp">
+      <Filter>Arquivos de Cabeçalho\SDK</Filter>
+    </ClInclude>
+    <ClInclude Include="Sdk\CppSDK\SDK\InputCore_structs.hpp">
+      <Filter>Arquivos de Cabeçalho\SDK</Filter>
+    </ClInclude>
+    <ClInclude Include="Sdk\CppSDK\SDK\Intro_classes.hpp">
+      <Filter>Arquivos de Cabeçalho\SDK</Filter>
+    </ClInclude>
+    <ClInclude Include="Sdk\CppSDK\SDK\Intro_parameters.hpp">
+      <Filter>Arquivos de Cabeçalho\SDK</Filter>
+    </ClInclude>
+    <ClInclude Include="Sdk\CppSDK\SDK\JsonUtilities_classes.hpp">
+      <Filter>Arquivos de Cabeçalho\SDK</Filter>
+    </ClInclude>
+    <ClInclude Include="Sdk\CppSDK\SDK\JsonUtilities_structs.hpp">
+      <Filter>Arquivos de Cabeçalho\SDK</Filter>
+    </ClInclude>
+    <ClInclude Include="Sdk\CppSDK\SDK\Landscape_classes.hpp">
+      <Filter>Arquivos de Cabeçalho\SDK</Filter>
+    </ClInclude>
+    <ClInclude Include="Sdk\CppSDK\SDK\Landscape_parameters.hpp">
+      <Filter>Arquivos de Cabeçalho\SDK</Filter>
+    </ClInclude>
+    <ClInclude Include="Sdk\CppSDK\SDK\Landscape_structs.hpp">
+      <Filter>Arquivos de Cabeçalho\SDK</Filter>
+    </ClInclude>
+    <ClInclude Include="Sdk\CppSDK\SDK\LevelSequence_classes.hpp">
+      <Filter>Arquivos de Cabeçalho\SDK</Filter>
+    </ClInclude>
+    <ClInclude Include="Sdk\CppSDK\SDK\LevelSequence_parameters.hpp">
+      <Filter>Arquivos de Cabeçalho\SDK</Filter>
+    </ClInclude>
+    <ClInclude Include="Sdk\CppSDK\SDK\LevelSequence_structs.hpp">
+      <Filter>Arquivos de Cabeçalho\SDK</Filter>
+    </ClInclude>
+    <ClInclude Include="Sdk\CppSDK\SDK\LightPropagationVolumeRuntime_classes.hpp">
+      <Filter>Arquivos de Cabeçalho\SDK</Filter>
+    </ClInclude>
+    <ClInclude Include="Sdk\CppSDK\SDK\LiveLink_classes.hpp">
+      <Filter>Arquivos de Cabeçalho\SDK</Filter>
+    </ClInclude>
+    <ClInclude Include="Sdk\CppSDK\SDK\LiveLink_parameters.hpp">
+      <Filter>Arquivos de Cabeçalho\SDK</Filter>
+    </ClInclude>
+    <ClInclude Include="Sdk\CppSDK\SDK\LiveLink_structs.hpp">
+      <Filter>Arquivos de Cabeçalho\SDK</Filter>
+    </ClInclude>
+    <ClInclude Include="Sdk\CppSDK\SDK\LiveLinkComponents_classes.hpp">
+      <Filter>Arquivos de Cabeçalho\SDK</Filter>
+    </ClInclude>
+    <ClInclude Include="Sdk\CppSDK\SDK\LiveLinkComponents_structs.hpp">
+      <Filter>Arquivos de Cabeçalho\SDK</Filter>
+    </ClInclude>
+    <ClInclude Include="Sdk\CppSDK\SDK\LiveLinkInterface_classes.hpp">
+      <Filter>Arquivos de Cabeçalho\SDK</Filter>
+    </ClInclude>
+    <ClInclude Include="Sdk\CppSDK\SDK\LiveLinkInterface_structs.hpp">
+      <Filter>Arquivos de Cabeçalho\SDK</Filter>
+    </ClInclude>
+    <ClInclude Include="Sdk\CppSDK\SDK\LiveLinkMessageBusFramework_structs.hpp">
+      <Filter>Arquivos de Cabeçalho\SDK</Filter>
+    </ClInclude>
+    <ClInclude Include="Sdk\CppSDK\SDK\LiveLinkMovieScene_classes.hpp">
+      <Filter>Arquivos de Cabeçalho\SDK</Filter>
+    </ClInclude>
+    <ClInclude Include="Sdk\CppSDK\SDK\LiveLinkMovieScene_structs.hpp">
+      <Filter>Arquivos de Cabeçalho\SDK</Filter>
+    </ClInclude>
+    <ClInclude Include="Sdk\CppSDK\SDK\MainMenu_classes.hpp">
+      <Filter>Arquivos de Cabeçalho\SDK</Filter>
+    </ClInclude>
+    <ClInclude Include="Sdk\CppSDK\SDK\MainMenu_parameters.hpp">
+      <Filter>Arquivos de Cabeçalho\SDK</Filter>
+    </ClInclude>
+    <ClInclude Include="Sdk\CppSDK\SDK\MainMenuStartScreen_classes.hpp">
+      <Filter>Arquivos de Cabeçalho\SDK</Filter>
+    </ClInclude>
+    <ClInclude Include="Sdk\CppSDK\SDK\MainMenuStartScreen_parameters.hpp">
+      <Filter>Arquivos de Cabeçalho\SDK</Filter>
+    </ClInclude>
+    <ClInclude Include="Sdk\CppSDK\SDK\MatchController_Indoor_classes.hpp">
+      <Filter>Arquivos de Cabeçalho\SDK</Filter>
+    </ClInclude>
+    <ClInclude Include="Sdk\CppSDK\SDK\MatchController_Indoor_parameters.hpp">
+      <Filter>Arquivos de Cabeçalho\SDK</Filter>
+    </ClInclude>
+    <ClInclude Include="Sdk\CppSDK\SDK\MatchController_Regulation_classes.hpp">
+      <Filter>Arquivos de Cabeçalho\SDK</Filter>
+    </ClInclude>
+    <ClInclude Include="Sdk\CppSDK\SDK\MatchController_Regulation_parameters.hpp">
+      <Filter>Arquivos de Cabeçalho\SDK</Filter>
+    </ClInclude>
+    <ClInclude Include="Sdk\CppSDK\SDK\MatchInfo_classes.hpp">
+      <Filter>Arquivos de Cabeçalho\SDK</Filter>
+    </ClInclude>
+    <ClInclude Include="Sdk\CppSDK\SDK\MatchState_classes.hpp">
+      <Filter>Arquivos de Cabeçalho\SDK</Filter>
+    </ClInclude>
+    <ClInclude Include="Sdk\CppSDK\SDK\MaterialShaderQualitySettings_classes.hpp">
+      <Filter>Arquivos de Cabeçalho\SDK</Filter>
+    </ClInclude>
+    <ClInclude Include="Sdk\CppSDK\SDK\MaterialShaderQualitySettings_structs.hpp">
+      <Filter>Arquivos de Cabeçalho\SDK</Filter>
+    </ClInclude>
+    <ClInclude Include="Sdk\CppSDK\SDK\MediaAssets_classes.hpp">
+      <Filter>Arquivos de Cabeçalho\SDK</Filter>
+    </ClInclude>
+    <ClInclude Include="Sdk\CppSDK\SDK\MediaAssets_parameters.hpp">
+      <Filter>Arquivos de Cabeçalho\SDK</Filter>
+    </ClInclude>
+    <ClInclude Include="Sdk\CppSDK\SDK\MediaAssets_structs.hpp">
+      <Filter>Arquivos de Cabeçalho\SDK</Filter>
+    </ClInclude>
+    <ClInclude Include="Sdk\CppSDK\SDK\MediaUtils_structs.hpp">
+      <Filter>Arquivos de Cabeçalho\SDK</Filter>
+    </ClInclude>
+    <ClInclude Include="Sdk\CppSDK\SDK\MeshDescription_classes.hpp">
+      <Filter>Arquivos de Cabeçalho\SDK</Filter>
+    </ClInclude>
+    <ClInclude Include="Sdk\CppSDK\SDK\MeshDescription_parameters.hpp">
+      <Filter>Arquivos de Cabeçalho\SDK</Filter>
+    </ClInclude>
+    <ClInclude Include="Sdk\CppSDK\SDK\MeshDescription_structs.hpp">
+      <Filter>Arquivos de Cabeçalho\SDK</Filter>
+    </ClInclude>
+    <ClInclude Include="Sdk\CppSDK\SDK\MiddlePanel_classes.hpp">
+      <Filter>Arquivos de Cabeçalho\SDK</Filter>
+    </ClInclude>
+    <ClInclude Include="Sdk\CppSDK\SDK\MiddlePanel_parameters.hpp">
+      <Filter>Arquivos de Cabeçalho\SDK</Filter>
+    </ClInclude>
+    <ClInclude Include="minhook\include\MinHook.h">
+      <Filter>Arquivos de Cabeçalho\SDK</Filter>
+    </ClInclude>
+    <ClInclude Include="Sdk\CppSDK\SDK\MM_Character_classes.hpp">
+      <Filter>Arquivos de Cabeçalho\SDK</Filter>
+    </ClInclude>
+    <ClInclude Include="Sdk\CppSDK\SDK\MM_Character_parameters.hpp">
+      <Filter>Arquivos de Cabeçalho\SDK</Filter>
+    </ClInclude>
+    <ClInclude Include="Sdk\CppSDK\SDK\MM_Controller_classes.hpp">
+      <Filter>Arquivos de Cabeçalho\SDK</Filter>
+    </ClInclude>
+    <ClInclude Include="Sdk\CppSDK\SDK\MM_Controller_parameters.hpp">
+      <Filter>Arquivos de Cabeçalho\SDK</Filter>
+    </ClInclude>
+    <ClInclude Include="Sdk\CppSDK\SDK\MM_Credits_classes.hpp">
+      <Filter>Arquivos de Cabeçalho\SDK</Filter>
+    </ClInclude>
+    <ClInclude Include="Sdk\CppSDK\SDK\MM_Credits_parameters.hpp">
+      <Filter>Arquivos de Cabeçalho\SDK</Filter>
+    </ClInclude>
+    <ClInclude Include="Sdk\CppSDK\SDK\MM_Customization_classes.hpp">
+      <Filter>Arquivos de Cabeçalho\SDK</Filter>
+    </ClInclude>
+    <ClInclude Include="Sdk\CppSDK\SDK\MM_Customization_parameters.hpp">
+      <Filter>Arquivos de Cabeçalho\SDK</Filter>
+    </ClInclude>
+    <ClInclude Include="Sdk\CppSDK\SDK\MM_CustomTeamsOld_classes.hpp">
+      <Filter>Arquivos de Cabeçalho\SDK</Filter>
+    </ClInclude>
+    <ClInclude Include="Sdk\CppSDK\SDK\MM_CustomTeamsOld_parameters.hpp">
+      <Filter>Arquivos de Cabeçalho\SDK</Filter>
+    </ClInclude>
+    <ClInclude Include="Sdk\CppSDK\SDK\MM_Extras_classes.hpp">
+      <Filter>Arquivos de Cabeçalho\SDK</Filter>
+    </ClInclude>
+    <ClInclude Include="Sdk\CppSDK\SDK\MM_Extras_parameters.hpp">
+      <Filter>Arquivos de Cabeçalho\SDK</Filter>
+    </ClInclude>
+    <ClInclude Include="Sdk\CppSDK\SDK\MM_HUD_classes.hpp">
+      <Filter>Arquivos de Cabeçalho\SDK</Filter>
+    </ClInclude>
+    <ClInclude Include="Sdk\CppSDK\SDK\MM_HUD_New_classes.hpp">
+      <Filter>Arquivos de Cabeçalho\SDK</Filter>
+    </ClInclude>
+    <ClInclude Include="Sdk\CppSDK\SDK\MM_HUD_New_parameters.hpp">
+      <Filter>Arquivos de Cabeçalho\SDK</Filter>
+    </ClInclude>
+    <ClInclude Include="Sdk\CppSDK\SDK\MM_HUD_parameters.hpp">
+      <Filter>Arquivos de Cabeçalho\SDK</Filter>
+    </ClInclude>
+    <ClInclude Include="Sdk\CppSDK\SDK\MM_Intro_classes.hpp">
+      <Filter>Arquivos de Cabeçalho\SDK</Filter>
+    </ClInclude>
+    <ClInclude Include="Sdk\CppSDK\SDK\MM_Intro_parameters.hpp">
+      <Filter>Arquivos de Cabeçalho\SDK</Filter>
+    </ClInclude>
+    <ClInclude Include="Sdk\CppSDK\SDK\MM_Music_classes.hpp">
+      <Filter>Arquivos de Cabeçalho\SDK</Filter>
+    </ClInclude>
+    <ClInclude Include="Sdk\CppSDK\SDK\MM_Music_parameters.hpp">
+      <Filter>Arquivos de Cabeçalho\SDK</Filter>
+    </ClInclude>
+    <ClInclude Include="Sdk\CppSDK\SDK\MM_Profile_classes.hpp">
+      <Filter>Arquivos de Cabeçalho\SDK</Filter>
+    </ClInclude>
+    <ClInclude Include="Sdk\CppSDK\SDK\MM_Profile_parameters.hpp">
+      <Filter>Arquivos de Cabeçalho\SDK</Filter>
+    </ClInclude>
+    <ClInclude Include="Sdk\CppSDK\SDK\MM_SoloRanked_classes.hpp">
+      <Filter>Arquivos de Cabeçalho\SDK</Filter>
+    </ClInclude>
+    <ClInclude Include="Sdk\CppSDK\SDK\MM_SoloRanked_parameters.hpp">
+      <Filter>Arquivos de Cabeçalho\SDK</Filter>
+    </ClInclude>
+    <ClInclude Include="Sdk\CppSDK\SDK\MM_Soundtrack_classes.hpp">
+      <Filter>Arquivos de Cabeçalho\SDK</Filter>
+    </ClInclude>
+    <ClInclude Include="Sdk\CppSDK\SDK\MM_Soundtrack_parameters.hpp">
+      <Filter>Arquivos de Cabeçalho\SDK</Filter>
+    </ClInclude>
+    <ClInclude Include="Sdk\CppSDK\SDK\MM_Start_classes.hpp">
+      <Filter>Arquivos de Cabeçalho\SDK</Filter>
+    </ClInclude>
+    <ClInclude Include="Sdk\CppSDK\SDK\MM_Start_parameters.hpp">
+      <Filter>Arquivos de Cabeçalho\SDK</Filter>
+    </ClInclude>
+    <ClInclude Include="Sdk\CppSDK\SDK\MoviePlayer_classes.hpp">
+      <Filter>Arquivos de Cabeçalho\SDK</Filter>
+    </ClInclude>
+    <ClInclude Include="Sdk\CppSDK\SDK\MoviePlayer_structs.hpp">
+      <Filter>Arquivos de Cabeçalho\SDK</Filter>
+    </ClInclude>
+    <ClInclude Include="Sdk\CppSDK\SDK\MovieScene_classes.hpp">
+      <Filter>Arquivos de Cabeçalho\SDK</Filter>
+    </ClInclude>
+    <ClInclude Include="Sdk\CppSDK\SDK\MovieScene_parameters.hpp">
+      <Filter>Arquivos de Cabeçalho\SDK</Filter>
+    </ClInclude>
+    <ClInclude Include="Sdk\CppSDK\SDK\MovieScene_structs.hpp">
+      <Filter>Arquivos de Cabeçalho\SDK</Filter>
+    </ClInclude>
+    <ClInclude Include="Sdk\CppSDK\SDK\MovieSceneCapture_classes.hpp">
+      <Filter>Arquivos de Cabeçalho\SDK</Filter>
+    </ClInclude>
+    <ClInclude Include="Sdk\CppSDK\SDK\MovieSceneCapture_parameters.hpp">
+      <Filter>Arquivos de Cabeçalho\SDK</Filter>
+    </ClInclude>
+    <ClInclude Include="Sdk\CppSDK\SDK\MovieSceneCapture_structs.hpp">
+      <Filter>Arquivos de Cabeçalho\SDK</Filter>
+    </ClInclude>
+    <ClInclude Include="Sdk\CppSDK\SDK\MovieSceneTracks_classes.hpp">
+      <Filter>Arquivos de Cabeçalho\SDK</Filter>
+    </ClInclude>
+    <ClInclude Include="Sdk\CppSDK\SDK\MovieSceneTracks_parameters.hpp">
+      <Filter>Arquivos de Cabeçalho\SDK</Filter>
+    </ClInclude>
+    <ClInclude Include="Sdk\CppSDK\SDK\MovieSceneTracks_structs.hpp">
+      <Filter>Arquivos de Cabeçalho\SDK</Filter>
+    </ClInclude>
+    <ClInclude Include="Sdk\CppSDK\SDK\MP_ChatMessage_classes.hpp">
+      <Filter>Arquivos de Cabeçalho\SDK</Filter>
+    </ClInclude>
+    <ClInclude Include="Sdk\CppSDK\SDK\MP_ChatMessage_parameters.hpp">
+      <Filter>Arquivos de Cabeçalho\SDK</Filter>
+    </ClInclude>
+    <ClInclude Include="Sdk\CppSDK\SDK\MP_FreeCam_classes.hpp">
+      <Filter>Arquivos de Cabeçalho\SDK</Filter>
+    </ClInclude>
+    <ClInclude Include="Sdk\CppSDK\SDK\MP_FreeCam_parameters.hpp">
+      <Filter>Arquivos de Cabeçalho\SDK</Filter>
+    </ClInclude>
+    <ClInclude Include="Sdk\CppSDK\SDK\MP_GameliftServerObject_classes.hpp">
+      <Filter>Arquivos de Cabeçalho\SDK</Filter>
+    </ClInclude>
+    <ClInclude Include="Sdk\CppSDK\SDK\MP_GameliftServerObject_parameters.hpp">
+      <Filter>Arquivos de Cabeçalho\SDK</Filter>
+    </ClInclude>
+    <ClInclude Include="Sdk\CppSDK\SDK\MP_GameMode_classes.hpp">
+      <Filter>Arquivos de Cabeçalho\SDK</Filter>
+    </ClInclude>
+    <ClInclude Include="Sdk\CppSDK\SDK\MP_GameMode_parameters.hpp">
+      <Filter>Arquivos de Cabeçalho\SDK</Filter>
+    </ClInclude>
+    <ClInclude Include="Sdk\CppSDK\SDK\MP_GameState_classes.hpp">
+      <Filter>Arquivos de Cabeçalho\SDK</Filter>
+    </ClInclude>
+    <ClInclude Include="Sdk\CppSDK\SDK\MP_GameState_parameters.hpp">
+      <Filter>Arquivos de Cabeçalho\SDK</Filter>
+    </ClInclude>
+    <ClInclude Include="Sdk\CppSDK\SDK\MP_HostMenu_PlayerCard_classes.hpp">
+      <Filter>Arquivos de Cabeçalho\SDK</Filter>
+    </ClInclude>
+    <ClInclude Include="Sdk\CppSDK\SDK\MP_HostMenu_PlayerCard_parameters.hpp">
+      <Filter>Arquivos de Cabeçalho\SDK</Filter>
+    </ClInclude>
+    <ClInclude Include="Sdk\CppSDK\SDK\MP_HUD_classes.hpp">
+      <Filter>Arquivos de Cabeçalho\SDK</Filter>
+    </ClInclude>
+    <ClInclude Include="Sdk\CppSDK\SDK\MP_HUD_NEW_classes.hpp">
+      <Filter>Arquivos de Cabeçalho\SDK</Filter>
+    </ClInclude>
+    <ClInclude Include="Sdk\CppSDK\SDK\MP_HUD_NEW_parameters.hpp">
+      <Filter>Arquivos de Cabeçalho\SDK</Filter>
+    </ClInclude>
+    <ClInclude Include="Sdk\CppSDK\SDK\MP_HUD_parameters.hpp">
+      <Filter>Arquivos de Cabeçalho\SDK</Filter>
+    </ClInclude>
+    <ClInclude Include="Sdk\CppSDK\SDK\MP_Interface_classes.hpp">
+      <Filter>Arquivos de Cabeçalho\SDK</Filter>
+    </ClInclude>
+    <ClInclude Include="Sdk\CppSDK\SDK\MP_Interface_parameters.hpp">
+      <Filter>Arquivos de Cabeçalho\SDK</Filter>
+    </ClInclude>
+    <ClInclude Include="Sdk\CppSDK\SDK\MP_PlayerState_classes.hpp">
+      <Filter>Arquivos de Cabeçalho\SDK</Filter>
+    </ClInclude>
+    <ClInclude Include="Sdk\CppSDK\SDK\MP_PlayerState_parameters.hpp">
+      <Filter>Arquivos de Cabeçalho\SDK</Filter>
+    </ClInclude>
+    <ClInclude Include="Sdk\CppSDK\SDK\MP_RichImageDecorator_classes.hpp">
+      <Filter>Arquivos de Cabeçalho\SDK</Filter>
+    </ClInclude>
+    <ClInclude Include="Sdk\CppSDK\SDK\MP_ScoreBoardCard_classes.hpp">
+      <Filter>Arquivos de Cabeçalho\SDK</Filter>
+    </ClInclude>
+    <ClInclude Include="Sdk\CppSDK\SDK\MP_ScoreBoardCard_parameters.hpp">
+      <Filter>Arquivos de Cabeçalho\SDK</Filter>
+    </ClInclude>
+    <ClInclude Include="Sdk\CppSDK\SDK\MP_SpectatorCharacter_classes.hpp">
+      <Filter>Arquivos de Cabeçalho\SDK</Filter>
+    </ClInclude>
+    <ClInclude Include="Sdk\CppSDK\SDK\MP_SpectatorCharacter_parameters.hpp">
+      <Filter>Arquivos de Cabeçalho\SDK</Filter>
+    </ClInclude>
+    <ClInclude Include="Sdk\CppSDK\SDK\MP_TeamSheet_classes.hpp">
+      <Filter>Arquivos de Cabeçalho\SDK</Filter>
+    </ClInclude>
+    <ClInclude Include="Sdk\CppSDK\SDK\MP_TeamSheet_parameters.hpp">
+      <Filter>Arquivos de Cabeçalho\SDK</Filter>
+    </ClInclude>
+    <ClInclude Include="Sdk\CppSDK\SDK\MRMesh_classes.hpp">
+      <Filter>Arquivos de Cabeçalho\SDK</Filter>
+    </ClInclude>
+    <ClInclude Include="Sdk\CppSDK\SDK\MRMesh_parameters.hpp">
+      <Filter>Arquivos de Cabeçalho\SDK</Filter>
+    </ClInclude>
+    <ClInclude Include="Sdk\CppSDK\SDK\MRMesh_structs.hpp">
+      <Filter>Arquivos de Cabeçalho\SDK</Filter>
+    </ClInclude>
+    <ClInclude Include="Sdk\CppSDK\SDK\MultiplayerMenu_classes.hpp">
+      <Filter>Arquivos de Cabeçalho\SDK</Filter>
+    </ClInclude>
+    <ClInclude Include="Sdk\CppSDK\SDK\MultiplayerMenu_parameters.hpp">
+      <Filter>Arquivos de Cabeçalho\SDK</Filter>
+    </ClInclude>
+    <ClInclude Include="Sdk\CppSDK\SDK\NavigationSystem_classes.hpp">
+      <Filter>Arquivos de Cabeçalho\SDK</Filter>
+    </ClInclude>
+    <ClInclude Include="Sdk\CppSDK\SDK\NavigationSystem_parameters.hpp">
+      <Filter>Arquivos de Cabeçalho\SDK</Filter>
+    </ClInclude>
+    <ClInclude Include="Sdk\CppSDK\SDK\NavigationSystem_structs.hpp">
+      <Filter>Arquivos de Cabeçalho\SDK</Filter>
+    </ClInclude>
+    <ClInclude Include="Sdk\CppSDK\SDK\NetCore_classes.hpp">
+      <Filter>Arquivos de Cabeçalho\SDK</Filter>
+    </ClInclude>
+    <ClInclude Include="Sdk\CppSDK\SDK\NetCore_structs.hpp">
+      <Filter>Arquivos de Cabeçalho\SDK</Filter>
+    </ClInclude>
+    <ClInclude Include="Sdk\CppSDK\SDK\NewsItem_classes.hpp">
+      <Filter>Arquivos de Cabeçalho\SDK</Filter>
+    </ClInclude>
+    <ClInclude Include="Sdk\CppSDK\SDK\NewsItem_parameters.hpp">
+      <Filter>Arquivos de Cabeçalho\SDK</Filter>
+    </ClInclude>
+    <ClInclude Include="Sdk\CppSDK\SDK\NewsPanel_classes.hpp">
+      <Filter>Arquivos de Cabeçalho\SDK</Filter>
+    </ClInclude>
+    <ClInclude Include="Sdk\CppSDK\SDK\NewsPanel_parameters.hpp">
+      <Filter>Arquivos de Cabeçalho\SDK</Filter>
+    </ClInclude>
+    <ClInclude Include="Sdk\CppSDK\SDK\OnlineSubsystem_classes.hpp">
+      <Filter>Arquivos de Cabeçalho\SDK</Filter>
+    </ClInclude>
+    <ClInclude Include="Sdk\CppSDK\SDK\OnlineSubsystem_parameters.hpp">
+      <Filter>Arquivos de Cabeçalho\SDK</Filter>
+    </ClInclude>
+    <ClInclude Include="Sdk\CppSDK\SDK\OnlineSubsystem_structs.hpp">
+      <Filter>Arquivos de Cabeçalho\SDK</Filter>
+    </ClInclude>
+    <ClInclude Include="Sdk\CppSDK\SDK\OnlineSubsystemSteam_classes.hpp">
+      <Filter>Arquivos de Cabeçalho\SDK</Filter>
+    </ClInclude>
+    <ClInclude Include="Sdk\CppSDK\SDK\OnlineSubsystemUtils_classes.hpp">
+      <Filter>Arquivos de Cabeçalho\SDK</Filter>
+    </ClInclude>
+    <ClInclude Include="Sdk\CppSDK\SDK\OnlineSubsystemUtils_parameters.hpp">
+      <Filter>Arquivos de Cabeçalho\SDK</Filter>
+    </ClInclude>
+    <ClInclude Include="Sdk\CppSDK\SDK\OnlineSubsystemUtils_structs.hpp">
+      <Filter>Arquivos de Cabeçalho\SDK</Filter>
+    </ClInclude>
+    <ClInclude Include="Sdk\CppSDK\SDK\OodleNetworkHandlerComponent_classes.hpp">
+      <Filter>Arquivos de Cabeçalho\SDK</Filter>
+    </ClInclude>
+    <ClInclude Include="Sdk\CppSDK\SDK\OodleNetworkHandlerComponent_structs.hpp">
+      <Filter>Arquivos de Cabeçalho\SDK</Filter>
+    </ClInclude>
+    <ClInclude Include="Sdk\CppSDK\SDK\OpenXRHandTracking_classes.hpp">
+      <Filter>Arquivos de Cabeçalho\SDK</Filter>
+    </ClInclude>
+    <ClInclude Include="Sdk\CppSDK\SDK\OpenXRHandTracking_structs.hpp">
+      <Filter>Arquivos de Cabeçalho\SDK</Filter>
+    </ClInclude>
+    <ClInclude Include="Sdk\CppSDK\SDK\Overlay_classes.hpp">
+      <Filter>Arquivos de Cabeçalho\SDK</Filter>
+    </ClInclude>
+    <ClInclude Include="Sdk\CppSDK\SDK\Overlay_structs.hpp">
+      <Filter>Arquivos de Cabeçalho\SDK</Filter>
+    </ClInclude>
+    <ClInclude Include="Sdk\CppSDK\SDK\PacketHandler_classes.hpp">
+      <Filter>Arquivos de Cabeçalho\SDK</Filter>
+    </ClInclude>
+    <ClInclude Include="Sdk\CppSDK\SDK\PhysicsCore_classes.hpp">
+      <Filter>Arquivos de Cabeçalho\SDK</Filter>
+    </ClInclude>
+    <ClInclude Include="Sdk\CppSDK\SDK\PhysicsCore_structs.hpp">
+      <Filter>Arquivos de Cabeçalho\SDK</Filter>
+    </ClInclude>
+    <ClInclude Include="Sdk\CppSDK\SDK\PlayerCustomization_classes.hpp">
+      <Filter>Arquivos de Cabeçalho\SDK</Filter>
+    </ClInclude>
+    <ClInclude Include="Sdk\CppSDK\SDK\PlayerCustomization_parameters.hpp">
+      <Filter>Arquivos de Cabeçalho\SDK</Filter>
+    </ClInclude>
+    <ClInclude Include="Sdk\CppSDK\SDK\PlayerReport_classes.hpp">
+      <Filter>Arquivos de Cabeçalho\SDK</Filter>
+    </ClInclude>
+    <ClInclude Include="Sdk\CppSDK\SDK\PlayerReport_parameters.hpp">
+      <Filter>Arquivos de Cabeçalho\SDK</Filter>
+    </ClInclude>
+    <ClInclude Include="Sdk\CppSDK\SDK\PlayerStats_classes.hpp">
+      <Filter>Arquivos de Cabeçalho\SDK</Filter>
+    </ClInclude>
+    <ClInclude Include="Sdk\CppSDK\SDK\PlayerStatsItem_classes.hpp">
+      <Filter>Arquivos de Cabeçalho\SDK</Filter>
+    </ClInclude>
+    <ClInclude Include="Sdk\CppSDK\SDK\PlayerStatsItem_parameters.hpp">
+      <Filter>Arquivos de Cabeçalho\SDK</Filter>
+    </ClInclude>
+    <ClInclude Include="Sdk\CppSDK\SDK\PropertyAccess_classes.hpp">
+      <Filter>Arquivos de Cabeçalho\SDK</Filter>
+    </ClInclude>
+    <ClInclude Include="Sdk\CppSDK\SDK\PropertyAccess_structs.hpp">
+      <Filter>Arquivos de Cabeçalho\SDK</Filter>
+    </ClInclude>
+    <ClInclude Include="Sdk\CppSDK\PropertyFixup.hpp">
+      <Filter>Arquivos de Cabeçalho\SDK</Filter>
+    </ClInclude>
+    <ClInclude Include="Sdk\CppSDK\SDK\PropertyPath_structs.hpp">
+      <Filter>Arquivos de Cabeçalho\SDK</Filter>
+    </ClInclude>
+    <ClInclude Include="Sdk\CppSDK\SDK\ProSoccerOnline_classes.hpp">
+      <Filter>Arquivos de Cabeçalho\SDK</Filter>
+    </ClInclude>
+    <ClInclude Include="Sdk\CppSDK\SDK\PSO_CustomTeam_classes.hpp">
+      <Filter>Arquivos de Cabeçalho\SDK</Filter>
+    </ClInclude>
+    <ClInclude Include="Sdk\CppSDK\SDK\PSO_GameInstance_classes.hpp">
+      <Filter>Arquivos de Cabeçalho\SDK</Filter>
+    </ClInclude>
+    <ClInclude Include="Sdk\CppSDK\SDK\PSO_GameInstance_parameters.hpp">
+      <Filter>Arquivos de Cabeçalho\SDK</Filter>
+    </ClInclude>
+    <ClInclude Include="Sdk\CppSDK\SDK\PSO_PlayerAppearance_classes.hpp">
+      <Filter>Arquivos de Cabeçalho\SDK</Filter>
+    </ClInclude>
+    <ClInclude Include="Sdk\CppSDK\SDK\PSO_Settings_Audio_classes.hpp">
+      <Filter>Arquivos de Cabeçalho\SDK</Filter>
+    </ClInclude>
+    <ClInclude Include="Sdk\CppSDK\SDK\PSO_Settings_Camera_classes.hpp">
+      <Filter>Arquivos de Cabeçalho\SDK</Filter>
+    </ClInclude>
+    <ClInclude Include="Sdk\CppSDK\SDK\PSO_Settings_Controls_classes.hpp">
+      <Filter>Arquivos de Cabeçalho\SDK</Filter>
+    </ClInclude>
+    <ClInclude Include="Sdk\CppSDK\SDK\PSO_Settings_Online_classes.hpp">
+      <Filter>Arquivos de Cabeçalho\SDK</Filter>
+    </ClInclude>
+    <ClInclude Include="Sdk\CppSDK\SDK\PSO_Settings_Video_classes.hpp">
+      <Filter>Arquivos de Cabeçalho\SDK</Filter>
+    </ClInclude>
+    <ClInclude Include="Sdk\CppSDK\SDK\PSO_UserTeam_classes.hpp">
+      <Filter>Arquivos de Cabeçalho\SDK</Filter>
+    </ClInclude>
+    <ClInclude Include="minhook\src\hde\pstdint.h">
+      <Filter>Arquivos de Cabeçalho\SDK</Filter>
+    </ClInclude>
+    <ClInclude Include="Sdk\CppSDK\SDK\Reg_Net_classes.hpp">
+      <Filter>Arquivos de Cabeçalho\SDK</Filter>
+    </ClInclude>
+    <ClInclude Include="Sdk\CppSDK\SDK\Reg_Net_parameters.hpp">
+      <Filter>Arquivos de Cabeçalho\SDK</Filter>
+    </ClInclude>
+    <ClInclude Include="Sdk\CppSDK\SDK\Renderer_structs.hpp">
+      <Filter>Arquivos de Cabeçalho\SDK</Filter>
+    </ClInclude>
+    <ClInclude Include="Sdk\CppSDK\SDK\RichTextBlockInlineDecorator_classes.hpp">
+      <Filter>Arquivos de Cabeçalho\SDK</Filter>
+    </ClInclude>
+    <ClInclude Include="Sdk\CppSDK\SDK\RigVM_classes.hpp">
+      <Filter>Arquivos de Cabeçalho\SDK</Filter>
+    </ClInclude>
+    <ClInclude Include="Sdk\CppSDK\SDK\RigVM_parameters.hpp">
+      <Filter>Arquivos de Cabeçalho\SDK</Filter>
+    </ClInclude>
+    <ClInclude Include="Sdk\CppSDK\SDK\RigVM_structs.hpp">
+      <Filter>Arquivos de Cabeçalho\SDK</Filter>
+    </ClInclude>
+    <ClInclude Include="Sdk\CppSDK\SDK\Scorecard_classes.hpp">
+      <Filter>Arquivos de Cabeçalho\SDK</Filter>
+    </ClInclude>
+    <ClInclude Include="Sdk\CppSDK\SDK\Scorecard_parameters.hpp">
+      <Filter>Arquivos de Cabeçalho\SDK</Filter>
+    </ClInclude>
+    <ClInclude Include="Sdk\CppSDK\SDK\SCUE4_classes.hpp">
+      <Filter>Arquivos de Cabeçalho\SDK</Filter>
+    </ClInclude>
+    <ClInclude Include="Sdk\CppSDK\SDK\SCUE4_parameters.hpp">
+      <Filter>Arquivos de Cabeçalho\SDK</Filter>
+    </ClInclude>
+    <ClInclude Include="Sdk\CppSDK\SDK\SCUE4_structs.hpp">
+      <Filter>Arquivos de Cabeçalho\SDK</Filter>
+    </ClInclude>
+    <ClInclude Include="Sdk\CppSDK\SDK.hpp">
+      <Filter>Arquivos de Cabeçalho\SDK</Filter>
+    </ClInclude>
+    <ClInclude Include="Sdk\CppSDK\SDK\Serialization_structs.hpp">
+      <Filter>Arquivos de Cabeçalho\SDK</Filter>
+    </ClInclude>
+    <ClInclude Include="Sdk\CppSDK\SDK\SessionInfo_structs.hpp">
+      <Filter>Arquivos de Cabeçalho\SDK</Filter>
+    </ClInclude>
+    <ClInclude Include="Sdk\CppSDK\SDK\SessionMessages_structs.hpp">
+      <Filter>Arquivos de Cabeçalho\SDK</Filter>
+    </ClInclude>
+    <ClInclude Include="Sdk\CppSDK\SDK\Settings_classes.hpp">
+      <Filter>Arquivos de Cabeçalho\SDK</Filter>
+    </ClInclude>
+    <ClInclude Include="Sdk\CppSDK\SDK\Settings_parameters.hpp">
+      <Filter>Arquivos de Cabeçalho\SDK</Filter>
+    </ClInclude>
+    <ClInclude Include="Sdk\CppSDK\SDK\SettingsListItem_classes.hpp">
+      <Filter>Arquivos de Cabeçalho\SDK</Filter>
+    </ClInclude>
+    <ClInclude Include="Sdk\CppSDK\SDK\SettingsListItem_parameters.hpp">
+      <Filter>Arquivos de Cabeçalho\SDK</Filter>
+    </ClInclude>
+    <ClInclude Include="Sdk\CppSDK\SDK\SignificanceManager_classes.hpp">
+      <Filter>Arquivos de Cabeçalho\SDK</Filter>
+    </ClInclude>
+    <ClInclude Include="Sdk\CppSDK\SDK\Slate_classes.hpp">
+      <Filter>Arquivos de Cabeçalho\SDK</Filter>
+    </ClInclude>
+    <ClInclude Include="Sdk\CppSDK\SDK\Slate_structs.hpp">
+      <Filter>Arquivos de Cabeçalho\SDK</Filter>
+    </ClInclude>
+    <ClInclude Include="Sdk\CppSDK\SDK\SlateCore_classes.hpp">
+      <Filter>Arquivos de Cabeçalho\SDK</Filter>
+    </ClInclude>
+    <ClInclude Include="Sdk\CppSDK\SDK\SlateCore_structs.hpp">
+      <Filter>Arquivos de Cabeçalho\SDK</Filter>
+    </ClInclude>
+    <ClInclude Include="Sdk\CppSDK\SDK\SoccerBall_classes.hpp">
+      <Filter>Arquivos de Cabeçalho\SDK</Filter>
+    </ClInclude>
+    <ClInclude Include="Sdk\CppSDK\SDK\SoccerBall_parameters.hpp">
+      <Filter>Arquivos de Cabeçalho\SDK</Filter>
+    </ClInclude>
+    <ClInclude Include="Sdk\CppSDK\SDK\SoundFields_classes.hpp">
+      <Filter>Arquivos de Cabeçalho\SDK</Filter>
+    </ClInclude>
+    <ClInclude Include="Sdk\CppSDK\SDK\SoundUtilities_classes.hpp">
+      <Filter>Arquivos de Cabeçalho\SDK</Filter>
+    </ClInclude>
+    <ClInclude Include="Sdk\CppSDK\SDK\SoundUtilities_parameters.hpp">
+      <Filter>Arquivos de Cabeçalho\SDK</Filter>
+    </ClInclude>
+    <ClInclude Include="Sdk\CppSDK\SDK\SoundUtilities_structs.hpp">
+      <Filter>Arquivos de Cabeçalho\SDK</Filter>
+    </ClInclude>
+    <ClInclude Include="Sdk\CppSDK\SDK\SP_ABP_classes.hpp">
+      <Filter>Arquivos de Cabeçalho\SDK</Filter>
+    </ClInclude>
+    <ClInclude Include="Sdk\CppSDK\SDK\SP_ABP_parameters.hpp">
+      <Filter>Arquivos de Cabeçalho\SDK</Filter>
+    </ClInclude>
+    <ClInclude Include="Sdk\CppSDK\SDK\SP_AppearanceCombined_structs.hpp">
+      <Filter>Arquivos de Cabeçalho\SDK</Filter>
+    </ClInclude>
+    <ClInclude Include="Sdk\CppSDK\SDK\SP_Character_classes.hpp">
+      <Filter>Arquivos de Cabeçalho\SDK</Filter>
+    </ClInclude>
+    <ClInclude Include="Sdk\CppSDK\SDK\SP_Character_parameters.hpp">
+      <Filter>Arquivos de Cabeçalho\SDK</Filter>
+    </ClInclude>
+    <ClInclude Include="Sdk\CppSDK\SDK\SP_Controller_classes.hpp">
+      <Filter>Arquivos de Cabeçalho\SDK</Filter>
+    </ClInclude>
+    <ClInclude Include="Sdk\CppSDK\SDK\SP_Controller_parameters.hpp">
+      <Filter>Arquivos de Cabeçalho\SDK</Filter>
+    </ClInclude>
+    <ClInclude Include="Sdk\CppSDK\SDK\SP_Emotes_QC_classes.hpp">
+      <Filter>Arquivos de Cabeçalho\SDK</Filter>
+    </ClInclude>
+    <ClInclude Include="Sdk\CppSDK\SDK\SP_Emotes_QC_parameters.hpp">
+      <Filter>Arquivos de Cabeçalho\SDK</Filter>
+    </ClInclude>
+    <ClInclude Include="Sdk\CppSDK\SDK\SP_Kickbar_classes.hpp">
+      <Filter>Arquivos de Cabeçalho\SDK</Filter>
+    </ClInclude>
+    <ClInclude Include="Sdk\CppSDK\SDK\SP_Kickbar_parameters.hpp">
+      <Filter>Arquivos de Cabeçalho\SDK</Filter>
+    </ClInclude>
+    <ClInclude Include="Sdk\CppSDK\SDK\SP_KickBarOld_classes.hpp">
+      <Filter>Arquivos de Cabeçalho\SDK</Filter>
+    </ClInclude>
+    <ClInclude Include="Sdk\CppSDK\SDK\SP_KickBarOld_parameters.hpp">
+      <Filter>Arquivos de Cabeçalho\SDK</Filter>
+    </ClInclude>
+    <ClInclude Include="Sdk\CppSDK\SDK\SP_NameTag_classes.hpp">
+      <Filter>Arquivos de Cabeçalho\SDK</Filter>
+    </ClInclude>
+    <ClInclude Include="Sdk\CppSDK\SDK\SP_PlayerAppearance_structs.hpp">
+      <Filter>Arquivos de Cabeçalho\SDK</Filter>
+    </ClInclude>
+    <ClInclude Include="Sdk\CppSDK\SDK\SP_ShirtData_classes.hpp">
+      <Filter>Arquivos de Cabeçalho\SDK</Filter>
+    </ClInclude>
+    <ClInclude Include="Sdk\CppSDK\SDK\SP_ShirtData_parameters.hpp">
+      <Filter>Arquivos de Cabeçalho\SDK</Filter>
+    </ClInclude>
+    <ClInclude Include="Sdk\CppSDK\SDK\SP_TeamAppearance_structs.hpp">
+      <Filter>Arquivos de Cabeçalho\SDK</Filter>
+    </ClInclude>
+    <ClInclude Include="Sdk\CppSDK\SDK\SpectatorListItem_classes.hpp">
+      <Filter>Arquivos de Cabeçalho\SDK</Filter>
+    </ClInclude>
+    <ClInclude Include="Sdk\CppSDK\SDK\SpectatorListItem_parameters.hpp">
+      <Filter>Arquivos de Cabeçalho\SDK</Filter>
+    </ClInclude>
+    <ClInclude Include="Sdk\CppSDK\SDK\SpectatorOptions_classes.hpp">
+      <Filter>Arquivos de Cabeçalho\SDK</Filter>
+    </ClInclude>
+    <ClInclude Include="Sdk\CppSDK\SDK\StaticMeshDescription_classes.hpp">
+      <Filter>Arquivos de Cabeçalho\SDK</Filter>
+    </ClInclude>
+    <ClInclude Include="Sdk\CppSDK\SDK\StaticMeshDescription_parameters.hpp">
+      <Filter>Arquivos de Cabeçalho\SDK</Filter>
+    </ClInclude>
+    <ClInclude Include="Sdk\CppSDK\SDK\StaticMeshDescription_structs.hpp">
+      <Filter>Arquivos de Cabeçalho\SDK</Filter>
+    </ClInclude>
+    <ClInclude Include="Sdk\CppSDK\SDK\StatsUpdateSheet_structs.hpp">
+      <Filter>Arquivos de Cabeçalho\SDK</Filter>
+    </ClInclude>
+    <ClInclude Include="Sdk\CppSDK\SDK\SteamCore_classes.hpp">
+      <Filter>Arquivos de Cabeçalho\SDK</Filter>
+    </ClInclude>
+    <ClInclude Include="Sdk\CppSDK\SDK\SteamCore_parameters.hpp">
+      <Filter>Arquivos de Cabeçalho\SDK</Filter>
+    </ClInclude>
+    <ClInclude Include="Sdk\CppSDK\SDK\SteamCore_structs.hpp">
+      <Filter>Arquivos de Cabeçalho\SDK</Filter>
+    </ClInclude>
+    <ClInclude Include="Sdk\CppSDK\SDK\SteamCoreWeb_classes.hpp">
+      <Filter>Arquivos de Cabeçalho\SDK</Filter>
+    </ClInclude>
+    <ClInclude Include="Sdk\CppSDK\SDK\SteamCoreWeb_parameters.hpp">
+      <Filter>Arquivos de Cabeçalho\SDK</Filter>
+    </ClInclude>
+    <ClInclude Include="Sdk\CppSDK\SDK\SteamCoreWeb_structs.hpp">
+      <Filter>Arquivos de Cabeçalho\SDK</Filter>
+    </ClInclude>
+    <ClInclude Include="Sdk\CppSDK\SDK\SteamSockets_classes.hpp">
+      <Filter>Arquivos de Cabeçalho\SDK</Filter>
+    </ClInclude>
+    <ClInclude Include="minhook\src\hde\table32.h">
+      <Filter>Arquivos de Cabeçalho\SDK</Filter>
+    </ClInclude>
+    <ClInclude Include="minhook\src\hde\table64.h">
+      <Filter>Arquivos de Cabeçalho\SDK</Filter>
+    </ClInclude>
+    <ClInclude Include="Sdk\CppSDK\SDK\TakeMovieScene_classes.hpp">
+      <Filter>Arquivos de Cabeçalho\SDK</Filter>
+    </ClInclude>
+    <ClInclude Include="Sdk\CppSDK\SDK\TcpMessaging_classes.hpp">
+      <Filter>Arquivos de Cabeçalho\SDK</Filter>
+    </ClInclude>
+    <ClInclude Include="Sdk\CppSDK\SDK\Team1Info_classes.hpp">
+      <Filter>Arquivos de Cabeçalho\SDK</Filter>
+    </ClInclude>
+    <ClInclude Include="Sdk\CppSDK\SDK\Team1Info_parameters.hpp">
+      <Filter>Arquivos de Cabeçalho\SDK</Filter>
+    </ClInclude>
+    <ClInclude Include="Sdk\CppSDK\SDK\Team2Info_classes.hpp">
+      <Filter>Arquivos de Cabeçalho\SDK</Filter>
+    </ClInclude>
+    <ClInclude Include="Sdk\CppSDK\SDK\Team2Info_parameters.hpp">
+      <Filter>Arquivos de Cabeçalho\SDK</Filter>
+    </ClInclude>
+    <ClInclude Include="Sdk\CppSDK\SDK\TeamCustomization_classes.hpp">
+      <Filter>Arquivos de Cabeçalho\SDK</Filter>
+    </ClInclude>
+    <ClInclude Include="Sdk\CppSDK\SDK\TeamCustomization_parameters.hpp">
+      <Filter>Arquivos de Cabeçalho\SDK</Filter>
+    </ClInclude>
+    <ClInclude Include="Sdk\CppSDK\SDK\TeamFormation_0_structs.hpp">
+      <Filter>Arquivos de Cabeçalho\SDK</Filter>
+    </ClInclude>
+    <ClInclude Include="Sdk\CppSDK\SDK\TeamFormation_classes.hpp">
+      <Filter>Arquivos de Cabeçalho\SDK</Filter>
+    </ClInclude>
+    <ClInclude Include="Sdk\CppSDK\SDK\TeamFormationItem_classes.hpp">
+      <Filter>Arquivos de Cabeçalho\SDK</Filter>
+    </ClInclude>
+    <ClInclude Include="Sdk\CppSDK\SDK\TeamFormationItem_parameters.hpp">
+      <Filter>Arquivos de Cabeçalho\SDK</Filter>
+    </ClInclude>
+    <ClInclude Include="Sdk\CppSDK\SDK\TeamInfo_structs.hpp">
+      <Filter>Arquivos de Cabeçalho\SDK</Filter>
+    </ClInclude>
+    <ClInclude Include="Sdk\CppSDK\SDK\TeamList_classes.hpp">
+      <Filter>Arquivos de Cabeçalho\SDK</Filter>
+    </ClInclude>
+    <ClInclude Include="Sdk\CppSDK\SDK\TeamListItem_classes.hpp">
+      <Filter>Arquivos de Cabeçalho\SDK</Filter>
+    </ClInclude>
+    <ClInclude Include="Sdk\CppSDK\SDK\TeamListItem_parameters.hpp">
+      <Filter>Arquivos de Cabeçalho\SDK</Filter>
+    </ClInclude>
+    <ClInclude Include="Sdk\CppSDK\SDK\TemplateSequence_classes.hpp">
+      <Filter>Arquivos de Cabeçalho\SDK</Filter>
+    </ClInclude>
+    <ClInclude Include="Sdk\CppSDK\SDK\TemplateSequence_parameters.hpp">
+      <Filter>Arquivos de Cabeçalho\SDK</Filter>
+    </ClInclude>
+    <ClInclude Include="Sdk\CppSDK\SDK\TemplateSequence_structs.hpp">
+      <Filter>Arquivos de Cabeçalho\SDK</Filter>
+    </ClInclude>
+    <ClInclude Include="Sdk\CppSDK\SDK\TimeManagement_classes.hpp">
+      <Filter>Arquivos de Cabeçalho\SDK</Filter>
+    </ClInclude>
+    <ClInclude Include="Sdk\CppSDK\SDK\TimeManagement_parameters.hpp">
+      <Filter>Arquivos de Cabeçalho\SDK</Filter>
+    </ClInclude>
+    <ClInclude Include="Sdk\CppSDK\SDK\TimeManagement_structs.hpp">
+      <Filter>Arquivos de Cabeçalho\SDK</Filter>
+    </ClInclude>
+    <ClInclude Include="Sdk\CppSDK\SDK\TR_HUD_classes.hpp">
+      <Filter>Arquivos de Cabeçalho\SDK</Filter>
+    </ClInclude>
+    <ClInclude Include="Sdk\CppSDK\SDK\TR_HUD_parameters.hpp">
+      <Filter>Arquivos de Cabeçalho\SDK</Filter>
+    </ClInclude>
+    <ClInclude Include="Sdk\CppSDK\SDK\TR_StartMenu_classes.hpp">
+      <Filter>Arquivos de Cabeçalho\SDK</Filter>
+    </ClInclude>
+    <ClInclude Include="Sdk\CppSDK\SDK\TR_StartMenu_parameters.hpp">
+      <Filter>Arquivos de Cabeçalho\SDK</Filter>
+    </ClInclude>
+    <ClInclude Include="Sdk\CppSDK\SDK\TR_Tutorial_Dribbling_classes.hpp">
+      <Filter>Arquivos de Cabeçalho\SDK</Filter>
+    </ClInclude>
+    <ClInclude Include="Sdk\CppSDK\SDK\TR_Tutorial_Dribbling_parameters.hpp">
+      <Filter>Arquivos de Cabeçalho\SDK</Filter>
+    </ClInclude>
+    <ClInclude Include="Sdk\CppSDK\SDK\TR_Tutorial_GoalKeeping_classes.hpp">
+      <Filter>Arquivos de Cabeçalho\SDK</Filter>
+    </ClInclude>
+    <ClInclude Include="Sdk\CppSDK\SDK\TR_Tutorial_GoalKeeping_parameters.hpp">
+      <Filter>Arquivos de Cabeçalho\SDK</Filter>
+    </ClInclude>
+    <ClInclude Include="Sdk\CppSDK\SDK\TR_Tutorial_Kicking_classes.hpp">
+      <Filter>Arquivos de Cabeçalho\SDK</Filter>
+    </ClInclude>
+    <ClInclude Include="Sdk\CppSDK\SDK\TR_Tutorial_Kicking_parameters.hpp">
+      <Filter>Arquivos de Cabeçalho\SDK</Filter>
+    </ClInclude>
+    <ClInclude Include="Sdk\CppSDK\SDK\TR_Tutorial_Movement_classes.hpp">
+      <Filter>Arquivos de Cabeçalho\SDK</Filter>
+    </ClInclude>
+    <ClInclude Include="Sdk\CppSDK\SDK\TR_Tutorial_Movement_parameters.hpp">
+      <Filter>Arquivos de Cabeçalho\SDK</Filter>
+    </ClInclude>
+    <ClInclude Include="Sdk\CppSDK\SDK\TrainingController_Indoor_classes.hpp">
+      <Filter>Arquivos de Cabeçalho\SDK</Filter>
+    </ClInclude>
+    <ClInclude Include="Sdk\CppSDK\SDK\TrainingController_Indoor_parameters.hpp">
+      <Filter>Arquivos de Cabeçalho\SDK</Filter>
+    </ClInclude>
+    <ClInclude Include="Sdk\CppSDK\SDK\TrainingController_Regulation_classes.hpp">
+      <Filter>Arquivos de Cabeçalho\SDK</Filter>
+    </ClInclude>
+    <ClInclude Include="Sdk\CppSDK\SDK\TrainingController_Regulation_parameters.hpp">
+      <Filter>Arquivos de Cabeçalho\SDK</Filter>
+    </ClInclude>
+    <ClInclude Include="minhook\src\trampoline.h">
+      <Filter>Arquivos de Cabeçalho\SDK</Filter>
+    </ClInclude>
+    <ClInclude Include="Sdk\CppSDK\SDK\Tutorial_Dribbling_classes.hpp">
+      <Filter>Arquivos de Cabeçalho\SDK</Filter>
+    </ClInclude>
+    <ClInclude Include="Sdk\CppSDK\SDK\Tutorial_Dribbling_parameters.hpp">
+      <Filter>Arquivos de Cabeçalho\SDK</Filter>
+    </ClInclude>
+    <ClInclude Include="Sdk\CppSDK\SDK\Tutorial_GoalKeeping_classes.hpp">
+      <Filter>Arquivos de Cabeçalho\SDK</Filter>
+    </ClInclude>
+    <ClInclude Include="Sdk\CppSDK\SDK\Tutorial_GoalKeeping_parameters.hpp">
+      <Filter>Arquivos de Cabeçalho\SDK</Filter>
+    </ClInclude>
+    <ClInclude Include="Sdk\CppSDK\SDK\Tutorial_Kicking_classes.hpp">
+      <Filter>Arquivos de Cabeçalho\SDK</Filter>
+    </ClInclude>
+    <ClInclude Include="Sdk\CppSDK\SDK\Tutorial_Kicking_parameters.hpp">
+      <Filter>Arquivos de Cabeçalho\SDK</Filter>
+    </ClInclude>
+    <ClInclude Include="Sdk\CppSDK\SDK\Tutorial_Movement_classes.hpp">
+      <Filter>Arquivos de Cabeçalho\SDK</Filter>
+    </ClInclude>
+    <ClInclude Include="Sdk\CppSDK\SDK\Tutorial_Movement_parameters.hpp">
+      <Filter>Arquivos de Cabeçalho\SDK</Filter>
+    </ClInclude>
+    <ClInclude Include="Sdk\CppSDK\SDK\UdpMessaging_classes.hpp">
+      <Filter>Arquivos de Cabeçalho\SDK</Filter>
+    </ClInclude>
+    <ClInclude Include="Sdk\CppSDK\SDK\UdpMessaging_structs.hpp">
+      <Filter>Arquivos de Cabeçalho\SDK</Filter>
+    </ClInclude>
+    <ClInclude Include="Sdk\CppSDK\SDK\UMG_classes.hpp">
+      <Filter>Arquivos de Cabeçalho\SDK</Filter>
+    </ClInclude>
+    <ClInclude Include="Sdk\CppSDK\SDK\UMG_parameters.hpp">
+      <Filter>Arquivos de Cabeçalho\SDK</Filter>
+    </ClInclude>
+    <ClInclude Include="Sdk\CppSDK\SDK\UMG_structs.hpp">
+      <Filter>Arquivos de Cabeçalho\SDK</Filter>
+    </ClInclude>
+    <ClInclude Include="Sdk\CppSDK\SDK\UniversalVoiceChatPro_classes.hpp">
+      <Filter>Arquivos de Cabeçalho\SDK</Filter>
+    </ClInclude>
+    <ClInclude Include="Sdk\CppSDK\SDK\UniversalVoiceChatPro_parameters.hpp">
+      <Filter>Arquivos de Cabeçalho\SDK</Filter>
+    </ClInclude>
+    <ClInclude Include="Sdk\CppSDK\UnrealContainers.hpp">
+      <Filter>Arquivos de Cabeçalho\SDK</Filter>
+    </ClInclude>
+    <ClInclude Include="Sdk\CppSDK\SDK\UObjectPlugin_classes.hpp">
+      <Filter>Arquivos de Cabeçalho\SDK</Filter>
+    </ClInclude>
+    <ClInclude Include="Sdk\CppSDK\SDK\UObjectPlugin_structs.hpp">
+      <Filter>Arquivos de Cabeçalho\SDK</Filter>
+    </ClInclude>
+    <ClInclude Include="Sdk\CppSDK\UtfN.hpp">
+      <Filter>Arquivos de Cabeçalho\SDK</Filter>
+    </ClInclude>
+    <ClInclude Include="Sdk\CppSDK\SDK\VaRest_classes.hpp">
+      <Filter>Arquivos de Cabeçalho\SDK</Filter>
+    </ClInclude>
+    <ClInclude Include="Sdk\CppSDK\SDK\VaRest_parameters.hpp">
+      <Filter>Arquivos de Cabeçalho\SDK</Filter>
+    </ClInclude>
+    <ClInclude Include="Sdk\CppSDK\SDK\VaRest_structs.hpp">
+      <Filter>Arquivos de Cabeçalho\SDK</Filter>
+    </ClInclude>
+    <ClInclude Include="Sdk\CppSDK\SDK\VariantManagerContent_classes.hpp">
+      <Filter>Arquivos de Cabeçalho\SDK</Filter>
+    </ClInclude>
+    <ClInclude Include="Sdk\CppSDK\SDK\VariantManagerContent_parameters.hpp">
+      <Filter>Arquivos de Cabeçalho\SDK</Filter>
+    </ClInclude>
+    <ClInclude Include="Sdk\CppSDK\SDK\VariantManagerContent_structs.hpp">
+      <Filter>Arquivos de Cabeçalho\SDK</Filter>
+    </ClInclude>
+    <ClInclude Include="Sdk\CppSDK\SDK\VictoryBPLibrary_classes.hpp">
+      <Filter>Arquivos de Cabeçalho\SDK</Filter>
+    </ClInclude>
+    <ClInclude Include="Sdk\CppSDK\SDK\VictoryBPLibrary_parameters.hpp">
+      <Filter>Arquivos de Cabeçalho\SDK</Filter>
+    </ClInclude>
+    <ClInclude Include="Sdk\CppSDK\SDK\VictoryBPLibrary_structs.hpp">
+      <Filter>Arquivos de Cabeçalho\SDK</Filter>
+    </ClInclude>
+    <ClInclude Include="Sdk\CppSDK\SDK\VotePanel_classes.hpp">
+      <Filter>Arquivos de Cabeçalho\SDK</Filter>
+    </ClInclude>
+    <ClInclude Include="Sdk\CppSDK\SDK\WebBrowser_structs.hpp">
+      <Filter>Arquivos de Cabeçalho\SDK</Filter>
+    </ClInclude>
+    <ClInclude Include="Sdk\CppSDK\SDK\WebBrowserWidget_classes.hpp">
+      <Filter>Arquivos de Cabeçalho\SDK</Filter>
+    </ClInclude>
+    <ClInclude Include="Sdk\CppSDK\SDK\WebBrowserWidget_parameters.hpp">
+      <Filter>Arquivos de Cabeçalho\SDK</Filter>
+    </ClInclude>
+    <ClInclude Include="psosense_pipe.hpp">
+      <Filter>Arquivos de Cabeçalho</Filter>
+    </ClInclude>
+    <ClInclude Include="game_context.hpp">
+      <Filter>Arquivos de Cabeçalho</Filter>
+    </ClInclude>
+    <ClInclude Include="function_calls.hpp">
+      <Filter>Arquivos de Cabeçalho</Filter>
+    </ClInclude>
+    <ClInclude Include="pe_blocker.hpp">
+      <Filter>Arquivos de Cabeçalho</Filter>
+    </ClInclude>
+    <ClInclude Include="dx11_hook.hpp">
+      <Filter>Arquivos de Cabeçalho</Filter>
+    </ClInclude>
+    <ClInclude Include="imgui\imconfig.h">
+      <Filter>Arquivos de Cabeçalho\IMGUI</Filter>
+    </ClInclude>
+    <ClInclude Include="imgui\imgui.h">
+      <Filter>Arquivos de Cabeçalho\IMGUI</Filter>
+    </ClInclude>
+    <ClInclude Include="imgui\imgui_internal.h">
+      <Filter>Arquivos de Cabeçalho\IMGUI</Filter>
+    </ClInclude>
+    <ClInclude Include="imgui\imstb_rectpack.h">
+      <Filter>Arquivos de Cabeçalho\IMGUI</Filter>
+    </ClInclude>
+    <ClInclude Include="imgui\imstb_textedit.h">
+      <Filter>Arquivos de Cabeçalho\IMGUI</Filter>
+    </ClInclude>
+    <ClInclude Include="imgui\imstb_truetype.h">
+      <Filter>Arquivos de Cabeçalho\IMGUI</Filter>
+    </ClInclude>
+    <ClInclude Include="imgui\backends\imgui_impl_dx11.h">
+      <Filter>Arquivos de Cabeçalho\IMGUI</Filter>
+    </ClInclude>
+    <ClInclude Include="imgui\backends\imgui_impl_win32.h">
+      <Filter>Arquivos de Cabeçalho\IMGUI</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="dllmain.cpp">
+      <Filter>Arquivos de Origem</Filter>
+    </ClCompile>
+    <ClCompile Include="Sdk\CppSDK\SDK\SP_Character_functions.cpp">
+      <Filter>Arquivos de Origem\SDK</Filter>
+    </ClCompile>
+    <ClCompile Include="Sdk\CppSDK\SDK\ActorLayerUtilities_functions.cpp">
+      <Filter>Arquivos de Origem\SDK</Filter>
+    </ClCompile>
+    <ClCompile Include="Sdk\CppSDK\SDK\AIModule_functions.cpp">
+      <Filter>Arquivos de Origem\SDK</Filter>
+    </ClCompile>
+    <ClCompile Include="Sdk\CppSDK\SDK\AndroidPermission_functions.cpp">
+      <Filter>Arquivos de Origem\SDK</Filter>
+    </ClCompile>
+    <ClCompile Include="Sdk\CppSDK\SDK\AnimationSharing_functions.cpp">
+      <Filter>Arquivos de Origem\SDK</Filter>
+    </ClCompile>
+    <ClCompile Include="Sdk\CppSDK\SDK\AnimGraphRuntime_functions.cpp">
+      <Filter>Arquivos de Origem\SDK</Filter>
+    </ClCompile>
+    <ClCompile Include="Sdk\CppSDK\SDK\ApexDestruction_functions.cpp">
+      <Filter>Arquivos de Origem\SDK</Filter>
+    </ClCompile>
+    <ClCompile Include="Sdk\CppSDK\SDK\AppleImageUtils_functions.cpp">
+      <Filter>Arquivos de Origem\SDK</Filter>
+    </ClCompile>
+    <ClCompile Include="Sdk\CppSDK\SDK\AssetRegistry_functions.cpp">
+      <Filter>Arquivos de Origem\SDK</Filter>
+    </ClCompile>
+    <ClCompile Include="Sdk\CppSDK\SDK\AssetTags_functions.cpp">
+      <Filter>Arquivos de Origem\SDK</Filter>
+    </ClCompile>
+    <ClCompile Include="Sdk\CppSDK\SDK\AudioCapture_functions.cpp">
+      <Filter>Arquivos de Origem\SDK</Filter>
+    </ClCompile>
+    <ClCompile Include="Sdk\CppSDK\SDK\AudioMixer_functions.cpp">
+      <Filter>Arquivos de Origem\SDK</Filter>
+    </ClCompile>
+    <ClCompile Include="Sdk\CppSDK\SDK\AugmentedReality_functions.cpp">
+      <Filter>Arquivos de Origem\SDK</Filter>
+    </ClCompile>
+    <ClCompile Include="Sdk\CppSDK\SDK\AutomationUtils_functions.cpp">
+      <Filter>Arquivos de Origem\SDK</Filter>
+    </ClCompile>
+    <ClCompile Include="Sdk\CppSDK\SDK\AwsGameLiftClient_functions.cpp">
+      <Filter>Arquivos de Origem\SDK</Filter>
+    </ClCompile>
+    <ClCompile Include="Sdk\CppSDK\SDK\AwsGameLiftServer_functions.cpp">
+      <Filter>Arquivos de Origem\SDK</Filter>
+    </ClCompile>
+    <ClCompile Include="Sdk\CppSDK\SDK\Basic.cpp">
+      <Filter>Arquivos de Origem\SDK</Filter>
+    </ClCompile>
+    <ClCompile Include="Sdk\CppSDK\SDK\BlueprintJson_functions.cpp">
+      <Filter>Arquivos de Origem\SDK</Filter>
+    </ClCompile>
+    <ClCompile Include="Sdk\CppSDK\SDK\BP_FunctionLibrary_functions.cpp">
+      <Filter>Arquivos de Origem\SDK</Filter>
+    </ClCompile>
+    <ClCompile Include="Sdk\CppSDK\SDK\BP_Sky_Sphere_functions.cpp">
+      <Filter>Arquivos de Origem\SDK</Filter>
+    </ClCompile>
+    <ClCompile Include="Sdk\CppSDK\SDK\Chat_functions.cpp">
+      <Filter>Arquivos de Origem\SDK</Filter>
+    </ClCompile>
+    <ClCompile Include="Sdk\CppSDK\SDK\ChatMessage_functions.cpp">
+      <Filter>Arquivos de Origem\SDK</Filter>
+    </ClCompile>
+    <ClCompile Include="Sdk\CppSDK\SDK\ChatMessageMiddlePanel_functions.cpp">
+      <Filter>Arquivos de Origem\SDK</Filter>
+    </ClCompile>
+    <ClCompile Include="Sdk\CppSDK\SDK\CinematicCamera_functions.cpp">
+      <Filter>Arquivos de Origem\SDK</Filter>
+    </ClCompile>
+    <ClCompile Include="Sdk\CppSDK\SDK\ClothingSystemRuntimeInterface_functions.cpp">
+      <Filter>Arquivos de Origem\SDK</Filter>
+    </ClCompile>
+    <ClCompile Include="Sdk\CppSDK\SDK\ClothingSystemRuntimeNv_functions.cpp">
+      <Filter>Arquivos de Origem\SDK</Filter>
+    </ClCompile>
+    <ClCompile Include="Sdk\CppSDK\SDK\ColorWheelPlugin_functions.cpp">
+      <Filter>Arquivos de Origem\SDK</Filter>
+    </ClCompile>
+    <ClCompile Include="Sdk\CppSDK\SDK\ControlRig_functions.cpp">
+      <Filter>Arquivos de Origem\SDK</Filter>
+    </ClCompile>
+    <ClCompile Include="Sdk\CppSDK\SDK\CoreUObject_functions.cpp">
+      <Filter>Arquivos de Origem\SDK</Filter>
+    </ClCompile>
+    <ClCompile Include="Sdk\CppSDK\SDK\CPTMenu_functions.cpp">
+      <Filter>Arquivos de Origem\SDK</Filter>
+    </ClCompile>
+    <ClCompile Include="Sdk\CppSDK\SDK\CPTMenuPlayerItem_functions.cpp">
+      <Filter>Arquivos de Origem\SDK</Filter>
+    </ClCompile>
+    <ClCompile Include="Sdk\CppSDK\SDK\CustomLobbies_functions.cpp">
+      <Filter>Arquivos de Origem\SDK</Filter>
+    </ClCompile>
+    <ClCompile Include="Sdk\CppSDK\SDK\CustomLobbiesServerItem_functions.cpp">
+      <Filter>Arquivos de Origem\SDK</Filter>
+    </ClCompile>
+    <ClCompile Include="Sdk\CppSDK\SDK\Discords_functions.cpp">
+      <Filter>Arquivos de Origem\SDK</Filter>
+    </ClCompile>
+    <ClCompile Include="Sdk\CppSDK\SDK\DS_Entry_HUD_functions.cpp">
+      <Filter>Arquivos de Origem\SDK</Filter>
+    </ClCompile>
+    <ClCompile Include="Sdk\CppSDK\SDK\DS_Entry_Widget_functions.cpp">
+      <Filter>Arquivos de Origem\SDK</Filter>
+    </ClCompile>
+    <ClCompile Include="Sdk\CppSDK\SDK\DS_EntryGameMode_functions.cpp">
+      <Filter>Arquivos de Origem\SDK</Filter>
+    </ClCompile>
+    <ClCompile Include="Sdk\CppSDK\SDK\Engine_functions.cpp">
+      <Filter>Arquivos de Origem\SDK</Filter>
+    </ClCompile>
+    <ClCompile Include="Sdk\CppSDK\SDK\EngineSettings_functions.cpp">
+      <Filter>Arquivos de Origem\SDK</Filter>
+    </ClCompile>
+    <ClCompile Include="Sdk\CppSDK\SDK\Extras_functions.cpp">
+      <Filter>Arquivos de Origem\SDK</Filter>
+    </ClCompile>
+    <ClCompile Include="Sdk\CppSDK\SDK\EyeTracker_functions.cpp">
+      <Filter>Arquivos de Origem\SDK</Filter>
+    </ClCompile>
+    <ClCompile Include="Sdk\CppSDK\SDK\Foliage_functions.cpp">
+      <Filter>Arquivos de Origem\SDK</Filter>
+    </ClCompile>
+    <ClCompile Include="Sdk\CppSDK\SDK\FriendItem_functions.cpp">
+      <Filter>Arquivos de Origem\SDK</Filter>
+    </ClCompile>
+    <ClCompile Include="Sdk\CppSDK\SDK\GameplayCameras_functions.cpp">
+      <Filter>Arquivos de Origem\SDK</Filter>
+    </ClCompile>
+    <ClCompile Include="Sdk\CppSDK\SDK\GameplayTags_functions.cpp">
+      <Filter>Arquivos de Origem\SDK</Filter>
+    </ClCompile>
+    <ClCompile Include="Sdk\CppSDK\SDK\GameplayTasks_functions.cpp">
+      <Filter>Arquivos de Origem\SDK</Filter>
+    </ClCompile>
+    <ClCompile Include="Sdk\CppSDK\SDK\GeometryCache_functions.cpp">
+      <Filter>Arquivos de Origem\SDK</Filter>
+    </ClCompile>
+    <ClCompile Include="Sdk\CppSDK\SDK\HeadMountedDisplay_functions.cpp">
+      <Filter>Arquivos de Origem\SDK</Filter>
+    </ClCompile>
+    <ClCompile Include="Sdk\CppSDK\SDK\HostMenu_functions.cpp">
+      <Filter>Arquivos de Origem\SDK</Filter>
+    </ClCompile>
+    <ClCompile Include="Sdk\CppSDK\SDK\HostMenuPlayerItem_functions.cpp">
+      <Filter>Arquivos de Origem\SDK</Filter>
+    </ClCompile>
+    <ClCompile Include="Sdk\CppSDK\SDK\ImageWriteQueue_functions.cpp">
+      <Filter>Arquivos de Origem\SDK</Filter>
+    </ClCompile>
+    <ClCompile Include="Sdk\CppSDK\SDK\Ind_Net_functions.cpp">
+      <Filter>Arquivos de Origem\SDK</Filter>
+    </ClCompile>
+    <ClCompile Include="Sdk\CppSDK\SDK\Intro_functions.cpp">
+      <Filter>Arquivos de Origem\SDK</Filter>
+    </ClCompile>
+    <ClCompile Include="Sdk\CppSDK\SDK\Landscape_functions.cpp">
+      <Filter>Arquivos de Origem\SDK</Filter>
+    </ClCompile>
+    <ClCompile Include="Sdk\CppSDK\SDK\LevelSequence_functions.cpp">
+      <Filter>Arquivos de Origem\SDK</Filter>
+    </ClCompile>
+    <ClCompile Include="Sdk\CppSDK\SDK\LiveLink_functions.cpp">
+      <Filter>Arquivos de Origem\SDK</Filter>
+    </ClCompile>
+    <ClCompile Include="Sdk\CppSDK\SDK\MainMenu_functions.cpp">
+      <Filter>Arquivos de Origem\SDK</Filter>
+    </ClCompile>
+    <ClCompile Include="Sdk\CppSDK\SDK\MainMenuStartScreen_functions.cpp">
+      <Filter>Arquivos de Origem\SDK</Filter>
+    </ClCompile>
+    <ClCompile Include="Sdk\CppSDK\SDK\MatchController_Indoor_functions.cpp">
+      <Filter>Arquivos de Origem\SDK</Filter>
+    </ClCompile>
+    <ClCompile Include="Sdk\CppSDK\SDK\MatchController_Regulation_functions.cpp">
+      <Filter>Arquivos de Origem\SDK</Filter>
+    </ClCompile>
+    <ClCompile Include="Sdk\CppSDK\SDK\MediaAssets_functions.cpp">
+      <Filter>Arquivos de Origem\SDK</Filter>
+    </ClCompile>
+    <ClCompile Include="Sdk\CppSDK\SDK\MeshDescription_functions.cpp">
+      <Filter>Arquivos de Origem\SDK</Filter>
+    </ClCompile>
+    <ClCompile Include="Sdk\CppSDK\SDK\MiddlePanel_functions.cpp">
+      <Filter>Arquivos de Origem\SDK</Filter>
+    </ClCompile>
+    <ClCompile Include="Sdk\CppSDK\SDK\MM_Character_functions.cpp">
+      <Filter>Arquivos de Origem\SDK</Filter>
+    </ClCompile>
+    <ClCompile Include="Sdk\CppSDK\SDK\MM_Controller_functions.cpp">
+      <Filter>Arquivos de Origem\SDK</Filter>
+    </ClCompile>
+    <ClCompile Include="Sdk\CppSDK\SDK\MM_Credits_functions.cpp">
+      <Filter>Arquivos de Origem\SDK</Filter>
+    </ClCompile>
+    <ClCompile Include="Sdk\CppSDK\SDK\MM_Customization_functions.cpp">
+      <Filter>Arquivos de Origem\SDK</Filter>
+    </ClCompile>
+    <ClCompile Include="Sdk\CppSDK\SDK\MM_CustomTeamsOld_functions.cpp">
+      <Filter>Arquivos de Origem\SDK</Filter>
+    </ClCompile>
+    <ClCompile Include="Sdk\CppSDK\SDK\MM_Extras_functions.cpp">
+      <Filter>Arquivos de Origem\SDK</Filter>
+    </ClCompile>
+    <ClCompile Include="Sdk\CppSDK\SDK\MM_HUD_functions.cpp">
+      <Filter>Arquivos de Origem\SDK</Filter>
+    </ClCompile>
+    <ClCompile Include="Sdk\CppSDK\SDK\MM_HUD_New_functions.cpp">
+      <Filter>Arquivos de Origem\SDK</Filter>
+    </ClCompile>
+    <ClCompile Include="Sdk\CppSDK\SDK\MM_Intro_functions.cpp">
+      <Filter>Arquivos de Origem\SDK</Filter>
+    </ClCompile>
+    <ClCompile Include="Sdk\CppSDK\SDK\MM_Music_functions.cpp">
+      <Filter>Arquivos de Origem\SDK</Filter>
+    </ClCompile>
+    <ClCompile Include="Sdk\CppSDK\SDK\MM_Profile_functions.cpp">
+      <Filter>Arquivos de Origem\SDK</Filter>
+    </ClCompile>
+    <ClCompile Include="Sdk\CppSDK\SDK\MM_SoloRanked_functions.cpp">
+      <Filter>Arquivos de Origem\SDK</Filter>
+    </ClCompile>
+    <ClCompile Include="Sdk\CppSDK\SDK\MM_Soundtrack_functions.cpp">
+      <Filter>Arquivos de Origem\SDK</Filter>
+    </ClCompile>
+    <ClCompile Include="Sdk\CppSDK\SDK\MM_Start_functions.cpp">
+      <Filter>Arquivos de Origem\SDK</Filter>
+    </ClCompile>
+    <ClCompile Include="Sdk\CppSDK\SDK\MovieScene_functions.cpp">
+      <Filter>Arquivos de Origem\SDK</Filter>
+    </ClCompile>
+    <ClCompile Include="Sdk\CppSDK\SDK\MovieSceneCapture_functions.cpp">
+      <Filter>Arquivos de Origem\SDK</Filter>
+    </ClCompile>
+    <ClCompile Include="Sdk\CppSDK\SDK\MovieSceneTracks_functions.cpp">
+      <Filter>Arquivos de Origem\SDK</Filter>
+    </ClCompile>
+    <ClCompile Include="Sdk\CppSDK\SDK\MP_ChatMessage_functions.cpp">
+      <Filter>Arquivos de Origem\SDK</Filter>
+    </ClCompile>
+    <ClCompile Include="Sdk\CppSDK\SDK\MP_FreeCam_functions.cpp">
+      <Filter>Arquivos de Origem\SDK</Filter>
+    </ClCompile>
+    <ClCompile Include="Sdk\CppSDK\SDK\MP_GameliftServerObject_functions.cpp">
+      <Filter>Arquivos de Origem\SDK</Filter>
+    </ClCompile>
+    <ClCompile Include="Sdk\CppSDK\SDK\MP_GameMode_functions.cpp">
+      <Filter>Arquivos de Origem\SDK</Filter>
+    </ClCompile>
+    <ClCompile Include="Sdk\CppSDK\SDK\MP_GameState_functions.cpp">
+      <Filter>Arquivos de Origem\SDK</Filter>
+    </ClCompile>
+    <ClCompile Include="Sdk\CppSDK\SDK\MP_HostMenu_PlayerCard_functions.cpp">
+      <Filter>Arquivos de Origem\SDK</Filter>
+    </ClCompile>
+    <ClCompile Include="Sdk\CppSDK\SDK\MP_HUD_functions.cpp">
+      <Filter>Arquivos de Origem\SDK</Filter>
+    </ClCompile>
+    <ClCompile Include="Sdk\CppSDK\SDK\MP_HUD_NEW_functions.cpp">
+      <Filter>Arquivos de Origem\SDK</Filter>
+    </ClCompile>
+    <ClCompile Include="Sdk\CppSDK\SDK\MP_Interface_functions.cpp">
+      <Filter>Arquivos de Origem\SDK</Filter>
+    </ClCompile>
+    <ClCompile Include="Sdk\CppSDK\SDK\MP_PlayerState_functions.cpp">
+      <Filter>Arquivos de Origem\SDK</Filter>
+    </ClCompile>
+    <ClCompile Include="Sdk\CppSDK\SDK\MP_ScoreBoardCard_functions.cpp">
+      <Filter>Arquivos de Origem\SDK</Filter>
+    </ClCompile>
+    <ClCompile Include="Sdk\CppSDK\SDK\MP_SpectatorCharacter_functions.cpp">
+      <Filter>Arquivos de Origem\SDK</Filter>
+    </ClCompile>
+    <ClCompile Include="Sdk\CppSDK\SDK\MP_TeamSheet_functions.cpp">
+      <Filter>Arquivos de Origem\SDK</Filter>
+    </ClCompile>
+    <ClCompile Include="Sdk\CppSDK\SDK\MRMesh_functions.cpp">
+      <Filter>Arquivos de Origem\SDK</Filter>
+    </ClCompile>
+    <ClCompile Include="Sdk\CppSDK\SDK\MultiplayerMenu_functions.cpp">
+      <Filter>Arquivos de Origem\SDK</Filter>
+    </ClCompile>
+    <ClCompile Include="Sdk\CppSDK\SDK\NavigationSystem_functions.cpp">
+      <Filter>Arquivos de Origem\SDK</Filter>
+    </ClCompile>
+    <ClCompile Include="Sdk\CppSDK\SDK\NewsItem_functions.cpp">
+      <Filter>Arquivos de Origem\SDK</Filter>
+    </ClCompile>
+    <ClCompile Include="Sdk\CppSDK\SDK\NewsPanel_functions.cpp">
+      <Filter>Arquivos de Origem\SDK</Filter>
+    </ClCompile>
+    <ClCompile Include="Sdk\CppSDK\SDK\OnlineSubsystem_functions.cpp">
+      <Filter>Arquivos de Origem\SDK</Filter>
+    </ClCompile>
+    <ClCompile Include="Sdk\CppSDK\SDK\OnlineSubsystemUtils_functions.cpp">
+      <Filter>Arquivos de Origem\SDK</Filter>
+    </ClCompile>
+    <ClCompile Include="Sdk\CppSDK\SDK\PlayerCustomization_functions.cpp">
+      <Filter>Arquivos de Origem\SDK</Filter>
+    </ClCompile>
+    <ClCompile Include="Sdk\CppSDK\SDK\PlayerReport_functions.cpp">
+      <Filter>Arquivos de Origem\SDK</Filter>
+    </ClCompile>
+    <ClCompile Include="Sdk\CppSDK\SDK\PlayerStatsItem_functions.cpp">
+      <Filter>Arquivos de Origem\SDK</Filter>
+    </ClCompile>
+    <ClCompile Include="Sdk\CppSDK\SDK\PSO_GameInstance_functions.cpp">
+      <Filter>Arquivos de Origem\SDK</Filter>
+    </ClCompile>
+    <ClCompile Include="Sdk\CppSDK\SDK\Reg_Net_functions.cpp">
+      <Filter>Arquivos de Origem\SDK</Filter>
+    </ClCompile>
+    <ClCompile Include="Sdk\CppSDK\SDK\RigVM_functions.cpp">
+      <Filter>Arquivos de Origem\SDK</Filter>
+    </ClCompile>
+    <ClCompile Include="Sdk\CppSDK\SDK\Scorecard_functions.cpp">
+      <Filter>Arquivos de Origem\SDK</Filter>
+    </ClCompile>
+    <ClCompile Include="Sdk\CppSDK\SDK\SCUE4_functions.cpp">
+      <Filter>Arquivos de Origem\SDK</Filter>
+    </ClCompile>
+    <ClCompile Include="Sdk\CppSDK\SDK\Settings_functions.cpp">
+      <Filter>Arquivos de Origem\SDK</Filter>
+    </ClCompile>
+    <ClCompile Include="Sdk\CppSDK\SDK\SettingsListItem_functions.cpp">
+      <Filter>Arquivos de Origem\SDK</Filter>
+    </ClCompile>
+    <ClCompile Include="Sdk\CppSDK\SDK\SoccerBall_functions.cpp">
+      <Filter>Arquivos de Origem\SDK</Filter>
+    </ClCompile>
+    <ClCompile Include="Sdk\CppSDK\SDK\SoundUtilities_functions.cpp">
+      <Filter>Arquivos de Origem\SDK</Filter>
+    </ClCompile>
+    <ClCompile Include="Sdk\CppSDK\SDK\SP_ABP_functions.cpp">
+      <Filter>Arquivos de Origem\SDK</Filter>
+    </ClCompile>
+    <ClCompile Include="Sdk\CppSDK\SDK\SP_Controller_functions.cpp">
+      <Filter>Arquivos de Origem\SDK</Filter>
+    </ClCompile>
+    <ClCompile Include="Sdk\CppSDK\SDK\SP_Emotes_QC_functions.cpp">
+      <Filter>Arquivos de Origem\SDK</Filter>
+    </ClCompile>
+    <ClCompile Include="Sdk\CppSDK\SDK\SP_Kickbar_functions.cpp">
+      <Filter>Arquivos de Origem\SDK</Filter>
+    </ClCompile>
+    <ClCompile Include="Sdk\CppSDK\SDK\SP_KickBarOld_functions.cpp">
+      <Filter>Arquivos de Origem\SDK</Filter>
+    </ClCompile>
+    <ClCompile Include="Sdk\CppSDK\SDK\SP_ShirtData_functions.cpp">
+      <Filter>Arquivos de Origem\SDK</Filter>
+    </ClCompile>
+    <ClCompile Include="Sdk\CppSDK\SDK\SpectatorListItem_functions.cpp">
+      <Filter>Arquivos de Origem\SDK</Filter>
+    </ClCompile>
+    <ClCompile Include="Sdk\CppSDK\SDK\StaticMeshDescription_functions.cpp">
+      <Filter>Arquivos de Origem\SDK</Filter>
+    </ClCompile>
+    <ClCompile Include="Sdk\CppSDK\SDK\SteamCore_functions.cpp">
+      <Filter>Arquivos de Origem\SDK</Filter>
+    </ClCompile>
+    <ClCompile Include="Sdk\CppSDK\SDK\SteamCoreWeb_functions.cpp">
+      <Filter>Arquivos de Origem\SDK</Filter>
+    </ClCompile>
+    <ClCompile Include="Sdk\CppSDK\SDK\Team1Info_functions.cpp">
+      <Filter>Arquivos de Origem\SDK</Filter>
+    </ClCompile>
+    <ClCompile Include="Sdk\CppSDK\SDK\Team2Info_functions.cpp">
+      <Filter>Arquivos de Origem\SDK</Filter>
+    </ClCompile>
+    <ClCompile Include="Sdk\CppSDK\SDK\TeamCustomization_functions.cpp">
+      <Filter>Arquivos de Origem\SDK</Filter>
+    </ClCompile>
+    <ClCompile Include="Sdk\CppSDK\SDK\TeamFormationItem_functions.cpp">
+      <Filter>Arquivos de Origem\SDK</Filter>
+    </ClCompile>
+    <ClCompile Include="Sdk\CppSDK\SDK\TeamListItem_functions.cpp">
+      <Filter>Arquivos de Origem\SDK</Filter>
+    </ClCompile>
+    <ClCompile Include="Sdk\CppSDK\SDK\TemplateSequence_functions.cpp">
+      <Filter>Arquivos de Origem\SDK</Filter>
+    </ClCompile>
+    <ClCompile Include="Sdk\CppSDK\SDK\TimeManagement_functions.cpp">
+      <Filter>Arquivos de Origem\SDK</Filter>
+    </ClCompile>
+    <ClCompile Include="Sdk\CppSDK\SDK\TR_HUD_functions.cpp">
+      <Filter>Arquivos de Origem\SDK</Filter>
+    </ClCompile>
+    <ClCompile Include="Sdk\CppSDK\SDK\TR_StartMenu_functions.cpp">
+      <Filter>Arquivos de Origem\SDK</Filter>
+    </ClCompile>
+    <ClCompile Include="Sdk\CppSDK\SDK\TR_Tutorial_Dribbling_functions.cpp">
+      <Filter>Arquivos de Origem\SDK</Filter>
+    </ClCompile>
+    <ClCompile Include="Sdk\CppSDK\SDK\TR_Tutorial_GoalKeeping_functions.cpp">
+      <Filter>Arquivos de Origem\SDK</Filter>
+    </ClCompile>
+    <ClCompile Include="Sdk\CppSDK\SDK\TR_Tutorial_Kicking_functions.cpp">
+      <Filter>Arquivos de Origem\SDK</Filter>
+    </ClCompile>
+    <ClCompile Include="Sdk\CppSDK\SDK\TR_Tutorial_Movement_functions.cpp">
+      <Filter>Arquivos de Origem\SDK</Filter>
+    </ClCompile>
+    <ClCompile Include="Sdk\CppSDK\SDK\TrainingController_Indoor_functions.cpp">
+      <Filter>Arquivos de Origem\SDK</Filter>
+    </ClCompile>
+    <ClCompile Include="Sdk\CppSDK\SDK\TrainingController_Regulation_functions.cpp">
+      <Filter>Arquivos de Origem\SDK</Filter>
+    </ClCompile>
+    <ClCompile Include="Sdk\CppSDK\SDK\Tutorial_Dribbling_functions.cpp">
+      <Filter>Arquivos de Origem\SDK</Filter>
+    </ClCompile>
+    <ClCompile Include="Sdk\CppSDK\SDK\Tutorial_GoalKeeping_functions.cpp">
+      <Filter>Arquivos de Origem\SDK</Filter>
+    </ClCompile>
+    <ClCompile Include="Sdk\CppSDK\SDK\Tutorial_Kicking_functions.cpp">
+      <Filter>Arquivos de Origem\SDK</Filter>
+    </ClCompile>
+    <ClCompile Include="Sdk\CppSDK\SDK\Tutorial_Movement_functions.cpp">
+      <Filter>Arquivos de Origem\SDK</Filter>
+    </ClCompile>
+    <ClCompile Include="Sdk\CppSDK\SDK\UMG_functions.cpp">
+      <Filter>Arquivos de Origem\SDK</Filter>
+    </ClCompile>
+    <ClCompile Include="Sdk\CppSDK\SDK\UniversalVoiceChatPro_functions.cpp">
+      <Filter>Arquivos de Origem\SDK</Filter>
+    </ClCompile>
+    <ClCompile Include="Sdk\CppSDK\SDK\VaRest_functions.cpp">
+      <Filter>Arquivos de Origem\SDK</Filter>
+    </ClCompile>
+    <ClCompile Include="Sdk\CppSDK\SDK\VariantManagerContent_functions.cpp">
+      <Filter>Arquivos de Origem\SDK</Filter>
+    </ClCompile>
+    <ClCompile Include="Sdk\CppSDK\SDK\VictoryBPLibrary_functions.cpp">
+      <Filter>Arquivos de Origem\SDK</Filter>
+    </ClCompile>
+    <ClCompile Include="Sdk\CppSDK\SDK\WebBrowserWidget_functions.cpp">
+      <Filter>Arquivos de Origem\SDK</Filter>
+    </ClCompile>
+    <ClCompile Include="psosense_pipe.cpp">
+      <Filter>Arquivos de Origem</Filter>
+    </ClCompile>
+    <ClCompile Include="minhook\src\hde\hde32.c">
+      <Filter>Arquivos de Origem\SDK</Filter>
+    </ClCompile>
+    <ClCompile Include="minhook\src\hde\hde64.c">
+      <Filter>Arquivos de Origem\SDK</Filter>
+    </ClCompile>
+    <ClCompile Include="minhook\src\hook.c">
+      <Filter>Arquivos de Origem\SDK</Filter>
+    </ClCompile>
+    <ClCompile Include="minhook\src\trampoline.c">
+      <Filter>Arquivos de Origem\SDK</Filter>
+    </ClCompile>
+    <ClCompile Include="minhook\src\buffer.c">
+      <Filter>Arquivos de Origem\SDK</Filter>
+    </ClCompile>
+    <ClCompile Include="game_context.cpp">
+      <Filter>Arquivos de Origem</Filter>
+    </ClCompile>
+    <ClCompile Include="function_calls.cpp">
+      <Filter>Arquivos de Origem</Filter>
+    </ClCompile>
+    <ClCompile Include="pe_blocker.cpp">
+      <Filter>Arquivos de Origem</Filter>
+    </ClCompile>
+    <ClCompile Include="dx11_hook.cpp">
+      <Filter>Arquivos de Origem</Filter>
+    </ClCompile>
+    <ClCompile Include="imgui\imgui.cpp">
+      <Filter>Arquivos de Origem\IMGUI</Filter>
+    </ClCompile>
+    <ClCompile Include="imgui\imgui_demo.cpp">
+      <Filter>Arquivos de Origem\IMGUI</Filter>
+    </ClCompile>
+    <ClCompile Include="imgui\imgui_draw.cpp">
+      <Filter>Arquivos de Origem\IMGUI</Filter>
+    </ClCompile>
+    <ClCompile Include="imgui\imgui_tables.cpp">
+      <Filter>Arquivos de Origem\IMGUI</Filter>
+    </ClCompile>
+    <ClCompile Include="imgui\imgui_widgets.cpp">
+      <Filter>Arquivos de Origem\IMGUI</Filter>
+    </ClCompile>
+    <ClCompile Include="imgui\backends\imgui_impl_dx11.cpp">
+      <Filter>Arquivos de Origem\IMGUI</Filter>
+    </ClCompile>
+    <ClCompile Include="imgui\backends\imgui_impl_win32.cpp">
+      <Filter>Arquivos de Origem\IMGUI</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Sdk\CppSDK\NameCollisions.inl">
+      <Filter>Arquivos de Cabeçalho\SDK</Filter>
+    </None>
+  </ItemGroup>
+</Project>

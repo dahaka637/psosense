@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Generate and Save License Key</title>
+    <link rel="stylesheet" type="text/css" href="estilos/usersstyle.css">
+    <link rel="icon" href="estilos/imagens/favicon.ico" type="image/x-icon">
+</head>
+<body>
+    <div class="navigation-container">
+        <div class="navigation-menu">
+            <button class="BotaoNavigation" id="btnEdit">License Editor</button>
+            <button class="BotaoNavigation" id="btnLicenseList">License List</button>
+            <button class="BotaoNavigation" id="btnMassGenerator">Mass Generator</button>
+            <button class="BotaoNavigation" id="btnUserList">User List</button>
+            <button class="BotaoNavigation" id="btnUserEditor">User Editor</button>
+            <button class="BotaoNavigation" id="btnSoftware">Software Data</button>
+        </div>
+    </div>
+    <div class="container">
+        <img src="estilos/imagens/adminlogo.png" alt="Logo">
+        <div id="UserName"></div>
+        <!-- Adicione uma caixa de texto para exibir a licença do usuário -->
+        <input type="text" id="UserLicense" name="userLicense" class="user-info-input" placeholder="User License" readonly>
+        <!-- Adicione uma caixa de texto para exibir o e-mail do usuário -->
+        <input type="text" id="SelectedUserEmail" name="selectedUserEmail" class="user-info-input" placeholder="Selected User Email" readonly>
+
+
+
+        <div class="input-container">
+            <select id="UserStatus" name="UserStatus" style="margin-right: 10px;"> 
+                <option value="Active">Active</option>
+                <option value="Out-Of-Date">Out-Of-Date</option>
+                <option value="Disabled">Disabled</option>
+            </select>
+        </div>
+        <div class="input-container">
+            <input type="text" id="UserHWID" name="userHWID" placeholder="User HWID" readonly>
+            <button id="ResetHWID" name="resetHWID" class="button-icon">🔄</button>
+        </div>
+
+        <div class="button-container">
+            <button id="SaveUserInfo" name="saveUserInfo" class="button-icon">💾 Save</button>
+        </div>
+    </div>
+
+    <!-- Pop-up -->
+    <div id="popup" class="popup">
+        <div class="popup-content">
+            <span class="popup-close" id="popup-close">&times;</span>
+            <p id="popup-message"></p>
+        </div>
+    </div>
+
+    <script type="module" src="scripts/users-javascript.js"></script>
+</body>
+</html>

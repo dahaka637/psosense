@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Account Actions</title>
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="estilos/estiloauth.css">
+</head>
+<body>
+
+    <div class="container mt-5">
+        <div class="row justify-content-center">
+            <div class="col-lg-6 col-md-8 col-sm-10">
+                <div class="card">
+                    <div class="card-body">
+                        <!-- Nav Tabs -->
+                        <ul class="nav nav-tabs" id="accountTabs" role="tablist">
+                            <li class="nav-item">
+                                <a class="nav-link active" id="email-tab" data-bs-toggle="tab" href="#email" role="tab" aria-controls="email" aria-selected="true">Confirm Email</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" id="password-tab" data-bs-toggle="tab" href="#password" role="tab" aria-controls="password" aria-selected="false">Reset Password</a>
+                            </li>
+                        </ul>
+
+                        <!-- Tab Content -->
+                        <div class="tab-content pt-3" id="accountTabsContent">
+                            <!-- Confirm Email Tab -->
+                            <div class="tab-pane fade show active" id="email" role="tabpanel" aria-labelledby="email-tab">
+                                <!-- Icon for Confirm Email -->
+                                <div class="icon-lock">📧</div>
+                                <h1 class="title text-center">Confirm Email</h1>
+                                <form id="verifyEmailForm">
+                                    <div class="mb-3">
+                                        <button type="submit" class="btn btn-primary w-100">Confirm Email</button>
+                                    </div>
+                                    <div id="emailSuccessMessage" class="alert alert-success d-none mt-3">Email confirmed successfully!</div>
+                                    <div id="emailErrorMessage" class="alert alert-danger d-none mt-3">Error confirming email.</div>                                    
+                                </form>
+                            </div>
+
+                            <!-- Reset Password Tab -->
+                            <div class="tab-pane fade" id="password" role="tabpanel" aria-labelledby="password-tab">
+                                <!-- Icon for Reset Password -->
+                                <div class="icon-lock">🔒</div>
+                                <h1 class="title text-center">Reset Password</h1>
+                                <form id="resetPasswordForm">
+                                    <div class="mb-3">
+                                        <label for="newPassword" class="form-label">New Password</label>
+                                        <input type="password" class="form-control" id="newPassword" placeholder="Enter your new password" required minlength="6">
+                                    </div>
+                                    <div class="mb-3">
+                                        <label for="confirmPassword" class="form-label">Confirm New Password</label>
+                                        <input type="password" class="form-control" id="confirmPassword" placeholder="Confirm your new password" required minlength="6">
+                                    </div>
+                                    <button type="submit" class="btn btn-success w-100">Reset Password</button>
+                                    <div id="passwordErrorMessage" class="alert alert-danger d-none mt-3">Passwords do not match.</div>
+                                    <div id="passwordSuccessMessage" class="alert alert-success d-none mt-3">Password reset successfully!</div>
+                                </form>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
+    <script type="module" src="scripts/auth-javascript.js"></script>
+
+</body>
+</html>

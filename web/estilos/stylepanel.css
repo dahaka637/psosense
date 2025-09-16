@@ -1,0 +1,557 @@
+/* stylelogin.css */
+
+body {
+    background-image: url('imagens/wallpaper.jpg');
+    background-size: cover;
+    background-position: center;
+    color: #fff;
+    font-family: 'Courier New', Courier, monospace;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    font-size: 16.8px; /* Aumente o tamanho da fonte em 40% */
+}
+
+.container {
+    background-color: rgba(0, 0, 0, 0.1);
+    padding: 14px; /* Aumente o padding em 40% */
+    border-radius: 14px; /* Aumente o raio do border-radius em 40% */
+    box-shadow: 0 7px 12px rgba(0, 0, 0, 0.7); /* Adicione box-shadow para uma leve sombra */
+    text-align: center;
+    width: 80%; /* Defina a largura para 80% do viewport */
+    max-width: 500px; /* Defina uma largura máxima para garantir uma boa aparência em telas maiores */
+    margin: 0 auto; /* Centralize o contêiner horizontalmente */
+    backdrop-filter: blur(2px); /* Adicione um efeito de desfoque ao plano de fundo do container */
+}
+
+
+img {
+    width: 280px;
+    margin-bottom: 10px;
+    animation: pulse 3s infinite cubic-bezier(0.2, 0.7, 0.8, 0.2), shine 5s infinite;
+    margin: 10px;
+    filter: brightness(1); /* Configura o brilho padrão da imagem */
+}
+
+@keyframes shine {
+    50% {
+        filter: brightness(1.5); /* Aumenta o brilho pela metade da animação */
+    }
+}
+
+
+/* Estilo da caixa de entrada para e-mail e senha */
+.input-icon {
+    position: relative;
+    margin: 5px 0;
+}
+
+.input-icon i {
+    position: absolute;
+    left: 40px;
+    top: 50%;
+    transform: translateY(-50%);
+    color: #ccc;
+}
+
+label {
+    display: block;
+    text-align: left;
+    margin-bottom: 10px;
+    padding-left: 35px;
+    font-weight: bold; /* Adicione esta linha para aplicar negrito */
+}
+
+input[type="email"],
+input[type="password"] {
+    display: block;
+    padding: 12px;
+    font-size: 17px;
+    border: none;
+    border-radius: 4.2px;
+    margin: 15px auto;
+    width: calc(80% - 15px);
+    background-color: rgba(68, 68, 68, 0.8); /* Altere o último valor (0.8) para ajustar a transparência */
+    color: #fff;
+    padding-left: 40px;
+    text-align: center;
+}
+
+/* Botão "Remember me" */
+.remember-me {
+    text-align: left;
+    margin-bottom: 15px;
+}
+
+/* Botões de Login e Registro */
+.button-container {
+    display: flex;
+    justify-content: space-between;
+}
+
+button {
+    font-size: 17.5px; /* Aumente o tamanho da fonte em 40% */
+    background-color: #696969;
+    color: #fff;
+    border: none;
+    border-radius: 4.2px; /* Aumente o raio do border-radius em 40% */
+    cursor: pointer;
+    margin: 10px 35px;
+    padding: 10px 25px; /* Aumente o padding em 40% */
+}
+
+button:hover {
+    background-color: #00aa69;
+}
+
+/* Estilos para o pop-up */
+.popup {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    z-index: 9999;
+    justify-content: center;
+    align-items: center;
+}
+
+.popup-content {
+    background-color: #333; /* Cor de fundo do pop-up */
+    color: green; /* Cor do texto do pop-up (verde) */
+    border-radius: 4.2px; /* Aumente o raio do border-radius em 40% */
+    box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.3); /* Reduza o box-shadow */
+    padding: 10px; /* Aumente o padding em 40% */
+    position: relative;
+    width: 210px; /* Aumente a largura em 40% */
+}
+
+.popup-content p {
+    text-align: center; /* Centralizar o texto */
+    font-weight: bold; /* Texto em negrito */
+    text-shadow: 1px 1px 2px rgba(0, 128, 0, 0.5); /* Sombra para efeito de brilho em verde */
+}
+
+.green-text {
+    color: green !important; /* Cor do texto verde */
+    text-shadow: 1px 1px 2px rgba(0, 128, 0, 0.5) !important; /* Sombra para efeito de brilho em verde */
+}
+
+.popup-close {
+    position: absolute;
+    top: 3.6px; /* Aumente a distância do topo em 40% */
+    right: 3.6px; /* Aumente a distância da direita em 40% */
+    cursor: pointer;
+    font-size: 19.2px; /* Aumente o tamanho da fonte em 40% */
+    color: #fff; /* Cor do ícone de fechar */
+}
+
+
+/* Adicione estas regras de estilo para as entradas de texto */
+.form__group {
+    position: relative;
+    padding: 15px 0 0;
+    margin-top: 10px;
+    width: 100%;
+}
+
+.form__field {
+    font-family: inherit;
+    width: 100%;
+    border: 0;
+    border-bottom: 2px solid #ccc; /* Altere a cor da borda conforme necessário */
+    outline: 0;
+    font-size: 16px; /* Ajuste o tamanho da fonte conforme necessário */
+    color: #fff;
+    padding: 10px 0;
+    background: transparent;
+    transition: border-color 0.2s;
+
+    &::placeholder {
+        color: transparent;
+    }
+
+    &:placeholder-shown ~ .form__label {
+        font-size: 16px; /* Ajuste o tamanho da fonte conforme necessário */
+        cursor: text;
+        top: 20px;
+    }
+}
+
+.form__label {
+    position: absolute;
+    top: 0;
+    display: block;
+    transition: 0.2s;
+    font-size: 14px; /* Ajuste o tamanho da fonte conforme necessário */
+    color: #ccc; /* Altere a cor do rótulo conforme necessário */
+}
+
+.form__field:focus {
+    ~ .form__label {
+        position: absolute;
+        top: 0;
+        display: block;
+        transition: 0.2s;
+        font-size: 14px; /* Ajuste o tamanho da fonte conforme necessário */
+        color: #11998e; /* Altere a cor do rótulo ao receber foco conforme necessário */
+        font-weight: 700;
+    }
+    padding-bottom: 6px;
+    font-weight: 700;
+    border-width: 3px;
+    border-image: linear-gradient(to right, #11998e, #38ef7d);
+    border-image-slice: 1;
+}
+
+/* Resetar estilo do input */
+.form__field {
+    &:required,
+    &:invalid { box-shadow:none; }
+}
+
+
+/* Estilos para botões personalizados */
+.custom-button {
+    display: block;
+    width: 250px;
+    height: 47px;
+    font-size: 18px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-weight: bold;
+    text-decoration: none;
+    color: #fff;
+    background-color: #4bc995;
+    border: 2px solid #1f5841;
+    border-radius: 8px;
+    letter-spacing: 2px;
+    text-align: center;
+    position: relative;
+    transition: color 0.35s, background-color 0.35s, transform 0.35s ease-out;
+    margin: 15px auto;
+    overflow: hidden;
+    
+    
+}
+
+.hidden {
+    display: none;
+}
+
+.custom-button:hover {
+    color: #4bc995;
+    background-color: #fff;
+    transform: scale(1.05);
+}
+
+.custom-button:before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: -100%;
+    width: 100%;
+    height: 100%;
+    background: #fff;
+    transition: left 0.35s ease;
+    z-index: -1;
+}
+
+.custom-button:hover:before {
+    left: 100%;
+}
+
+
+
+.custom-button:after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(255, 255, 255, 0.3); /* Adiciona um efeito de fade na cor de fundo */
+    z-index: -1;
+}
+
+
+
+/* Adicione os estilos para o alerta aqui */
+/* Adicione a animação de fade-out */
+@keyframes fade-out {
+    from {
+        opacity: 1;
+    }
+    to {
+        opacity: 0;
+    }
+}
+
+/* Adicione os estilos para o alerta aqui */
+.notifications-container {
+    position: absolute;
+    top: 88%; /* Posiciona o container no final do container principal */
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: 1000;
+    width: 100%; /* Faz com que o container tenha a largura total do viewport */
+    max-width: 500px; /* Ou ajuste conforme necessário */
+}
+
+.alert {
+    display: none;
+    position: relative;
+    padding: 15px;
+    border-radius: 5px;
+    font-size: 16px;
+    font-weight: bold;
+    margin-bottom: 10px;
+    animation: fade-in 0.3s ease-in-out;
+}
+
+
+@keyframes fade-in {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+.alert-info {
+    background-color: #BEF;
+    color: #059;
+}
+
+.alert-success {
+    background-color: #DFF2BF;
+    color: #270;
+}
+
+.alert-warning {
+    background-color: #FEEFB3;
+    color: #9F6000;
+}
+
+.alert-error {
+    background-color: #FFBABA;
+    color: #D8000C;
+}
+
+
+
+
+/* Adições para o painel do usuário */
+.header {
+    margin-bottom: 20px;
+}
+
+.profile-section {
+    background-color: rgba(0, 0, 0, 0.1);
+    padding: 10px;
+    border-radius: 8px;
+    margin-bottom: 20px;
+}
+
+.user-profile {
+    font-size: 18px;
+}
+
+.status-info {
+    text-align: center; /* Centraliza o texto dentro da status-info */
+}
+
+.status {
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+    margin: 10px;
+}
+
+.status-icon {
+    margin-right: 10px;
+    font-size: 24px;
+}
+
+.green {
+    color: #4caf50; /* Verde */
+}
+
+.yellow {
+    color: #ffeb3b; /* Amarelo */
+}
+
+.red {
+    color: #ff3b3b; /* Vermelho */
+}
+
+.status-info .status {
+    display: flex;
+    align-items: center;
+    justify-content: center; /* Centraliza o texto dentro da status */
+}
+
+/* Adicione um estilo para o contêiner do ícone */
+.status-icon-container {
+    margin-left: 5px; /* Ajuste conforme necessário para obter o espaçamento desejado */
+}
+
+.status .status-icon {
+    margin-left: 5px; /* ou a margem desejada */
+    margin-right: 5px; /* ou a margem desejada */
+}
+
+
+
+/* Adicione a animação de carregamento */
+@keyframes rotate {
+    from {
+        transform: rotate(0deg);
+    }
+    to { 
+        transform: rotate(360deg);
+    }
+}
+
+@-webkit-keyframes rotate {
+    from {
+        -webkit-transform: rotate(0deg);
+    }
+    to { 
+        -webkit-transform: rotate(360deg);
+    }
+}
+
+.load {
+    width: 40px;
+    height: 40px;
+    margin: 5px auto 0; /* Reduza a margem superior para 30px */
+    border: solid 10px #22aa5b;
+    border-radius: 50%;
+    border-right-color: transparent;
+    border-bottom-color: transparent;
+    -webkit-transition: all 0.5s ease-in;
+    -webkit-animation-name: rotate; 
+    -webkit-animation-duration: 1.0s; 
+    -webkit-animation-iteration-count: infinite;
+    -webkit-animation-timing-function: linear;
+    transition: all 0.5s ease-in;
+    animation-name: rotate; 
+    animation-duration: 1.0s; 
+    animation-iteration-count: infinite;
+    animation-timing-function: linear; 
+}
+
+/* Oculte inicialmente o elemento de carregamento */
+.load {
+    display: none;
+}
+
+.user-profile p {
+    font-size: 20px; /* Ajuste o tamanho do texto conforme necessário */
+    font-weight: bold; /* Adicione negrito para mais destaque */
+    margin-bottom: 10px; /* Adicione margem na parte inferior para separar dos elementos abaixo */
+}
+
+#user-license {
+    color: #4CAF50; /* Código de cor para roxo neon (ajuste conforme necessário) */
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.8); /* Adiciona uma sombra escura */
+    font-weight: bold; /* Torna o texto em negrito */
+}
+
+
+
+
+
+
+/* Adicione ao final do seu arquivo de estilo */
+/* Estilos para o popup da licença */
+#license-popup {
+    display: none;
+}
+
+#license-popup .popup-content {
+    background-color: #333;
+    color: #fff;
+    border-radius: 4.2px;
+    box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.3);
+    padding: 20px;
+    position: relative;
+    width: 400px;
+    max-width: 80%;
+    margin: auto;
+}
+
+#license-popup label {
+    display: block;
+    text-align: left;
+    margin-bottom: 10px;
+    padding-left: 0;
+}
+
+#license-popup input {
+    display: block;
+    padding: 12px;
+    font-size: 26px; /* Aumentando o tamanho da fonte */
+    border: none;
+    border-radius: 4.2px;
+    margin: 15px 0;
+    width: calc(100% - 24px);
+    background-color: rgba(68, 68, 68, 0.8);
+    color: #fff;
+    padding-left: 10px;
+    text-align: center; /* Centralizando apenas o texto */
+}
+
+#license-popup .custom-button {
+    display: block;
+    width: 100%;
+    height: 47px;
+    font-size: 18px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-weight: bold;
+    text-decoration: none;
+    color: #fff;
+    background-color: #4bc995;
+    border: 2px solid #1f5841;
+    border-radius: 8px;
+    letter-spacing: 2px;
+    text-align: center;
+    position: relative;
+    transition: color 0.35s, background-color 0.35s, transform 0.35s ease-out;
+    margin: 15px 0;
+    overflow: hidden;
+}
+
+#license-popup .custom-button:hover {
+    color: #4bc995;
+    background-color: #fff;
+    transform: scale(1.05);
+}
+
+#license-popup .popup-close {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    cursor: pointer;
+    font-size: 24px;
+    color: #fff;
+}
+
+
+
+
+
+#expiration-date {
+    color: #4CAF50; /* Código de cor para roxo neon (ajuste conforme necessário) */
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.8); /* Adiciona uma sombra escura */
+    font-weight: bold; /* Torna o texto em negrito */
+}
+
+#user-license {
+    color: rgb(255, 255, 255); /* ou qualquer outra cor desejada */
+}

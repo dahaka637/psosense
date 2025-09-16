@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Register</title>
+    <link rel="icon" href="estilos/imagens/favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" type="text/css" href="estilos/styleregister.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+    <div class="container">
+        <img src="estilos/imagens/authlogo.png" alt="Logo">
+        <form id="auth-form">
+            <div class="input-container">
+                <!-- Label and input for email -->
+                <div class="form__group field">
+                    <input type="email" id="email-input" class="form__field" placeholder="Ex: useremail@gmail.com" required />
+                    <label for="email-input" class="form__label">Email</label>
+                </div>
+
+                <!-- Label and input to confirm email -->
+                <div class="form__group field">
+                    <input type="email" id="confirm-email-input" class="form__field" placeholder="Confirm your email" required />
+                    <label for="confirm-email-input" class="form__label">Confirm Email</label>
+                </div>
+
+                <!-- Label and input for password -->
+                <div class="form__group field">
+                    <input type="password" id="password-input" class="form__field" placeholder="Your password" required />
+                    <label for="password-input" class="form__label">Password</label>
+                    <div class="password-strength-bar-container">
+                        <div class="password-strength-bar" id="password-strength-bar"></div>
+                    </div>
+                </div>
+
+                <!-- Label and input to confirm password -->
+                <div class="form__group field">
+                    <input type="password" id="confirm-password-input" class="form__field" placeholder="Confirm your password" required />
+                    <label for="confirm-password-input" class="form__label">Confirm Password</label>
+                </div>
+            </div>
+            <div class="button-container">
+                <!-- Registration Button -->
+                <button type="button" id="register-button" class="custom-button">
+                    <i class="fas fa-user-plus"></i> Register
+                </button>
+                <!-- New Login Button -->
+                <button type="button" id="login-button" class="custom-button login-button">
+                    <i class="fas fa-sign-in-alt"></i> Login
+                </button>
+            </div>
+        </form>
+    </div>
+    <!-- Alert -->
+    <div class="notifications-container">
+        <div class="alert" id="alert-message"></div>
+    </div>
+
+    <script type="module" src="scripts/register-javascript.js"></script>
+</body>
+</html>

@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login</title>
+    <link rel="icon" href="estilos/imagens/favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" type="text/css" href="estilos/stylelogin.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+    <div class="container">
+        <img src="estilos/imagens/adminlogo.png" alt="Logo">
+        <form id="auth-form">
+            <div class="input-container">
+                <!-- Label e input para e-mail -->
+                <div class="form__group field">
+                    <input type="email" id="email-input" class="form__field" placeholder="Ex: useremail@gmail.com" required />
+                    <label for="email-input" class="form__label">e-mail</label>
+                </div>
+
+                <!-- Label e input para password -->
+                <div class="form__group field">
+                    <input type="password" id="password-input" class="form__field" placeholder="Your password" required />
+                    <label for="password-input" class="form__label">password</label>
+                </div>
+            </div>
+            <div class="button-container">
+                <button type="button" id="login-button" class="custom-button">
+                    <i class="fas fa-sign-in-alt"></i> Login
+                </button>
+            </div>
+        </form>
+    </div>
+
+    <!-- Alerta -->
+    <div class="notifications-container">
+        <div class="alert" id="alert-message"></div>
+    </div>
+
+    <script type="module" src="scripts/admlogin-javascript.js"></script>
+</body>
+</html>

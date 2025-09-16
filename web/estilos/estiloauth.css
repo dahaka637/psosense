@@ -1,0 +1,88 @@
+body {
+    background-image: url('imagens/wallpaper.jpg');
+    background-size: cover;
+    background-position: center;
+    color: #fff;
+    font-family: 'Courier New', Courier, monospace;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    font-size: 18px;
+}
+
+.container {
+    background-color: rgba(0, 0, 0, 0.2);
+    padding: 20px;
+    border-radius: 20px;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.7);
+    text-align: center;
+    width: 80%;
+    max-width: 600px;
+    margin: 0 auto;
+    backdrop-filter: blur(10px);
+    position: relative;
+}
+
+img {
+    width: 300px;
+    margin-bottom: 20px;
+    animation: pulse 3s infinite cubic-bezier(0.2, 0.7, 0.8, 0.2), shine 5s infinite;
+}
+
+#confirmation-message p {
+    font-size: 1.5em;
+    color: #4CAF50;
+    font-weight: bold;
+    text-shadow: 1px 1px 2px rgba(0, 128, 0, 0.5);
+}
+
+@keyframes shine {
+    50% {
+        filter: brightness(1.5);
+    }
+}
+
+.custom-button {
+    font-size: 20px;
+    width: 250px;
+    height: 50px;
+    letter-spacing: 2px;
+    text-align: center;
+    border: 2px solid #1f5841;
+    border-radius: 10px;
+    margin: 20px auto;
+    overflow: hidden;
+}
+
+.custom-button:hover {
+    color: #4bc995;
+    background-color: #fff;
+    transform: scale(1.05);
+}
+
+.custom-button:before,
+.custom-button:after {
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    transition: left 0.35s ease;
+    z-index: -1;
+}
+
+.custom-button:before {
+    background: #fff;
+    left: -100%;
+}
+
+.custom-button:hover:before {
+    left: 100%;
+}
+
+.custom-button:after {
+    background: rgba(255, 255, 255, 0.3);
+    z-index: -1;
+}
+

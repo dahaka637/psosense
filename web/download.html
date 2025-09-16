@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PSOSENSE Download | Your Purchase is Ready</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        primary: '#2FA572',
+                    }
+                }
+            }
+        }
+    </script>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
+        
+        body {
+            font-family: 'Poppins', sans-serif;
+            background-color: #0a0a0a;
+            color: #e2e8f0;
+        }
+        
+        .hero-bg {
+            background: radial-gradient(circle at center, rgba(47, 165, 114, 0.15) 0%, rgba(10, 10, 10, 1) 70%);
+        }
+        
+        .glow {
+            box-shadow: 0 0 15px rgba(47, 165, 114, 0.5);
+        }
+        
+        .btn-hover:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 10px 20px -5px rgba(47, 165, 114, 0.3);
+        }
+        
+        .btn-hover {
+            transition: all 0.3s ease;
+        }
+        
+        .download-card {
+            background: linear-gradient(145deg, #1a1a1a 0%, #0f0f0f 100%);
+            border: 1px solid #2a2a2a;
+        }
+        
+        .pulse {
+            animation: pulse 2s infinite;
+        }
+        
+        @keyframes pulse {
+            0% {
+                box-shadow: 0 0 0 0 rgba(47, 165, 114, 0.4);
+            }
+            70% {
+                box-shadow: 0 0 0 10px rgba(47, 165, 114, 0);
+            }
+            100% {
+                box-shadow: 0 0 0 0 rgba(47, 165, 114, 0);
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="min-h-screen flex flex-col hero-bg">
+        <!-- Header -->
+        <!-- Header -->
+        <header class="py-6 px-4 sm:px-6 lg:px-8">
+            <div class="flex justify-center items-center">
+                <div class="flex items-center">
+                    <img src="estilos/imagens/LOGOHD.png" alt="PSOSENSE Logo" class="w-12 h-12 mr-3 rounded-full shadow-md" />
+                    <h1 class="text-2xl font-bold bg-gradient-to-r from-primary to-emerald-400 bg-clip-text text-transparent">PSOSENSE</h1>
+                </div>
+            </div>
+        </header>
+
+        
+        <!-- Main Content -->
+        <main class="flex-grow flex items-center justify-center px-4">
+            <div class="max-w-3xl w-full space-y-8">
+                <!-- Hero Section -->
+                <div class="text-center pb-8">
+                    <h2 class="text-3xl md:text-4xl font-bold mb-4">Thank you for your purchase!</h2>
+                    <p class="text-gray-400 max-w-2xl mx-auto">Your copy of <span class="text-primary font-medium">PSOSENSE</span> is ready to download. Please choose one of the options below to get started.</p>
+                </div>
+                
+                <!-- Download Cards -->
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+                    <!-- Google Drive Card -->
+                    <div class="download-card rounded-xl p-6 transition-all duration-300 hover:border-primary/50">
+                        <div class="flex flex-col h-full">
+                            <div class="flex items-center mb-4">
+                                <div class="w-12 h-12 rounded-lg bg-[#4285F4] flex items-center justify-center">
+                                    <i class="fab fa-google-drive text-white text-2xl"></i>
+                                </div>
+                                <h3 class="ml-4 text-xl font-semibold">Google Drive</h3>
+                            </div>
+                            <p class="text-gray-400 mb-6 flex-grow">Secure download via Google's reliable cloud storage platform.</p>
+                            <a href="https://drive.google.com/file/d/1fst1Q5CUxnFRVtvLW4qO8qbPZJ7QelsZ/view?usp=sharing" class="btn-hover w-full bg-primary hover:bg-primary/90 text-white font-medium py-3 px-4 rounded-lg flex items-center justify-center">
+                                <i class="fas fa-download mr-2"></i> Download Now
+                            </a>
+                        </div>
+                    </div>
+                    
+                    <!-- MEGA Card -->
+                    <div class="download-card rounded-xl p-6 transition-all duration-300 hover:border-primary/50">
+                        <div class="flex flex-col h-full">
+                            <div class="flex items-center mb-4">
+                                <div class="w-12 h-12 rounded-lg bg-[#D9272E] flex items-center justify-center">
+                                    <i class="fas fa-cube text-white text-2xl"></i>
+                                </div>
+                                <h3 class="ml-4 text-xl font-semibold">MEGA</h3>
+                            </div>
+                            <p class="text-gray-400 mb-6 flex-grow">High-speed downloads with end-to-end encrypted cloud storage.</p>
+                            <a href="https://mega.nz/file/WLQRCTgY#s_CwOC-SurcjZJqFKBIR2tC49xc7P9eMWLD-vdFxX80" class="btn-hover w-full bg-[#D9272E] hover:bg-[#D9272E]/90 text-white font-medium py-3 px-4 rounded-lg flex items-center justify-center">
+                                <i class="fas fa-download mr-2"></i> Download Now
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Note Section -->
+                <div class="text-center text-gray-400 text-sm italic">
+                    <p>* Both downloads contain the same files. Please choose only one option.</p>
+                </div>
+                
+                <!-- Warning Box -->
+                <div class="bg-[#1f2937] border-l-4 border-primary rounded-lg p-4 mt-6">
+                    <div class="flex">
+                        <div class="flex-shrink-0">
+                            <i class="fas fa-key text-primary text-xl mt-1"></i>
+                        </div>
+                        <div class="ml-3">
+                            <h3 class="text-sm font-medium text-white">Extraction Password</h3>
+                            <div class="mt-2 text-sm text-gray-400">
+                                <p>The downloaded archive is password protected. Use the following password to extract the files:</p>
+                                <div class="mt-3 relative">
+                                    <input type="text" readonly value="psosense" id="passwordField" class="block w-full px-4 py-2 bg-[#111827] rounded-md border border-gray-700 focus:border-primary focus:ring-primary font-mono text-primary font-bold text-center">
+                                    <button onclick="copyPassword()" class="absolute inset-y-0 right-0 flex items-center pr-3 text-gray-400 hover:text-white">
+                                        <i class="far fa-copy"></i>
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </main>
+        
+        <!-- Support Section -->
+        <section class="pb-12 px-4 sm:px-6 lg:px-8 pt-8">
+            <div class="max-w-3xl mx-auto">
+                <div class="text-center">
+                    <h3 class="text-lg font-medium mb-2">Need help with installation?</h3>
+                    <p class="text-gray-400 mb-6 max-w-2xl mx-auto">Join our Discord community for setup guides, troubleshooting, and to connect with other players.</p>
+                    <a href="https://discord.gg/zAavKtq3st" class="btn-hover inline-flex items-center px-6 py-3 rounded-lg font-medium bg-[#5865F2] hover:bg-[#4752C4] text-white pulse">
+                        <i class="fab fa-discord mr-2 text-xl"></i> Get Support on Discord
+                    </a>
+                </div>
+            </div>
+        </section>
+        
+        <!-- Footer -->
+        <footer class="py-6 px-4 border-t border-gray-800/50 text-center text-sm text-gray-500">
+            <p>© 2023 PSOSENSE. All rights reserved. Not affiliated with Pro Soccer Online.</p>
+            <p class="mt-1">This software is intended for personal use only.</p>
+        </footer>
+    </div>
+
+    <script>
+        function copyPassword() {
+            const passwordField = document.getElementById('passwordField');
+            passwordField.select();
+            passwordField.setSelectionRange(0, 99999);
+            document.execCommand('copy');
+            
+            // Show a temporary tooltip
+            const button = event.currentTarget;
+            const originalIcon = button.innerHTML;
+            button.innerHTML = '<i class="fas fa-check"></i>';
+            
+            setTimeout(() => {
+                button.innerHTML = originalIcon;
+            }, 2000);
+        }
+        
+        // Simple animation on page load
+        document.addEventListener('DOMContentLoaded', () => {
+            const elements = document.querySelectorAll('.download-card, .hero-bg h2, .hero-bg p');
+            elements.forEach((el, i) => {
+                el.style.opacity = '0';
+                el.style.transform = 'translateY(20px)';
+                el.style.transition = 'opacity 0.6s ease, transform 0.6s ease';
+                setTimeout(() => {
+                    el.style.opacity = '1';
+                    el.style.transform = 'translateY(0)';
+                }, 200 + (i * 100));
+            });
+        });
+    </script>
+</body>
+</html>

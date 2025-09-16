@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Software</title>
+    <link rel="stylesheet" type="text/css" href="estilos/adminstyle.css">
+    <link rel="icon" href="estilos/imagens/favicon.ico" type="image/x-icon">
+</head>
+<body>
+    <div class="navigation-container">
+        <div class="navigation-menu">
+            <button class="BotaoNavigation" id="btnEdit">License Editor</button>
+            <button class="BotaoNavigation" id="btnLicenseList">License List</button>
+            <button class="BotaoNavigation" id="btnMassGenerator">Mass Generator</button>
+            <button class="BotaoNavigation" id="btnUserList">User List</button>
+            <button class="BotaoNavigation" id="btnUserEditor">User Editor</button>
+            <button class="BotaoNavigation" id="btnSoftware">Software Data</button>
+        </div>
+    </div>
+    <div class="container">
+        <img src="estilos/imagens/adminlogo.png" alt="Logo">
+        <div id="UserName"></div>
+
+        <!-- Caixa de seleção para o status do software -->
+        <div class="input-container">
+            <label for="SoftwareStatus">Software Status:</label>
+            <select id="SoftwareStatus" name="softwareStatus">
+                <option value="Updated">Updated</option>
+                <option value="Out-Of-Date">Out-Of-Date</option>
+                <option value="Disabled">Disabled</option>
+            </select>
+        </div>
+
+        <!-- Caixa de entrada para a versão do software -->
+        <div class="input-container">
+            <label for="SoftwareVersion">Software Version:</label>
+            <input type="text" id="SoftwareVersion" name="softwareVersion" placeholder="Enter Software Version">
+        </div>
+
+        <!-- Botão de salvar -->
+        <div class="button-container">
+            <button id="SaveStatus" name="saveStatus" class="button-icon">💾 Save</button>
+        </div>
+    </div>
+
+    <!-- Pop-up -->
+    <div id="popup" class="popup">
+        <div class="popup-content">
+            <span class="popup-close" id="popup-close">&times;</span>
+            <p id="popup-message"></p>
+        </div>
+    </div>
+
+    <script type="module" src="scripts/software-javascript.js"></script>
+</body>
+</html>

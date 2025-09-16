@@ -1,0 +1,11 @@
+nuitka ^
+--standalone ^
+--windows-icon-from-ico="C:\Users\hw223\Desktop\loader\icon.ico" ^
+--include-data-file="C:\Users\hw223\Desktop\loader\crasher.dll=crasher.dll" ^
+--include-data-file="C:\Users\hw223\Desktop\loader\key.json=key.json" ^
+--include-data-file="C:\Users\hw223\Desktop\loader\loading.gif=loading.gif" ^
+--enable-plugin=pyqt6 ^
+--windows-console-mode=disable ^
+--windows-uac-admin ^
+--output-dir="C:\Users\hw223\Desktop\loader\dist" ^
+"C:\Users\hw223\Desktop\loader\main.py"

@@ -1,0 +1,15 @@
+/* stylelogin.css */
+
+body {
+    background-image: url('imagens/error.gif');
+    background-size: cover;
+    background-position: center;
+    color: #fff;
+    font-family: 'Courier New', Courier, monospace;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    font-size: 16.8px; /* Aumente o tamanho da fonte em 40% */
+}

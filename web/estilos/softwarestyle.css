@@ -1,0 +1,266 @@
+body {
+    background-image: url('imagens/wallpaper.jpg');
+    background-size: cover;
+    background-position: center;
+    color: #fff;
+    font-family: 'Courier New', Courier, monospace;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+}
+
+body * {
+    font-family: 'Courier New', Courier, monospace;
+}
+
+.container {
+    background-color: rgba(0, 0, 0, 0.1);
+    padding: 14px; /* Aumente o padding em 40% */
+    border-radius: 14px; /* Aumente o raio do border-radius em 40% */
+    box-shadow: 0 7px 12px rgba(0, 0, 0, 0.7); /* Adicione box-shadow para uma leve sombra */
+    text-align: center;
+    width: 80%; /* Defina a largura para 80% do viewport */
+    max-width: 500px; /* Defina uma largura máxima para garantir uma boa aparência em telas maiores */
+    margin: 0 auto; /* Centralize o contêiner horizontalmente */
+    backdrop-filter: blur(10px); /* Adicione um efeito de desfoque ao plano de fundo do container */
+    position: relative;
+}
+
+img {
+    width: 400px;
+    margin-bottom: 10px;
+    animation: pulse 3s infinite cubic-bezier(0.2, 0.7, 0.8, 0.2);
+}
+
+.container input[type="text"], select {
+    display: block;
+    padding: 10px;
+    font-size: 18px;
+    border: none;
+    border-radius: 5px;
+    margin: 10px auto;
+    width: 80%;
+    background-color: #444;
+    color: #fff;
+    padding-left: 30px;
+}
+
+.container input[type="text"].search-input {
+    background-size: 16px;
+    background-repeat: no-repeat;
+    background-position: 95% center;
+}
+
+.container .button-icon {
+    font-size: 24px;
+    background-color: #4bc995;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin: 10px;
+    padding: 10px;
+}
+
+.container .button-icon .fa {
+    margin-right: 0;
+}
+
+.container .button-icon:hover {
+    background-color: #0056b3;
+}
+
+.input-container {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    justify-content: center; /* Centralizar elementos horizontalmente */
+}
+
+.input-container input[type="text"],
+.input-container select {
+    flex: 1;
+}
+
+.button-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-top: 20px; /* Adicionar margem para separar botões dos campos */
+}
+
+.button-container button {
+    margin: 10px;
+}
+
+.product-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.product-container select {
+    width: 80%;
+    padding-left: 30px;
+}
+
+/* Estilos para o pop-up */
+.popup {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    z-index: 9999;
+    justify-content: center;
+    align-items: center;
+}
+
+.popup-content {
+    background-color: #333; /* Cor de fundo do pop-up */
+    color: #fff; /* Cor do texto do pop-up */
+    border-radius: 5px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.3);
+    padding: 20px;
+    position: relative;
+    width: 300px;
+}
+
+.popup-content p {
+    text-align: center; /* Centralizar o texto */
+}
+
+.popup-close {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    cursor: pointer;
+    font-size: 20px;
+    color: #fff; /* Cor do ícone de fechar */
+}
+
+/* O switch - a caixa ao redor do controle deslizante */
+.switch {
+    position: relative;
+    display: inline-block;
+    width: 60px;
+    height: 34px;
+}
+
+/* Ocultar o checkbox HTML padrão */
+.switch input {
+    opacity: 0;
+    width: 0;
+    height: 0;
+}
+
+/* O controle deslizante */
+.slider {
+    position: absolute;
+    cursor: pointer;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: #ccc;
+    -webkit-transition: .4s;
+    transition: .4s;
+}
+
+.slider:before {
+    position: absolute;
+    content: "";
+    height: 26px;
+    width: 26px;
+    left: 4px;
+    bottom: 4px;
+    background-color: white;
+    -webkit-transition: .4s;
+    transition: .4s;
+}
+
+input:checked + .slider {
+    background-color: #4bc995;
+}
+
+input:focus + .slider {
+    box-shadow: 0 0 1px #2196F3;
+}
+
+input:checked + .slider:before {
+    -webkit-transform: translateX(26px);
+    -ms-transform: translateX(26px);
+    transform: translateX(26px);
+}
+
+/* Controles deslizantes arredondados */
+.slider.round {
+    border-radius: 34px;
+}
+
+.slider.round:before {
+    border-radius: 50%;
+}
+
+/* Estilo para o contêiner do menu de navegação */
+.navigation-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    max-height: 100px; /* Altura máxima desejada */
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: #27272749; /* Cor de fundo da faixa */
+    border-top: 3px solid #00000077; /* Borda superior personalizada */
+    border-left: 1px solid #0000004b; /* Borda esquerda */
+    border-right: 1px solid #0000004b; /* Borda direita */
+    border-bottom: 1px solid #0000004b; /* Borda inferior */
+
+    background-color: rgba(0, 0, 0, 0.1);
+    box-shadow: 0 7px 12px rgba(0, 0, 0, 0.7); /* Adicione box-shadow para uma leve sombra */
+    backdrop-filter: blur(10px); /* Adicione um efeito de desfoque ao plano de fundo do container */
+
+}
+
+/* Estilo para o menu de navegação */
+.navigation-menu {
+    text-align: center;
+    margin-top: 20px;
+}
+
+/* Estilo para os botões do menu de navegação */
+.BotaoNavigation {
+    background-color: #4bc994c0; /* Cor de fundo azul */
+    border: 3px solid #51d39d; /* Contorno azul */
+    border-radius: 5px; /* Bordas arredondadas */
+    color: #fff; /* Cor do texto branco */
+    font-family: Arial, sans-serif;
+    font-size: 20px;
+    font-weight: bold;
+    padding: 10px 25px; /* Espaçamento interno */
+    text-decoration: none;
+    cursor: pointer;
+    margin: 1px; /* Espaçamento entre botões */
+    transition: background-color 0.3s ease-in-out; /* Efeito de transição suave */
+}
+
+/* Estilo para hover (quando o mouse passa por cima) */
+.BotaoNavigation:hover {
+    background-color: #0056b3; /* Cor mais escura quando hover */
+}
+
+/* Estilo para a última classe de botão no menu */
+.BotaoNavigation:last-child {
+    margin-right: 0;
+}
+
+
+
